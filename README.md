@@ -1,9 +1,8 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
 [![Activity Graph](https://activity-graph.herokuapp.com/graph?username=IvanMurzak&theme=react-dark&hide_border=true&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
+<img align="center" src="https://raw.githubusercontent.com/IvanMurzak/IvanMurzak/main/waves.svg" width="100%" height="150">
 
-<div>
+<div align="center">
   <a href="https://github-readme-stats.vercel.app">
     <img width="49%" alt="Stats" src="https://github-readme-stats.vercel.app/api?&count_private=true&include_all_commits=true&username=IvanMurzak&theme=default&custom_title=GitHub+Stats&hide_border=true"/>
   </a>
@@ -12,6 +11,3 @@
   </a>
 </div>
 </br>
-
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
