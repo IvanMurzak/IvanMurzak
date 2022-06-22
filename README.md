@@ -1,4 +1,3 @@
-### My personal stats
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 [![Activity Graph](https://activity-graph.herokuapp.com/graph?username=IvanMurzak&theme=react-dark&hide_border=true&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
