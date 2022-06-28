@@ -9,7 +9,7 @@
 
 [![Activity Graph](https://activity-graph.herokuapp.com/graph?username=IvanMurzak&theme=react-dark&hide_border=true&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
-<h1 align="center">Connect with me</h1>
+<h1 align="center">Contacts</h1>
 <p align="center">
 	<a href="https://github.com/IvanMurzak"><img src="https://user-images.githubusercontent.com/58532023/171219272-a68dd897-a9c7-4826-b7e6-10ef84e6a0a8.png" alt="GitHub"/></a>
 	<a href="https://www.linkedin.com/in/ivan-murzak"><img src="https://user-images.githubusercontent.com/58532023/171219303-8839f911-21bf-453f-b517-9dd6ef9a873c.png" alt="LinkedIn"/></a>
