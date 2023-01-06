@@ -7,7 +7,6 @@
   </a>
 </div>
 
-[![Activity Graph](https://activity-graph.herokuapp.com/graph?username=IvanMurzak&theme=react-dark&hide_border=true&hide_title=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 <h1 align="center">Contacts</h1>
 <p align="center">
