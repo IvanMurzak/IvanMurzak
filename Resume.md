@@ -49,13 +49,14 @@ The most gorgeous my own project is Evil Cogs - a mobile game for Android & iOS 
 
 <table border="0">
   <tr>
-    <td>[]</td>
+    <td><img src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/logo.png?raw=true"/></td>
     <td>
-      Senior Unity Developer</br>=
+      <h3>Senior Unity Developer</h3>
+      Branch · Full-time · Hybrid
     </td>
   </tr>
 </table>
-### Unity Developer at [Yandex](https://yandex.com/) (2019 - Present)
+### Unity Developer
 
 <table>
   <tr>
