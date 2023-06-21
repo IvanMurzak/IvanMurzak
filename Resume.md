@@ -47,22 +47,59 @@ The most gorgeous my own project is Evil Cogs - a mobile game for Android & iOS 
 
 ## Experience
 
-<table border="0">
+<table>
   <tr>
-    <td><img src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/logo.png?raw=true"/></td>
+    <td>
+      <img width="60px" height="60px" style="object-fit: contain;" alight-content="left" src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/logo.png?raw=true"/>
+    </td>
     <td>
       <h3>Senior Unity Developer</h3>
       Branch · Full-time · Hybrid
     </td>
+    <td align="right!important" border="1">
+      <code>Feb 27, 2023</code> - <code>Jun 16, 2023</code><br/>
+      Seattle, Washington, United States
+    </td>
   </tr>
 </table>
-### Unity Developer
-
 <table>
   <tr>
-    <td>Foo</td>
-    <td>Foo</td>
-    <td>Foo</td>
+    <td>
+      <ul style="font-size: 0.8em">
+        <li>C#</li>
+        <li>Unity</li>
+        <li>Game Design</li>
+        <li>Team Leading</li>
+        <li>Tasks Creation</li>
+        <li>Project Architecture</li>
+        <li>URP / ShaderGraph</li>
+        <li>Plugin development</li>
+        <li>UI / UX</li>
+        <li>Math</li>
+        <li>Analytics (Firebase)</li>
+        <li>Publishing (App Store, Google Play)</li>
+      </ul>
+    </td>
+    <td>
+      As Unity Developer I made the game from scratch, also a tool similar to Ferr2D for creating splines in the game for making curved walls, trails, rivers, beach lines, and ground elevations. I made custom shaders for the ocean, river, and curved splines.<br/><br/>
+      We are a small indie team of just two persons, we made the "Idle Tower Defense" mobile game for iOS & Android platforms. I worked on many aspects of the product: product ownership, development, game design, and production.
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td>
+      <img width="200px" height="200px" style="object-fit: contain;" alight-content="left" src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/Castaways.Skins.gif?raw=true"/>
+    </td>
+    <td>
+      <img width="200px" height="200px" style="object-fit: contain;" alight-content="left" src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/Castaways.Skins.gif?raw=true"/>
+    </td>
+    <td>
+      <img width="200px" height="200px" style="object-fit: contain;" alight-content="left" src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/Castaways.Skins.gif?raw=true"/>
+    </td>
+    <td>
+      <img width="200px" height="200px" style="object-fit: contain;" alight-content="left" src="https://github.com/IvanMurzak/IvanMurzak/blob/main/images/Experience/Branch/Castaways.Skins.gif?raw=true"/>
+    </td>
   </tr>
 </table>
 
@@ -74,13 +111,24 @@ The most gorgeous my own project is Evil Cogs - a mobile game for Android & iOS 
 	<a href="https://twitter.com/IvanMurzak"><img src="https://user-images.githubusercontent.com/58532023/171218519-2ccc030a-72b5-45ea-a2ec-7f1dfbef917f.png" alt="Twitter"/></a>
 </p>
 
-<img align="center" src="https://raw.githubusercontent.com/IvanMurzak/IvanMurzak/main/waves.svg" width="100%" height="150">
+<img align="center" src="https://raw.githubusercontent.com/IvanMurzak/IvanMurzak/main/waves.svg" width="100%" height="100">
 
 <style>
-  td, th {
-    border: none!important;
+  table, table tr {
+    width: 100%!important;
   }
-  table td, table td * {
-    vertical-align: top;
+  th, table td, table td * {
+    border: 0px solid transparent!important;
+    border-collapse: collapse!important;
+    vertical-align: top!important;
+    padding: 0!important;
+    padding-top: 0!important;
+    padding-right: 0!important;
+    padding-bottom: 0!important;
+    padding-right: 0!important;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0!important;
+    margin-bottom: 6px!important;
   }
 </style>
