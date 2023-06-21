@@ -57,7 +57,7 @@ The most gorgeous my own project is Evil Cogs - a mobile game for Android & iOS 
       Branch · Full-time · Hybrid
     </td>
     <td align="right!important" border="1">
-      <code>Feb 27, 2023</code> - <code>Jun 16, 2023</code><br/>
+      <code>Feb 27, 2023</code> - <code>present</code><br/>
       Seattle, Washington, United States
     </td>
   </tr>
