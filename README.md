@@ -9,11 +9,7 @@
 
 <div align="center">
   <a href="https://star-history.com/#IvanMurzak/Unity-Gyroscope-Parallax&IvanMurzak/Unity-Package-Template&IvanMurzak/Unity-Mouse-Parallax&IvanMurzak/Unity-PlayerPrefsEx&IvanMurzak/Unity-ImageLoader&IvanMurzak/Unity-AudioLoader&IvanMurzak/Unity-IAP-Store&IvanMurzak/Unity-Theme&IvanMurzak/Unity-Saver&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=IvanMurzak/Unity-Gyroscope-Parallax,IvanMurzak/Unity-Package-Template,IvanMurzak/Unity-Mouse-Parallax,IvanMurzak/Unity-PlayerPrefsEx,IvanMurzak/Unity-ImageLoader,IvanMurzak/Unity-AudioLoader,IvanMurzak/Unity-IAP-Store,IvanMurzak/Unity-Theme,IvanMurzak/Unity-Saver&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=IvanMurzak/Unity-Gyroscope-Parallax,IvanMurzak/Unity-Package-Template,IvanMurzak/Unity-Mouse-Parallax,IvanMurzak/Unity-PlayerPrefsEx,IvanMurzak/Unity-ImageLoader,IvanMurzak/Unity-AudioLoader,IvanMurzak/Unity-IAP-Store,IvanMurzak/Unity-Theme,IvanMurzak/Unity-Saver&type=Date" />
-      <img alt="Star History Chart" width="97%" src="https://api.star-history.com/svg?repos=IvanMurzak/Unity-Gyroscope-Parallax,IvanMurzak/Unity-Package-Template,IvanMurzak/Unity-Mouse-Parallax,IvanMurzak/Unity-PlayerPrefsEx,IvanMurzak/Unity-ImageLoader,IvanMurzak/Unity-AudioLoader,IvanMurzak/Unity-IAP-Store,IvanMurzak/Unity-Theme,IvanMurzak/Unity-Saver&type=Date" />
-    </picture>
+    <img alt="Star History Chart" width="97%" src="https://api.star-history.com/svg?repos=IvanMurzak/Unity-Gyroscope-Parallax,IvanMurzak/Unity-Package-Template,IvanMurzak/Unity-Mouse-Parallax,IvanMurzak/Unity-PlayerPrefsEx,IvanMurzak/Unity-ImageLoader,IvanMurzak/Unity-AudioLoader,IvanMurzak/Unity-IAP-Store,IvanMurzak/Unity-Theme,IvanMurzak/Unity-Saver&type=Date" />
   </a>
 </div>
 
