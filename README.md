@@ -11,10 +11,10 @@
 </div>
 
 <a href="https://github.com/IvanMurzak">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=IvanMurzak&theme=transparent&show_icons=true&count_private=true&include_all_commits=true&custom_title=GitHub+Stats&hide_border=true"/>
+  <img height=190 align="center" src="https://github-readme-stats.vercel.app/api?username=IvanMurzak&theme=transparent&show_icons=true&count_private=true&include_all_commits=true&custom_title=GitHub+Stats&hide_border=true"/>
 </a>
-<a href="https://github.com/IvanMurzak">
-  <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=IvanMurzak&theme=transparent&hide_border=true"/>
+<a href="https://github.com/IvanMurzak" align="right">
+  <img height=190 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=IvanMurzak&theme=transparent&hide_border=true"/>
 </a>
 
 <img src="https://raw.githubusercontent.com/IvanMurzak/IvanMurzak/main/images/waves.svg" width="100%" height="100">
