@@ -1,7 +1,7 @@
 <div align="center">
-  
+
   <h1>Ivan Murzak</h1>
-  
+
   <div >
     <a href="https://github.com/IvanMurzak"><img src="https://user-images.githubusercontent.com/58532023/171219272-a68dd897-a9c7-4826-b7e6-10ef84e6a0a8.png" alt="GitHub"/></a>
     <a href="https://www.linkedin.com/in/ivan-murzak"><img src="https://user-images.githubusercontent.com/58532023/171219303-8839f911-21bf-453f-b517-9dd6ef9a873c.png" alt="LinkedIn"/></a>
@@ -17,15 +17,15 @@
   <img height=200 align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=IvanMurzak&theme=transparent&hide_border=true"/>
 </a>
 
-<img src="https://raw.githubusercontent.com/IvanMurzak/IvanMurzak/main/waves.svg" width="100%" height="100">
-  
+<img src="https://raw.githubusercontent.com/IvanMurzak/IvanMurzak/main/images/waves.svg" width="100%" height="100">
+
 <div align="center">
   <h2>About Me</h2>
 </div>
 
-🎮 Senior Unity Developer specializing in mobile games for Android and iOS.  
-🚀 Former startup co-founder and creator of the successful game *Evil Cogs*, with over 5 million installs.  
-💻 Master's degree in Computer Science, with a deep passion for software engineering and game development.  
+🎮 Senior Unity Developer specializing in mobile games for Android and iOS.
+🚀 Former startup co-founder and creator of the successful game *Evil Cogs*, with over 5 million installs.
+💻 Master's degree in Computer Science, with a deep passion for software engineering and game development.
 🌍 Originally from Ukraine :ukraine:, now based in the Greater Seattle Area, WA, USA.
 
 <br/>
