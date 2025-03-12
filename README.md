@@ -23,9 +23,9 @@
   <h2>About Me</h2>
 </div>
 
-🎮 Senior Unity Developer specializing in mobile games for Android and iOS.
-🚀 Former startup co-founder and creator of the successful game *Evil Cogs*, with over 5 million installs.
-💻 Master's degree in Computer Science, with a deep passion for software engineering and game development.
+🎮 Senior Unity Developer specializing in mobile games for Android and iOS.  
+🚀 Former startup co-founder and creator of the successful game *Evil Cogs*, with over 5 million installs.  
+💻 Master's degree in Computer Science, with a deep passion for software engineering and game development.  
 🌍 Originally from Ukraine :ukraine:, now based in the Greater Seattle Area, WA, USA.
 
 <br/>
