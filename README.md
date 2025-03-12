@@ -29,7 +29,7 @@
 🌍 Originally from Ukraine :ukraine:, now based in the Greater Seattle Area, WA, USA.
 
 <br/>
-<h1 align="center">Top Unity packages</h1>
+<h1 align="center">Unity packages</h1>
 <div align="center">I am passioned open source contributor</div>
 <div align="center">There are my the most popular packages for Unity Engine</div>
 <br/>
@@ -46,6 +46,25 @@
 <a href="https://github.com/IvanMurzak/Unity-Package-Template">
   <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Package-Template&theme=transparent&hide_border=true"/>
 </a>
+<a href="https://github.com/IvanMurzak/Unity-Mouse-Parallax">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Mouse-Parallax&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-PlayerPrefsEx">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-PlayerPrefsEx&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-EFCore-SQLite">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-EFCore-SQLite&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-Saver">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Saver&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AudioLoader">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-AudioLoader&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-IAP-Store">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-IAP-Store&theme=transparent&hide_border=true"/>
+</a>
+
 
 <br/>
 
