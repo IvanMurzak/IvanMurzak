@@ -67,6 +67,27 @@
 <a href="https://github.com/IvanMurzak/Unity-NonDrawingGraphic">
   <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-NonDrawingGraphic&theme=transparent&hide_border=true"/>
 </a>
+<a href="https://github.com/IvanMurzak/UBuilder">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=UBuilder&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-Network-REST">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Network-REST&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-Appodeal-Simplifier">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Appodeal-Simplifier&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-Gyroscope-Manager">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Gyroscope-Manager&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-Extensions">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Extensions&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-iOS-Pods-Bitcode">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-iOS-Pods-Bitcode&theme=transparent&hide_border=true"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-Mobile-Notifications-Simplifier">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-Mobile-Notifications-Simplifier&theme=transparent&hide_border=true"/>
+</a>
 
 <br/>
 
