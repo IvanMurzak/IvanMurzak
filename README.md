@@ -64,7 +64,9 @@
 <a href="https://github.com/IvanMurzak/Unity-IAP-Store">
   <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-IAP-Store&theme=transparent&hide_border=true"/>
 </a>
-
+<a href="https://github.com/IvanMurzak/Unity-NonDrawingGraphic">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-NonDrawingGraphic&theme=transparent&hide_border=true"/>
+</a>
 
 <br/>
 
