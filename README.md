@@ -34,6 +34,9 @@
 <div align="center">There are my the most popular packages for Unity Engine</div>
 <br/>
 
+<a href="https://github.com/IvanMurzak/Unity-MCP">
+  <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-MCP&theme=transparent&hide_border=true"/>
+</a>
 <a href="https://github.com/IvanMurzak/Unity-ImageLoader">
   <img width="45%" align="center" src="https://github-readme-stats.vercel.app/api/pin?username=IvanMurzak&repo=Unity-ImageLoader&theme=transparent&hide_border=true"/>
 </a>
