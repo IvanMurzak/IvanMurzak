@@ -27,7 +27,7 @@
       }
       @keyframes streakRing {
         from { stroke-dashoffset: 251.32741228718345; }
-        to { stroke-dashoffset: 201.06192982974676; }
+        to { stroke-dashoffset: 196.49234051543434; }
       }
     </style>
     
@@ -59,21 +59,21 @@
             <g transform="translate(0, 32)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.7s">
                  <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#0969da" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
                 <text x="30" y="10" class="stat-label">Total Commits</text>
-                <text x="180" y="10" class="stat-value">11943</text>
+                <text x="180" y="10" class="stat-value">11944</text>
             </g>
 
             <!-- PRs -->
             <g transform="translate(0, 64)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.8s">
                  <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#0969da" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zm2.25 7.5a.75.75 0 100 1.5.75.75 0 000-1.5zM1.5 11.5a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zm2.325-9.25a.75.75 0 01.75.75v7.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75z"/></svg>
                 <text x="30" y="10" class="stat-label">Total PRs</text>
-                <text x="180" y="10" class="stat-value">660</text>
+                <text x="180" y="10" class="stat-value">298</text>
             </g>
 
             <!-- Issues -->
             <g transform="translate(0, 96)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.9s">
                  <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#0969da" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0-5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/></svg>
                 <text x="30" y="10" class="stat-label">Total Issues</text>
-                <text x="180" y="10" class="stat-value">177</text>
+                <text x="180" y="10" class="stat-value">169</text>
             </g>
 
             <!-- Followers -->
@@ -107,7 +107,7 @@
                 <!-- Total Contributions big number -->
                 <g transform="translate(82.5, 48)">
                     <text x="0" y="32" stroke-width="0" text-anchor="middle" fill="#333" stroke="none" font-family="&quot;Segoe UI&quot;, Ubuntu, sans-serif" font-weight="700" font-size="28px" font-style="normal" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">
-                        12,485
+                        12,487
                     </text>
                 </g>
 
@@ -141,7 +141,7 @@
                     </g>
 
                     <text x="0" y="32" stroke-width="0" text-anchor="middle" fill="#333" stroke="none" font-family="&quot;Segoe UI&quot;, Ubuntu, sans-serif" font-weight="700" font-size="28px" font-style="normal" style="animation: currstreak 0.6s linear forwards">
-                        11
+                        12
                     </text>
                 </g>
 
@@ -155,7 +155,7 @@
                 <!-- Current Streak range -->
                 <g transform="translate(247.5, 145)">
                     <text x="0" y="21" stroke-width="0" text-anchor="middle" fill="#777" stroke="none" font-family="&quot;Segoe UI&quot;, Ubuntu, sans-serif" font-weight="400" font-size="12px" font-style="normal" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">
-                        Nov 19 - Nov 29
+                        Nov 19 - Nov 30
                     </text>
                 </g>
 
