@@ -26,13 +26,13 @@
 
     <!-- Total Contributions -->
     <g transform="translate(82.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">3,497</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">12,485</text>
     </g>
     <g transform="translate(82.5, 84)">
         <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 0.7s">Total Contributions</text>
     </g>
     <g transform="translate(82.5, 114)">
-        <text x="0" y="32" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.8s">Dec 1 - Present</text>
+        <text x="0" y="32" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.8s">Jan 1 - Present</text>
     </g>
 
     <!-- Current Streak -->
