@@ -46,7 +46,7 @@
         <rect x="0.5" y="0.5" rx="4.5" height="194" width="449" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
 
         <!-- Stats List -->
-        <g transform="translate(25, 25)">
+        <g transform="translate(25, 30)">
             
             <!-- Stars -->
             <g transform="translate(0, 0)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.6s">
