@@ -53,6 +53,9 @@ async function fetchGitHubData() {
         name
         login
         createdAt
+        followers {
+          totalCount
+        }
         pullRequests(first: 1) {
           totalCount
         }
