@@ -1,11 +1,9 @@
 const fs = require('fs');
 const { fetchGitHubData } = require('./api');
-const { generateGithubStatsSVG } = require('./generators/github-stats');
-const { generateStreakStatsSVG } = require('./generators/streak-stats');
+const { generateCombinedStatsSVG } = require('./generators/combined-stats');
 const { generateRepoCardSVG } = require('./generators/repo-card');
 
-const GITHUB_STATS_FILE = 'images/stats/github-stats.svg';
-const STREAK_STATS_FILE = 'images/stats/streak-stats.svg';
+const COMBINED_STATS_FILE = 'images/stats/combined-stats.svg';
 const REPO_CARDS_DIR = 'images/pins';
 
 const REPOS_TO_PIN = [
@@ -35,22 +33,16 @@ async function main() {
     console.log('Fetching GitHub data...');
     const data = await fetchGitHubData();
 
-    console.log('Generating GitHub Stats...');
-    const githubStatsSVG = generateGithubStatsSVG(data);
-
-    console.log('Generating Streak Stats...');
-    const streakStatsSVG = generateStreakStatsSVG(data);
+    console.log('Generating Combined Stats...');
+    const combinedStatsSVG = generateCombinedStatsSVG(data);
 
     // Ensure stats directory exists
-    const statsDir = GITHUB_STATS_FILE.substring(0, GITHUB_STATS_FILE.lastIndexOf('/'));
+    const statsDir = COMBINED_STATS_FILE.substring(0, COMBINED_STATS_FILE.lastIndexOf('/'));
     if (!fs.existsSync(statsDir)) {
         fs.mkdirSync(statsDir, { recursive: true });
     }
-    fs.writeFileSync(GITHUB_STATS_FILE, githubStatsSVG);
-    console.log(`Successfully generated ${GITHUB_STATS_FILE}`);
-
-    fs.writeFileSync(STREAK_STATS_FILE, streakStatsSVG);
-    console.log(`Successfully generated ${STREAK_STATS_FILE}`);
+    fs.writeFileSync(COMBINED_STATS_FILE, combinedStatsSVG);
+    console.log(`Successfully generated ${COMBINED_STATS_FILE}`);
     
     console.log('Generating Repo Cards...');
     const userRepos = data.user.repositories.nodes;

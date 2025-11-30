@@ -47,20 +47,20 @@ function generateGithubStatsSVG(data) {
 
   // Layout
   const cardWidth = 450;
-  const cardHeight = 215; // Adjusted for 5 rows without header
+  const cardHeight = 195; // Matched to streak-stats
   const padding = 25;
   
   // Rank Circle Config
   const circleX = 360;
-  const circleY = 107; // Centered vertically (215 / 2)
+  const circleY = 97.5; // Centered vertically (195 / 2)
   const radius = 50;
   const circumference = 2 * Math.PI * radius;
   const progress = rank.score; 
   const dashOffset = circumference - (progress / 100) * circumference;
 
   // Stats layout
-  const lineHeight = 35;
-  const startY = 30; // Moved up since header is gone
+  const lineHeight = 32; // Slightly tighter to fit 5 rows
+  const startY = 20; // Moved up
   const labelX = 55;
   const valueX = 180;
 
@@ -142,3 +142,5 @@ function generateGithubStatsSVG(data) {
   `;
   return svg;
 }
+
+module.exports = { generateGithubStatsSVG };

@@ -12,12 +12,9 @@
   </div>
 </div>
 
-<a href="https://github.com/IvanMurzak">
-  <img width="47%" align="left" src="images/stats/github-stats.svg"/>
-</a>
-<a href="https://github.com/IvanMurzak">
-  <img width="47%" align="right" src="images/stats/streak-stats.svg"/>
-</a>
+<div align="center">
+  <img src="images/stats/combined-stats.svg" width="100%" />
+</div>
 
 <img src="images/waves.svg" width="100%" height="100">
 
