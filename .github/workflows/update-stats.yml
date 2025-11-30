@@ -26,6 +26,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add images/stats/github-stats.svg images/stats/github-stats-dark.svg images/stats/streak-stats.svg images/stats/streak-stats-dark.svg images/pins/*.svg
+          git add images/stats/github-stats.svg images/stats/streak-stats.svg images/pins/*.svg
           git commit -m "Update stats images" || exit 0
           git push

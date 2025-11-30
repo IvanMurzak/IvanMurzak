@@ -1,20 +1,19 @@
-function generateGithubStatsSVG(data, options = {}) {
-  const { theme = 'light' } = options;
-  const isDark = theme === 'dark';
-
-  const colors = {
-    header: isDark ? '#58a6ff' : '#006AFF',
-    label: isDark ? '#8b949e' : '#333',
-    value: isDark ? '#c9d1d9' : '#333',
-    icon: isDark ? '#58a6ff' : '#006AFF',
-    border: isDark ? '#30363d' : '#e1e4e8'
-  };
-
+function generateGithubStatsSVG(data) {
   const user = data.user;
   const totalStars = user.repositories.nodes.reduce((acc, repo) => acc + repo.stargazers.totalCount, 0);
   const totalCommits = user.contributionsCollection.totalCommitContributions + user.contributionsCollection.restrictedContributionsCount;
   const totalPRs = user.pullRequests.totalCount;
   const totalIssues = user.issues.totalCount;
+
+  // Colors (Classic Light/Default Theme)
+  const colors = {
+    bg: '#ffffff',
+    border: '#e1e4e8',
+    header: '#0969da',
+    label: '#333',
+    value: '#24292f',
+    icon: '#0969da'
+  };
 
   // Icons (Simple paths)
   const starIcon = `<path fill="${colors.icon}" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/>`;
@@ -43,7 +42,8 @@ function generateGithubStatsSVG(data, options = {}) {
       }
     </style>
     
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="${colors.border}" stroke-opacity="0"/>
+    <!-- Background Card -->
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="${colors.bg}" stroke="${colors.border}" stroke-width="1"/>
 
     <text x="25" y="35" class="header">Ivan Murzak's GitHub Stats</text>
 

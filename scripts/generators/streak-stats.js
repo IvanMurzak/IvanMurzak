@@ -1,18 +1,4 @@
-function generateStreakStatsSVG(data, options = {}) {
-  const { theme = 'light' } = options;
-  const isDark = theme === 'dark';
-
-  const colors = {
-    label: isDark ? '#58a6ff' : '#006AFF', // Use blue for labels in dark mode too for consistency
-    value: isDark ? '#c9d1d9' : '#333',
-    date: isDark ? '#8b949e' : '#777',
-    ring: isDark ? '#58a6ff' : '#006AFF',
-    fire: isDark ? '#58a6ff' : '#006AFF',
-    currStreakLabel: isDark ? '#79c0ff' : '#0579C3', // Lighter blue for dark mode
-    currStreakValue: isDark ? '#79c0ff' : '#0579C3',
-    border: isDark ? '#30363d' : '#e1e4e8'
-  };
-
+function generateStreakStatsSVG(data) {
   const contributionCalendar = data.user.contributionsCollection.contributionCalendar;
   const weeks = contributionCalendar.weeks;
   const days = weeks.flatMap(week => week.contributionDays);
@@ -129,12 +115,23 @@ function generateStreakStatsSVG(data, options = {}) {
       return `${s} - ${e}`;
   };
 
-  const currentStreakText = `${currentStreak} days`;
-  const longestStreakText = `${longestStreak} days`;
   const totalText = `${totalContributions.toLocaleString()}`;
   
   const cardWidth = 495;
   const cardHeight = 195;
+
+  // Colors (Classic Light/Default Theme)
+  const colors = {
+    bg: '#ffffff',
+    border: '#e1e4e8',
+    label: '#006AFF',
+    value: '#333',
+    date: '#777',
+    ring: '#006AFF',
+    fire: '#006AFF',
+    currStreakLabel: '#0579C3',
+    currStreakValue: '#333' // Dark text for visibility on light bg
+  };
 
   const svg = `
   <svg width="${cardWidth}" height="${cardHeight}" viewBox="0 0 ${cardWidth} ${cardHeight}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,7 +153,8 @@ function generateStreakStatsSVG(data, options = {}) {
       }
     </style>
     
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="${colors.border}" stroke-opacity="0"/>
+    <!-- Background Card -->
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="${colors.bg}" stroke="${colors.border}" stroke-width="1"/>
     
     <!-- Separators -->
     <line x1="165" y1="28" x2="165" y2="170" stroke="#E4E2E2" stroke-width="1"/>
