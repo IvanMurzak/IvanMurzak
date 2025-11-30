@@ -3,11 +3,12 @@
   <h1>Ivan Murzak</h1>
 
   <div >
-    <a href="https://github.com/IvanMurzak"><img src="images/social/github-icon.png" alt="GitHub"/></a>
-    <a href="https://www.linkedin.com/in/ivan-murzak"><img src="images/social/linkedin-icon.png" alt="LinkedIn"/></a>
-    <a href="https://www.youtube.com/@Ivan_Murzak_Dev"><img src="images/social/youtube-icon.png" alt="YouTube"/></a>
-    <a href="https://www.instagram.com/ivanmurzak_/"><img src="images/social/instagram-icon.png" alt="Instagram"/></a>
-    <a href="https://twitter.com/IvanMurzak"><img src="images/social/twitter-icon.png" alt="Twitter"/></a>
+    <a href="https://github.com/IvanMurzak"><img src="images/social/github.png" alt="GitHub"/></a>
+    <a href="https://www.linkedin.com/in/ivan-murzak"><img src="images/social/linkedin.png" alt="LinkedIn"/></a>
+    <a href="https://www.youtube.com/@Ivan_Murzak_Dev"><img src="images/social/youtube.png" alt="YouTube"/></a>
+    <a href="http://discord.com/users/baizor"><img src="images/social/discord.png" alt="Twitter"/></a>
+    <a href="https://www.instagram.com/ivanmurzak_/"><img src="images/social/instagram.png" alt="Instagram"/></a>
+    <a href="https://twitter.com/IvanMurzak"><img src="images/social/twitter.png" alt="Twitter"/></a>
   </div>
 </div>
 
