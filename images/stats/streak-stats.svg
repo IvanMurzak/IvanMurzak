@@ -1,66 +1,149 @@
 
-  <svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      .label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #006AFF; }
-      .value { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333; }
-      .date { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #777; }
-      .ring { fill: none; stroke: #006AFF; stroke-width: 5; }
-      .fire { fill: #006AFF; }
+
+    <svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+      <style>
+
+        .label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333; }
+
+        .value { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #24292f; }
+
+        .date { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #777; }
+
+        .ring { fill: none; stroke: #0969da; stroke-width: 5; }
+
+        .fire { fill: #0969da; }
+
+        
+
+        @keyframes currstreak {
+
+            0% { font-size: 3px; opacity: 0.2; }
+
+            80% { font-size: 34px; opacity: 1; }
+
+            100% { font-size: 28px; opacity: 1; }
+
+        }
+
+        @keyframes fadein {
+
+            0% { opacity: 0; }
+
+            100% { opacity: 1; }
+
+        }
+
+        @keyframes streakRing {
+
+          from { stroke-dashoffset: 175.92918860102841; }
+
+          to { stroke-dashoffset: 140.74335088082273; }
+
+        }
+
+      </style>
+
       
-      @keyframes currstreak {
-          0% { font-size: 3px; opacity: 0.2; }
-          80% { font-size: 34px; opacity: 1; }
-          100% { font-size: 28px; opacity: 1; }
-      }
-      @keyframes fadein {
-          0% { opacity: 0; }
-          100% { opacity: 1; }
-      }
-    </style>
-    
-    <!-- Background Card -->
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
-    
-    <!-- Separators -->
-    <line x1="165" y1="28" x2="165" y2="170" stroke="#E4E2E2" stroke-width="1"/>
-    <line x1="330" y1="28" x2="330" y2="170" stroke="#E4E2E2" stroke-width="1"/>
 
-    <!-- Total Contributions -->
-    <g transform="translate(82.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">12,485</text>
-    </g>
-    <g transform="translate(82.5, 84)">
-        <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 0.7s">Total Contributions</text>
-    </g>
-    <g transform="translate(82.5, 114)">
-        <text x="0" y="32" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.8s">Jan 1 - Present</text>
-    </g>
+      <!-- Background Card -->
 
-    <!-- Current Streak -->
-    <g transform="translate(247.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#333" style="animation: currstreak 0.6s linear forwards">11</text>
-    </g>
-    <g transform="translate(247.5, 108)">
-        <text x="0" y="32" text-anchor="middle" class="label" fill="#0579C3" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
-    </g>
-    <g transform="translate(247.5, 145)">
-        <text x="0" y="21" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Nov 19 - Nov 29</text>
-    </g>
-     <!-- Fire Icon Placeholder (Simplified) -->
-    <g transform="translate(247.5, 20)" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">
-       <path d="M -6 0 L 6 0 L 0 12 Z" fill="#006AFF" />
-    </g>
+      <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
 
-    <!-- Longest Streak -->
-    <g transform="translate(412.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 1.2s">55</text>
-    </g>
-    <g transform="translate(412.5, 84)">
-        <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 1.3s">Longest Streak</text>
-    </g>
-    <g transform="translate(412.5, 114)">
-         <text x="0" y="32" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 1.4s">Jul 13 - Sep 5</text>
-    </g>
+      
 
-  </svg>
+      <!-- Separators -->
+
+      <line x1="165" y1="28" x2="165" y2="170" stroke="#E4E2E2" stroke-width="1"/>
+
+      <line x1="330" y1="28" x2="330" y2="170" stroke="#E4E2E2" stroke-width="1"/>
+
   
+
+      <!-- Total Contributions -->
+
+      <g transform="translate(82.5, 48)">
+
+          <text x="0" y="32" text-anchor="middle" class="value" fill="#333" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">12,485</text>
+
+      </g>
+
+      <g transform="translate(82.5, 84)">
+
+          <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 0.7s">Total Contributions</text>
+
+      </g>
+
+      <g transform="translate(82.5, 114)">
+
+          <text x="0" y="32" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.8s">Jan 1 - Present</text>
+
+      </g>
+
+  
+
+      <!-- Current Streak -->
+
+      <g transform="translate(247.5, 55)">
+
+          <!-- Ring -->
+
+          <circle cx="0" cy="0" r="28" fill="none" stroke="#e1e4e8" stroke-width="4" />
+
+          <circle cx="0" cy="0" r="28" fill="none" stroke="#0969da" stroke-width="4" stroke-dasharray="175.92918860102841" stroke-dashoffset="175.92918860102841" stroke-linecap="round" transform="rotate(-90)" style="animation: streakRing 1s forwards ease-in-out 0.5s"/>
+
+          
+
+          <!-- Fire Icon (Moved up slightly) -->
+
+          <g transform="translate(0, -22)" style="opacity: 0; animation: fadein 0.5s linear forwards 0.8s">
+
+             <path d="M -6 0 L 6 0 L 0 12 Z" fill="#0969da" transform="scale(0.8)"/>
+
+          </g>
+
+  
+
+          <text x="0" y="12" text-anchor="middle" class="value" fill="#24292f" style="animation: currstreak 0.6s linear forwards">11</text>
+
+      </g>
+
+      <g transform="translate(247.5, 108)">
+
+          <text x="0" y="32" text-anchor="middle" class="label" fill="#0969da" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
+
+      </g>
+
+      <g transform="translate(247.5, 145)">
+
+          <text x="0" y="21" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Nov 19 - Nov 29</text>
+
+      </g>
+
+  
+
+      <!-- Longest Streak -->
+
+      <g transform="translate(412.5, 48)">
+
+          <text x="0" y="32" text-anchor="middle" class="value" fill="#333" style="opacity: 0; animation: fadein 0.5s linear forwards 1.2s">55</text>
+
+      </g>
+
+      <g transform="translate(412.5, 84)">
+
+          <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 1.3s">Longest Streak</text>
+
+      </g>
+
+      <g transform="translate(412.5, 114)">
+
+           <text x="0" y="32" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 1.4s">Jul 13 - Sep 5</text>
+
+      </g>
+
+  
+
+    </svg>
+
+    
