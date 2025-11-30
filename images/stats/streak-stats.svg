@@ -18,7 +18,8 @@
       }
     </style>
     
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#e1e4e8" stroke-opacity="0"/>
+    <!-- Background Card -->
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="#ffffff" stroke="#e1e4e8" stroke-width="1"/>
     
     <!-- Separators -->
     <line x1="165" y1="28" x2="165" y2="170" stroke="#E4E2E2" stroke-width="1"/>
@@ -37,7 +38,7 @@
 
     <!-- Current Streak -->
     <g transform="translate(247.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#0579C3" style="animation: currstreak 0.6s linear forwards">11</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="#333" style="animation: currstreak 0.6s linear forwards">11</text>
     </g>
     <g transform="translate(247.5, 108)">
         <text x="0" y="32" text-anchor="middle" class="label" fill="#0579C3" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
