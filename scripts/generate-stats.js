@@ -37,16 +37,27 @@ async function main() {
 
     console.log('Generating GitHub Stats...');
     const githubStatsSVG = generateGithubStatsSVG(data);
-    fs.writeFileSync(GITHUB_STATS_FILE, githubStatsSVG);
-    console.log(`Successfully generated ${GITHUB_STATS_FILE}`);
 
     console.log('Generating Streak Stats...');
     const streakStatsSVG = generateStreakStatsSVG(data);
+    // Ensure stats directory exists
+    const statsDir = GITHUB_STATS_FILE.substring(0, GITHUB_STATS_FILE.lastIndexOf('/'));
+    if (!fs.existsSync(statsDir)) {
+        fs.mkdirSync(statsDir, { recursive: true });
+    }
+    fs.writeFileSync(GITHUB_STATS_FILE, githubStatsSVG);
+    console.log(`Successfully generated ${GITHUB_STATS_FILE}`);
+
     fs.writeFileSync(STREAK_STATS_FILE, streakStatsSVG);
     console.log(`Successfully generated ${STREAK_STATS_FILE}`);
     
     console.log('Generating Repo Cards...');
     const userRepos = data.user.repositories.nodes;
+    
+    // Ensure pins directory exists
+    if (!fs.existsSync(REPO_CARDS_DIR)) {
+        fs.mkdirSync(REPO_CARDS_DIR, { recursive: true });
+    }
     
     for (const repoName of REPOS_TO_PIN) {
         const repo = userRepos.find(r => r.name === repoName);
