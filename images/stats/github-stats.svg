@@ -28,7 +28,7 @@
         <g transform="translate(0, 35)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.7s">
              <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#006AFF" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
             <text x="35" y="10" class="stat-label">Total Commits</text>
-            <text x="220" y="10" class="stat-value">3087</text>
+            <text x="220" y="10" class="stat-value">3102</text>
         </g>
 
         <!-- PRs -->

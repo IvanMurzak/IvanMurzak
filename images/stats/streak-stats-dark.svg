@@ -1,11 +1,11 @@
 
   <svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
-      .label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #006AFF; }
-      .value { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333; }
-      .date { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #777; }
-      .ring { fill: none; stroke: #006AFF; stroke-width: 5; }
-      .fire { fill: #006AFF; }
+      .label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #58a6ff; }
+      .value { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
+      .date { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
+      .ring { fill: none; stroke: #58a6ff; stroke-width: 5; }
+      .fire { fill: #58a6ff; }
       
       @keyframes currstreak {
           0% { font-size: 3px; opacity: 0.2; }
@@ -18,7 +18,7 @@
       }
     </style>
     
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#e1e4e8" stroke-opacity="0"/>
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#30363d" stroke-opacity="0"/>
     
     <!-- Separators -->
     <line x1="165" y1="28" x2="165" y2="170" stroke="#E4E2E2" stroke-width="1"/>
@@ -26,7 +26,7 @@
 
     <!-- Total Contributions -->
     <g transform="translate(82.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">3,497</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="#58a6ff" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">3,497</text>
     </g>
     <g transform="translate(82.5, 84)">
         <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 0.7s">Total Contributions</text>
@@ -37,22 +37,22 @@
 
     <!-- Current Streak -->
     <g transform="translate(247.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#0579C3" style="animation: currstreak 0.6s linear forwards">11</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="#79c0ff" style="animation: currstreak 0.6s linear forwards">11</text>
     </g>
     <g transform="translate(247.5, 108)">
-        <text x="0" y="32" text-anchor="middle" class="label" fill="#0579C3" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
+        <text x="0" y="32" text-anchor="middle" class="label" fill="#79c0ff" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
     </g>
     <g transform="translate(247.5, 145)">
         <text x="0" y="21" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Nov 19 - Nov 29</text>
     </g>
      <!-- Fire Icon Placeholder (Simplified) -->
     <g transform="translate(247.5, 20)" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">
-       <path d="M -6 0 L 6 0 L 0 12 Z" fill="#006AFF" />
+       <path d="M -6 0 L 6 0 L 0 12 Z" fill="#58a6ff" />
     </g>
 
     <!-- Longest Streak -->
     <g transform="translate(412.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 1.2s">55</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="#58a6ff" style="opacity: 0; animation: fadein 0.5s linear forwards 1.2s">55</text>
     </g>
     <g transform="translate(412.5, 84)">
         <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 1.3s">Longest Streak</text>

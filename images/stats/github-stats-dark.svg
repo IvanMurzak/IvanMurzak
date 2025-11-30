@@ -1,0 +1,49 @@
+
+  <svg width="450" height="195" viewBox="0 0 450 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .header { font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif; fill: #58a6ff; }
+      .stat-label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #8b949e; }
+      .stat-value { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #c9d1d9; }
+      .icon { transform: scale(1.5); transform-origin: center; }
+      
+      @keyframes fadein {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    </style>
+    
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#30363d" stroke-opacity="0"/>
+
+    <text x="25" y="35" class="header">Ivan Murzak's GitHub Stats</text>
+
+    <g transform="translate(25, 55)">
+        <!-- Stars -->
+        <g transform="translate(0, 0)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.6s">
+            <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#58a6ff" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
+            <text x="35" y="10" class="stat-label">Total Stars</text>
+            <text x="220" y="10" class="stat-value">1436</text>
+        </g>
+
+        <!-- Commits -->
+        <g transform="translate(0, 35)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.7s">
+             <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#58a6ff" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"/></svg>
+            <text x="35" y="10" class="stat-label">Total Commits</text>
+            <text x="220" y="10" class="stat-value">3102</text>
+        </g>
+
+        <!-- PRs -->
+        <g transform="translate(0, 70)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.8s">
+             <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#58a6ff" d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zm2.25 7.5a.75.75 0 100 1.5.75.75 0 000-1.5zM1.5 11.5a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zm2.325-9.25a.75.75 0 01.75.75v7.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75z"/></svg>
+            <text x="35" y="10" class="stat-label">Total PRs</text>
+            <text x="220" y="10" class="stat-value">660</text>
+        </g>
+
+        <!-- Issues -->
+        <g transform="translate(0, 105)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.9s">
+             <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16"><path fill="#58a6ff" d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm0-5a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/></svg>
+            <text x="35" y="10" class="stat-label">Total Issues</text>
+            <text x="220" y="10" class="stat-value">177</text>
+        </g>
+    </g>
+  </svg>
+  
