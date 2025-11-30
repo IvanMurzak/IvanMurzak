@@ -25,6 +25,11 @@ function generateGithubStatsSVG(data) {
       .stat-label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333; }
       .stat-value { font: 600 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333; }
       .icon { transform: scale(1.5); transform-origin: center; }
+      
+      @keyframes fadein {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
     </style>
     
     <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#e1e4e8" stroke-opacity="0"/>
@@ -33,28 +38,28 @@ function generateGithubStatsSVG(data) {
 
     <g transform="translate(25, ${startY})">
         <!-- Stars -->
-        <g transform="translate(0, 0)">
+        <g transform="translate(0, 0)" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.6s">
             <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16">${starIcon}</svg>
             <text x="${labelX - 25}" y="10" class="stat-label">Total Stars</text>
             <text x="${valueX}" y="10" class="stat-value">${totalStars}</text>
         </g>
 
         <!-- Commits -->
-        <g transform="translate(0, ${lineHeight})">
+        <g transform="translate(0, ${lineHeight})" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.7s">
              <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16">${commitIcon}</svg>
             <text x="${labelX - 25}" y="10" class="stat-label">Total Commits</text>
             <text x="${valueX}" y="10" class="stat-value">${totalCommits}</text>
         </g>
 
         <!-- PRs -->
-        <g transform="translate(0, ${lineHeight * 2})">
+        <g transform="translate(0, ${lineHeight * 2})" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.8s">
              <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16">${prIcon}</svg>
             <text x="${labelX - 25}" y="10" class="stat-label">Total PRs</text>
             <text x="${valueX}" y="10" class="stat-value">${totalPRs}</text>
         </g>
 
         <!-- Issues -->
-        <g transform="translate(0, ${lineHeight * 3})">
+        <g transform="translate(0, ${lineHeight * 3})" style="opacity: 0; animation: fadein 0.5s ease-in-out forwards 0.9s">
              <svg x="0" y="-5" width="16" height="16" viewBox="0 0 16 16">${issueIcon}</svg>
             <text x="${labelX - 25}" y="10" class="stat-label">Total Issues</text>
             <text x="${valueX}" y="10" class="stat-value">${totalIssues}</text>
