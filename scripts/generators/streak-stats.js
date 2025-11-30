@@ -1,4 +1,18 @@
-function generateStreakStatsSVG(data) {
+function generateStreakStatsSVG(data, options = {}) {
+  const { theme = 'light' } = options;
+  const isDark = theme === 'dark';
+
+  const colors = {
+    label: isDark ? '#58a6ff' : '#006AFF', // Use blue for labels in dark mode too for consistency
+    value: isDark ? '#c9d1d9' : '#333',
+    date: isDark ? '#8b949e' : '#777',
+    ring: isDark ? '#58a6ff' : '#006AFF',
+    fire: isDark ? '#58a6ff' : '#006AFF',
+    currStreakLabel: isDark ? '#79c0ff' : '#0579C3', // Lighter blue for dark mode
+    currStreakValue: isDark ? '#79c0ff' : '#0579C3',
+    border: isDark ? '#30363d' : '#e1e4e8'
+  };
+
   const contributionCalendar = data.user.contributionsCollection.contributionCalendar;
   const weeks = contributionCalendar.weeks;
   const days = weeks.flatMap(week => week.contributionDays);
@@ -125,11 +139,11 @@ function generateStreakStatsSVG(data) {
   const svg = `
   <svg width="${cardWidth}" height="${cardHeight}" viewBox="0 0 ${cardWidth} ${cardHeight}" fill="none" xmlns="http://www.w3.org/2000/svg">
     <style>
-      .label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: #006AFF; }
-      .value { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #333; }
-      .date { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #777; }
-      .ring { fill: none; stroke: #006AFF; stroke-width: 5; }
-      .fire { fill: #006AFF; }
+      .label { font: 400 14px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${colors.label}; }
+      .value { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${colors.value}; }
+      .date { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: ${colors.date}; }
+      .ring { fill: none; stroke: ${colors.ring}; stroke-width: 5; }
+      .fire { fill: ${colors.fire}; }
       
       @keyframes currstreak {
           0% { font-size: 3px; opacity: 0.2; }
@@ -142,7 +156,7 @@ function generateStreakStatsSVG(data) {
       }
     </style>
     
-    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#e1e4e8" stroke-opacity="0"/>
+    <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="${colors.border}" stroke-opacity="0"/>
     
     <!-- Separators -->
     <line x1="165" y1="28" x2="165" y2="170" stroke="#E4E2E2" stroke-width="1"/>
@@ -150,7 +164,7 @@ function generateStreakStatsSVG(data) {
 
     <!-- Total Contributions -->
     <g transform="translate(82.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">${totalText}</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="${colors.label}" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">${totalText}</text>
     </g>
     <g transform="translate(82.5, 84)">
         <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 0.7s">Total Contributions</text>
@@ -161,22 +175,22 @@ function generateStreakStatsSVG(data) {
 
     <!-- Current Streak -->
     <g transform="translate(247.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#0579C3" style="animation: currstreak 0.6s linear forwards">${currentStreak}</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="${colors.currStreakValue}" style="animation: currstreak 0.6s linear forwards">${currentStreak}</text>
     </g>
     <g transform="translate(247.5, 108)">
-        <text x="0" y="32" text-anchor="middle" class="label" fill="#0579C3" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
+        <text x="0" y="32" text-anchor="middle" class="label" fill="${colors.currStreakLabel}" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">Current Streak</text>
     </g>
     <g transform="translate(247.5, 145)">
         <text x="0" y="21" text-anchor="middle" class="date" style="opacity: 0; animation: fadein 0.5s linear forwards 0.9s">${formatRange(currentStreakRange.start, currentStreakRange.end)}</text>
     </g>
      <!-- Fire Icon Placeholder (Simplified) -->
     <g transform="translate(247.5, 20)" style="opacity: 0; animation: fadein 0.5s linear forwards 0.6s">
-       <path d="M -6 0 L 6 0 L 0 12 Z" fill="#006AFF" />
+       <path d="M -6 0 L 6 0 L 0 12 Z" fill="${colors.fire}" />
     </g>
 
     <!-- Longest Streak -->
     <g transform="translate(412.5, 48)">
-        <text x="0" y="32" text-anchor="middle" class="value" fill="#006AFF" style="opacity: 0; animation: fadein 0.5s linear forwards 1.2s">${longestStreak}</text>
+        <text x="0" y="32" text-anchor="middle" class="value" fill="${colors.label}" style="opacity: 0; animation: fadein 0.5s linear forwards 1.2s">${longestStreak}</text>
     </g>
     <g transform="translate(412.5, 84)">
         <text x="0" y="32" text-anchor="middle" class="label" style="opacity: 0; animation: fadein 0.5s linear forwards 1.3s">Longest Streak</text>

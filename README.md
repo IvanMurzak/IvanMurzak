@@ -13,10 +13,16 @@
 </div>
 
 <a href="https://github.com/IvanMurzak">
-  <img width="47%" align="left" src="images/stats/github-stats.svg"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/stats/github-stats-dark.svg">
+    <img width="47%" align="left" src="images/stats/github-stats.svg" alt="GitHub Stats"/>
+  </picture>
 </a>
 <a href="https://github.com/IvanMurzak">
-  <img width="47%" align="right" src="images/stats/streak-stats.svg"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="images/stats/streak-stats-dark.svg">
+    <img width="47%" align="right" src="images/stats/streak-stats.svg" alt="Streak Stats"/>
+  </picture>
 </a>
 
 <img src="images/waves.svg" width="100%" height="100">

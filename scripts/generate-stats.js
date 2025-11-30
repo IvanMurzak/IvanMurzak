@@ -5,7 +5,9 @@ const { generateStreakStatsSVG } = require('./generators/streak-stats');
 const { generateRepoCardSVG } = require('./generators/repo-card');
 
 const GITHUB_STATS_FILE = 'images/stats/github-stats.svg';
+const GITHUB_STATS_DARK_FILE = 'images/stats/github-stats-dark.svg';
 const STREAK_STATS_FILE = 'images/stats/streak-stats.svg';
+const STREAK_STATS_DARK_FILE = 'images/stats/streak-stats-dark.svg';
 const REPO_CARDS_DIR = 'images/pins';
 
 const REPOS_TO_PIN = [
@@ -35,11 +37,18 @@ async function main() {
     console.log('Fetching GitHub data...');
     const data = await fetchGitHubData();
 
-    console.log('Generating GitHub Stats...');
-    const githubStatsSVG = generateGithubStatsSVG(data);
+    console.log('Generating GitHub Stats (Light)...');
+    const githubStatsSVG = generateGithubStatsSVG(data, { theme: 'light' });
 
-    console.log('Generating Streak Stats...');
-    const streakStatsSVG = generateStreakStatsSVG(data);
+    console.log('Generating GitHub Stats (Dark)...');
+    const githubStatsDarkSVG = generateGithubStatsSVG(data, { theme: 'dark' });
+
+    console.log('Generating Streak Stats (Light)...');
+    const streakStatsSVG = generateStreakStatsSVG(data, { theme: 'light' });
+
+    console.log('Generating Streak Stats (Dark)...');
+    const streakStatsDarkSVG = generateStreakStatsSVG(data, { theme: 'dark' });
+
     // Ensure stats directory exists
     const statsDir = GITHUB_STATS_FILE.substring(0, GITHUB_STATS_FILE.lastIndexOf('/'));
     if (!fs.existsSync(statsDir)) {
@@ -48,9 +57,15 @@ async function main() {
     fs.writeFileSync(GITHUB_STATS_FILE, githubStatsSVG);
     console.log(`Successfully generated ${GITHUB_STATS_FILE}`);
 
+    fs.writeFileSync(GITHUB_STATS_DARK_FILE, githubStatsDarkSVG);
+    console.log(`Successfully generated ${GITHUB_STATS_DARK_FILE}`);
+
     fs.writeFileSync(STREAK_STATS_FILE, streakStatsSVG);
     console.log(`Successfully generated ${STREAK_STATS_FILE}`);
     
+    fs.writeFileSync(STREAK_STATS_DARK_FILE, streakStatsDarkSVG);
+    console.log(`Successfully generated ${STREAK_STATS_DARK_FILE}`);
+
     console.log('Generating Repo Cards...');
     const userRepos = data.user.repositories.nodes;
     
