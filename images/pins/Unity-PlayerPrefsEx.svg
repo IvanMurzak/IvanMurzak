@@ -14,7 +14,7 @@
     </g>
 
     <g transform="translate(25, 60)">
-        <text x="0" y="0" class="description">Lightweight package with optimized advanced version of </text><text x="0" y="15" class="description">PlayerPrefs. Under the hood it uses the same </text>
+        <text x="0" y="0" class="description">Lightweight package with variables, custom data model </text><text x="0" y="15" class="description">support and optional encryption. Under the hood it uses </text>
     </g>
 
     <g transform="translate(25, 100)">
