@@ -1,7 +1,7 @@
 <div align="center">
 
   <h1>Ivan Murzak</h1>
-  AI Tools • AI Agents • LLMs • .NET • Unity • Game Dev
+  <code>AI Tools</code> • <code>AI Agents</code> • <code>LLMs</code> • <code>.NET</code> • <code>Unity</code> • <code>Game Dev</code>
   <br/>
   <div >
     <a href="https://github.com/IvanMurzak"><img src="images/social/github.png" alt="GitHub"/></a>
