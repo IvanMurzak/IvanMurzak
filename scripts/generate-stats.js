@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { fetchGitHubData } = require('./api');
+const { fetchGitHubData, fetchOpenUPMDownloads } = require('./api');
 const { generateCombinedStatsSVG } = require('./generators/combined-stats');
 const { generateRepoCardSVG } = require('./generators/repo-card');
 
@@ -7,31 +7,31 @@ const COMBINED_STATS_FILE = 'images/stats/combined-stats.svg';
 const REPO_CARDS_DIR = 'images/pins';
 
 const REPOS_TO_PIN = [
-  'Unity-MCP',
-  'Unity-ImageLoader',
-  'Unity-Theme',
-  'Unity-Gyroscope-Parallax',
-  'Unity-Package-Template',
-  'Unity-Mouse-Parallax',
-  'Unity-PlayerPrefsEx',
-  'Unity-EFCore-SQLite',
-  'Unity-Saver',
-  'Unity-AudioLoader',
-  'Unity-IAP-Store',
-  'Unity-NonDrawingGraphic',
-  'UBuilder',
-  'Unity-Network-REST',
-  'Unity-Appodeal-Simplifier',
-  'Unity-Gyroscope-Manager',
-  'Unity-Extensions',
-  'Unity-iOS-Pods-Bitcode',
-  'Unity-Mobile-Notifications-Simplifier',
-  'Unity-AI-Tools-Template',
-  'Unity-AI-Animation',
-  'Unity-AI-ProBuilder',
-  'Unity-AI-ParticleSystem',
-  'ReflectorNet',
-  'MCP-Plugin-dotnet'
+  { name: 'Unity-MCP', packageId: 'com.ivanmurzak.unity.mcp' },
+  { name: 'Unity-ImageLoader', packageId: 'extensions.unity.imageloader' },
+  { name: 'Unity-Theme', packageId: 'extensions.unity.theme' },
+  { name: 'Unity-Gyroscope-Parallax', packageId: 'extensions.unity.gyroscope.parallax' },
+  { name: 'Unity-Package-Template' },
+  { name: 'Unity-Mouse-Parallax', packageId: 'extensions.unity.mouse.parallax' },
+  { name: 'Unity-PlayerPrefsEx', packageId: 'extensions.unity.playerprefsex' },
+  { name: 'Unity-EFCore-SQLite', packageId: 'extensions.unity.bundle.efcore.sqlite' },
+  { name: 'Unity-Saver', packageId: 'extensions.unity.saver' },
+  { name: 'Unity-AudioLoader', packageId: 'extensions.unity.audioloader' },
+  { name: 'Unity-IAP-Store', packageId: 'extensions.unity.iap.store' },
+  { name: 'Unity-NonDrawingGraphic', packageId: 'extensions.unity.nondrawinggraphic' },
+  { name: 'UBuilder', packageId: 'extensions.unity.ubuilder' },
+  { name: 'Unity-Network-REST', packageId: 'extensions.unity.network' },
+  { name: 'Unity-Appodeal-Simplifier', packageId: 'extensions.unity.base' },
+  { name: 'Unity-Gyroscope-Manager', packageId: 'extensions.unity.gyroscope.manager' },
+  { name: 'Unity-Extensions', packageId: 'extensions.unity.base' },
+  { name: 'Unity-iOS-Pods-Bitcode', packageId: 'com.github.ivanmurzak.ios.pods.bitcode' },
+  { name: 'Unity-Mobile-Notifications-Simplifier', packageId: 'extensions.unity.notifications' },
+  { name: 'Unity-AI-Tools-Template' },
+  { name: 'Unity-AI-Animation', packageId: 'com.ivanmurzak.unity.mcp.animation' },
+  { name: 'Unity-AI-ProBuilder', packageId: 'com.ivanmurzak.unity.mcp.probuilder' },
+  { name: 'Unity-AI-ParticleSystem', packageId: 'com.ivanmurzak.unity.mcp.particlesystem' },
+  { name: 'ReflectorNet' },
+  { name: 'MCP-Plugin-dotnet' }
 ];
 
 async function main() {
@@ -58,10 +58,20 @@ async function main() {
       fs.mkdirSync(REPO_CARDS_DIR, { recursive: true });
     }
 
-    for (const repoName of REPOS_TO_PIN) {
+    for (const repoConfig of REPOS_TO_PIN) {
+      const repoName = repoConfig.name;
+      const packageId = repoConfig.packageId;
       const repo = userRepos.find(r => r.name === repoName);
       if (repo) {
-        const svg = generateRepoCardSVG(repo);
+        let downloads = null;
+        if (packageId) {
+          console.log(`Fetching downloads for ${packageId}...`);
+          downloads = await fetchOpenUPMDownloads(packageId);
+          if (downloads !== null) {
+            console.log(`  Downloads: ${downloads}`);
+          }
+        }
+        const svg = generateRepoCardSVG(repo, downloads);
         const filePath = `${REPO_CARDS_DIR}/${repoName}.svg`;
         fs.writeFileSync(filePath, svg);
         console.log(`Generated ${filePath}`);
