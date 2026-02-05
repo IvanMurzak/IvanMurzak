@@ -1,7 +1,8 @@
 <div align="center">
 
   <h1>Ivan Murzak</h1>
-
+  AI Tools • AI Agents • LLMs • .NET • Unity • Game Dev
+  <br/>
   <div >
     <a href="https://github.com/IvanMurzak"><img src="images/social/github.png" alt="GitHub"/></a>
     <a href="https://www.linkedin.com/in/ivan-murzak"><img src="images/social/linkedin.png" alt="LinkedIn"/></a>
@@ -22,15 +23,17 @@
   <h2>About Me</h2>
 </div>
 
-🎮 Senior Unity Developer specializing in mobile games for Android and iOS.
-🚀 Former startup co-founder and creator of the successful game *Evil Cogs*, with over 5 million installs.
-💻 Master's degree in Computer Science, with a deep passion for software engineering and game development.
-🌍 Originally from Ukraine :ukraine:, now based in the Greater Seattle Area, WA, USA.
+AI-focused Software Engineer and open-source maintainer building AI-powered developer tools, AI agents and LLM integrations for real production environments.
+My work focuses on practical AI adoption: agent tooling, automation, developer productivity, and bridging AI systems with existing C# / .NET and Unity ecosystems.
 
-<br/>
-<h1 align="center">Unity packages</h1>
+> - Inventor and creator of "[MCP Plugin](https://github.com/IvanMurzak/MCP-Plugin-dotnet)" concept for .NET
+> - Former startup co-founder and creator of the successful game *[Evil Cogs](https://www.youtube.com/watch?v=tJRztGsD7PE)*, with over 5 million installs.
+
+Master's degree in Computer Science, with a deep passion for software engineering and game development.
+
+<h1 align="center">Unity Packages</h1>
 <div align="center">I am open source contributor</div>
-<div align="center">There are my the most popular packages for Unity Engine</div>
+<div align="center">My the most popular packages for Unity Engine</div>
 <br/>
 
 <a href="https://github.com/IvanMurzak/Unity-MCP">
