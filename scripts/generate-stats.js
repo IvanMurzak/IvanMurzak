@@ -27,9 +27,9 @@ const REPOS_TO_PIN = [
   { name: 'Unity-iOS-Pods-Bitcode' },
   { name: 'Unity-Mobile-Notifications-Simplifier' },
   { name: 'Unity-AI-Tools-Template' },
-  { name: 'Unity-AI-Animation', packageId: 'com.ivanmurzak.unity.mcp.ai.animation' },
-  { name: 'Unity-AI-ProBuilder', packageId: 'com.ivanmurzak.unity.mcp.ai.probuilder' },
-  { name: 'Unity-AI-ParticleSystem', packageId: 'com.ivanmurzak.unity.mcp.ai.particlesystem' },
+  { name: 'Unity-AI-Animation', packageId: 'com.ivanmurzak.unity.mcp.animation' },
+  { name: 'Unity-AI-ProBuilder', packageId: 'com.ivanmurzak.unity.mcp.probuilder' },
+  { name: 'Unity-AI-ParticleSystem', packageId: 'com.ivanmurzak.unity.mcp.particlesystem' },
   { name: 'ReflectorNet' },
   { name: 'MCP-Plugin-dotnet' }
 ];

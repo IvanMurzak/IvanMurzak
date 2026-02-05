@@ -8,6 +8,18 @@ function formatDownloads(num) {
   return num.toString();
 }
 
+function calcTextWidth(text, charWidth) {
+  let width = 0;
+  for (const char of text) {
+    if (char === '.') {
+      width += charWidth * 0.4;
+    } else {
+      width += charWidth;
+    }
+  }
+  return width;
+}
+
 function generateRepoCardSVG(repo, downloads = null) {
   const name = repo.name;
   const description = repo.description || 'No description provided';
@@ -58,12 +70,18 @@ function generateRepoCardSVG(repo, downloads = null) {
   const downloadIcon = `<path fill="#586069" d="M2.75 14A1.75 1.75 0 011 12.25v-2.5a.75.75 0 011.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25v-2.5a.75.75 0 011.5 0v2.5A1.75 1.75 0 0113.25 14H2.75z"/><path fill="#586069" d="M7.25 7.689V2a.75.75 0 011.5 0v5.689l1.97-1.969a.749.749 0 111.06 1.06l-3.25 3.25a.749.749 0 01-1.06 0L4.22 6.78a.749.749 0 111.06-1.06l1.97 1.969z"/>`;
 
   // Downloads section (right side)
-  const downloadsSection = downloads !== null ? `
+  let downloadsSection = '';
+  if (downloads !== null) {
+    const downloadsText = formatDownloads(downloads);
+    const downloadsTextWidth = calcTextWidth(downloadsText, charWidth);
+    const iconX = -(downloadsTextWidth + 18); // 20 = icon width (16) + gap (2)
+    downloadsSection = `
         <g transform="translate(${cardWidth - 25}, 100)">
-             <svg x="-45" y="-10" width="16" height="16" viewBox="0 0 16 16">${downloadIcon}</svg>
-             <text x="0" y="0" class="stat" text-anchor="end">${formatDownloads(downloads)}</text>
+             <svg x="${iconX}" y="-10" width="16" height="16" viewBox="0 0 16 16">${downloadIcon}</svg>
+             <text x="0" y="0" class="stat" text-anchor="end">${downloadsText}</text>
         </g>
-  ` : '';
+    `;
+  }
 
   const svg = `
   <svg width="${cardWidth}" height="${cardHeight}" viewBox="0 0 ${cardWidth} ${cardHeight}" fill="none" xmlns="http://www.w3.org/2000/svg">
