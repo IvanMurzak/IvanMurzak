@@ -26,6 +26,7 @@ const REPOS_TO_PIN = [
   'Unity-Extensions',
   'Unity-iOS-Pods-Bitcode',
   'Unity-Mobile-Notifications-Simplifier',
+  'Unity-AI-Tools-Template',
   'Unity-AI-Animation',
   'Unity-AI-ProBuilder',
   'Unity-AI-ParticleSystem',

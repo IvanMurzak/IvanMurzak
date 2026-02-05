@@ -49,6 +49,9 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 <a href="https://github.com/IvanMurzak/Unity-AI-ParticleSystem">
   <img width="45%" align="center" src="images/pins/Unity-AI-ParticleSystem.svg"/>
 </a>
+<a href="https://github.com/IvanMurzak/Unity-AI-Tools-Template">
+  <img width="45%" align="center" src="images/pins/Unity-AI-Tools-Template.svg"/>
+</a>
 
 <h1 align="center">Unity Packages</h1>
 <div align="center">My the most popular packages for Unity Engine</div>
@@ -67,6 +70,18 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Package-Template">
   <img width="45%" align="center" src="images/pins/Unity-Package-Template.svg"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AI-Tools-Template">
+  <img width="45%" align="center" src="images/pins/Unity-AI-Tools-Template.svg"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AI-Animation">
+  <img width="45%" align="center" src="images/pins/Unity-AI-Animation.svg"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AI-ProBuilder">
+  <img width="45%" align="center" src="images/pins/Unity-AI-ProBuilder.svg"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AI-ParticleSystem">
+  <img width="45%" align="center" src="images/pins/Unity-AI-ParticleSystem.svg"/>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Mouse-Parallax">
   <img width="45%" align="center" src="images/pins/Unity-Mouse-Parallax.svg"/>
