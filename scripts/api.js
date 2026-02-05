@@ -146,4 +146,39 @@ async function fetchGitHubData() {
   return { user };
 }
 
-module.exports = { fetchGitHubData };
+async function fetchOpenUPMDownloads(packageId) {
+  if (!packageId) return null;
+
+  const options = {
+    hostname: 'package.openupm.com',
+    path: `/downloads/point/all-time/${packageId}`,
+    method: 'GET',
+    headers: {
+      'User-Agent': 'Node.js Script',
+    },
+  };
+
+  return new Promise((resolve) => {
+    const req = https.request(options, (res) => {
+      let data = '';
+      res.on('data', (chunk) => (data += chunk));
+      res.on('end', () => {
+        try {
+          const json = JSON.parse(data);
+          resolve(json.downloads || null);
+        } catch (e) {
+          console.warn(`Failed to parse OpenUPM response for ${packageId}:`, e.message);
+          resolve(null);
+        }
+      });
+    });
+
+    req.on('error', (e) => {
+      console.warn(`Failed to fetch OpenUPM downloads for ${packageId}:`, e.message);
+      resolve(null);
+    });
+    req.end();
+  });
+}
+
+module.exports = { fetchGitHubData, fetchOpenUPMDownloads };
