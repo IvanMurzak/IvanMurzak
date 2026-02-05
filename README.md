@@ -30,7 +30,6 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 
 <h1 align="center">AI Packages</h1>
 <div align="center">My AI project and solutions for .NET</div>
-<br/>
 
 <a href="https://github.com/IvanMurzak/Unity-MCP">
   <img width="45%" align="center" src="images/pins/Unity-MCP.svg"/>
@@ -53,7 +52,6 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 
 <h1 align="center">Unity Packages</h1>
 <div align="center">My the most popular packages for Unity Engine</div>
-<br/>
 
 <a href="https://github.com/IvanMurzak/Unity-MCP">
   <img width="45%" align="center" src="images/pins/Unity-MCP.svg"/>
