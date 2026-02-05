@@ -6,9 +6,9 @@
       .stat { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #586069; }
       .lang-color { width: 12px; height: 12px; rx: 6px; }
     </style>
-    
+
     <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#e1e4e8" stroke-opacity="0"/>
-    
+
     <g transform="translate(25, 35)">
         <text x="0" y="0" class="name">Unity-AI-Tools-Template</text>
     </g>
@@ -38,5 +38,8 @@
              <text x="15" y="0" class="stat">1</text>
         </g>
     </g>
+
+    <!-- Downloads (right side) -->
+    
   </svg>
   

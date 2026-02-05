@@ -6,9 +6,9 @@
       .stat { font: 400 12px 'Segoe UI', Ubuntu, Sans-Serif; fill: #586069; }
       .lang-color { width: 12px; height: 12px; rx: 6px; }
     </style>
-    
+
     <rect x="0.5" y="0.5" rx="4.5" height="99%" width="99%" fill="none" stroke="#e1e4e8" stroke-opacity="0"/>
-    
+
     <g transform="translate(25, 35)">
         <text x="0" y="0" class="name">Unity-AI-Animation</text>
     </g>
@@ -38,5 +38,13 @@
              <text x="15" y="0" class="stat">2</text>
         </g>
     </g>
+
+    <!-- Downloads (right side) -->
+    
+        <g transform="translate(375, 100)">
+             <svg x="-32.4" y="-10" width="16" height="16" viewBox="0 0 16 16"><path fill="#586069" d="M2.75 14A1.75 1.75 0 011 12.25v-2.5a.75.75 0 011.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25v-2.5a.75.75 0 011.5 0v2.5A1.75 1.75 0 0113.25 14H2.75z"/><path fill="#586069" d="M7.25 7.689V2a.75.75 0 011.5 0v5.689l1.97-1.969a.749.749 0 111.06 1.06l-3.25 3.25a.749.749 0 01-1.06 0L4.22 6.78a.749.749 0 111.06-1.06l1.97 1.969z"/></svg>
+             <text x="0" y="0" class="stat" text-anchor="end">84</text>
+        </g>
+    
   </svg>
   
