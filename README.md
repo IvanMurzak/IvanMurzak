@@ -29,7 +29,7 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 <img src="images/waves.svg" width="100%" height="100">
 
 <h1 align="center">AI Packages</h1>
-<div align="center">I am open source contributor</div>
+<div align="center">My AI project and solutions for .NET</div>
 <br/>
 
 <a href="https://github.com/IvanMurzak/Unity-MCP">
@@ -41,9 +41,17 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 <a href="https://github.com/IvanMurzak/ReflectorNet">
   <img width="45%" align="center" src="images/pins/ReflectorNet.svg"/>
 </a>
+<a href="https://github.com/IvanMurzak/Unity-AI-Animation">
+  <img width="45%" align="center" src="images/pins/Unity-AI-Animation.svg"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AI-ProBuilder">
+  <img width="45%" align="center" src="images/pins/Unity-AI-ProBuilder.svg"/>
+</a>
+<a href="https://github.com/IvanMurzak/Unity-AI-ParticleSystem">
+  <img width="45%" align="center" src="images/pins/Unity-AI-ParticleSystem.svg"/>
+</a>
 
 <h1 align="center">Unity Packages</h1>
-<div align="center">I am open source contributor</div>
 <div align="center">My the most popular packages for Unity Engine</div>
 <br/>
 
