@@ -23,12 +23,12 @@ function generateRepoCardSVG(repo, downloads = null) {
   let currentLine = '';
 
   words.forEach(word => {
-      if ((currentLine + word).length > maxLineLength) {
-          lines.push(currentLine);
-          currentLine = word + ' ';
-      } else {
-          currentLine += word + ' ';
-      }
+    if ((currentLine + word).length > maxLineLength) {
+      lines.push(currentLine);
+      currentLine = word + ' ';
+    } else {
+      currentLine += word + ' ';
+    }
   });
   lines.push(currentLine);
   if (lines.length > 2) lines = lines.slice(0, 2); // Limit to 2 lines
@@ -43,7 +43,7 @@ function generateRepoCardSVG(repo, downloads = null) {
 
   let langWidth = 0;
   if (langName) {
-      langWidth = 15 + (langName.length * charWidth);
+    langWidth = 15 + (langName.length * charWidth);
   }
 
   const starsX = langName ? (langWidth + gap) : 0;
@@ -60,7 +60,7 @@ function generateRepoCardSVG(repo, downloads = null) {
   // Downloads section (right side)
   const downloadsSection = downloads !== null ? `
         <g transform="translate(${cardWidth - 25}, 100)">
-             <svg x="-35" y="-10" width="16" height="16" viewBox="0 0 16 16">${downloadIcon}</svg>
+             <svg x="-45" y="-10" width="16" height="16" viewBox="0 0 16 16">${downloadIcon}</svg>
              <text x="0" y="0" class="stat" text-anchor="end">${formatDownloads(downloads)}</text>
         </g>
   ` : '';

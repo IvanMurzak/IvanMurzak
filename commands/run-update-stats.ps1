@@ -1,10 +1,7 @@
 param(
     [string]$RepoPath = ".",
-    [string]$Workflow = ".github/workflows/update-stats.yml",
     [string]$SecretsFile = ".secrets",
-    [string]$Job = "update-stats",
-    [string]$Image = "node:16-bullseye",
-    [switch]$NoPrePull
+    [switch]$Commit
 )
 
 [void] (Set-StrictMode -Version Latest)
@@ -14,15 +11,44 @@ function Fail($msg) {
     exit 1
 }
 
-# Ensure 'act' is available early and give install hints
-if (-not (Get-Command act -ErrorAction SilentlyContinue)) {
-    Write-Host "The 'act' tool is required but was not found on PATH." -ForegroundColor Yellow
-    Write-Host "Install options (choose one):" -ForegroundColor Yellow
-    Write-Host "  Scoop (recommended):`n    iwr -useb get.scoop.sh | iex`n    scoop install act" -ForegroundColor Gray
-    Write-Host "  Chocolatey: choco install act" -ForegroundColor Gray
-    Write-Host "  WSL / Linux (example):`n    curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash" -ForegroundColor Gray
-    Write-Host "  Manual & other options: https://github.com/nektos/act" -ForegroundColor Gray
-    Fail "'act' not found. Install it and re-run this script."
+# Ensure Node.js is available
+if (-not (Get-Command node -ErrorAction SilentlyContinue)) {
+    Fail "Node.js is required but was not found on PATH."
+}
+
+# Check for GH_TOKEN - try environment variables first, then secrets file, then gh CLI
+if (-not $env:GH_TOKEN) {
+    $env:GH_TOKEN = $env:GITHUB_TOKEN
+}
+
+if (-not $env:GH_TOKEN -and (Test-Path $SecretsFile)) {
+    $match = Select-String -Path $SecretsFile -Pattern "^(GH_TOKEN|GITHUB_TOKEN)=(.+)$" | Select-Object -First 1
+    if ($match) {
+        $env:GH_TOKEN = $match.Matches.Groups[2].Value
+    }
+}
+
+# Try to get token from GitHub CLI
+if (-not $env:GH_TOKEN -and (Get-Command gh -ErrorAction SilentlyContinue)) {
+    $ghToken = gh auth token 2>$null
+    if ($LASTEXITCODE -eq 0 -and $ghToken) {
+        $env:GH_TOKEN = $ghToken
+        Write-Host "Using token from GitHub CLI." -ForegroundColor Green
+    } else {
+        Write-Host "GitHub CLI found but not logged in. Starting login..." -ForegroundColor Cyan
+        gh auth login --scopes read:user
+        if ($LASTEXITCODE -eq 0) {
+            $env:GH_TOKEN = gh auth token 2>$null
+        }
+    }
+}
+
+if (-not $env:GH_TOKEN) {
+    Write-Host "GH_TOKEN is not set. Options:" -ForegroundColor Yellow
+    Write-Host "  1. Install GitHub CLI and run: gh auth login" -ForegroundColor Gray
+    Write-Host "  2. Set environment variable: `$env:GH_TOKEN = 'your_token'" -ForegroundColor Gray
+    Write-Host "  3. Add to $SecretsFile file: GH_TOKEN=your_token" -ForegroundColor Gray
+    Fail "GH_TOKEN is required to fetch GitHub stats."
 }
 
 # Resolve and move into repo path
@@ -35,110 +61,32 @@ catch {
 
 Push-Location $RepoPath
 
-# Check Docker is available
-try {
-    docker version | Out-Null
-}
-catch {
-    Fail "Docker is not available or not running. Start Docker Desktop (WSL2 recommended)."
-}
-
-# Helper: try to pull an image with timeout and return success/failure
-function Try-PullImage {
-    param(
-        [string]$Image,
-        [int]$TimeoutSec = 180
-    )
-
-    Write-Verbose "Attempting docker pull $Image (timeout ${TimeoutSec}s)"
-    try {
-        $p = Start-Process -FilePath docker -ArgumentList @('pull', $Image) -NoNewWindow -PassThru -ErrorAction Stop
-    }
-    catch {
-        Write-Verbose ("Failed to start docker pull for {0}: {1}" -f $Image, $_)
-        return $false
-    }
-
-    # Wait up to timeout seconds
-    try {
-        Wait-Process -Id $p.Id -Timeout $TimeoutSec -ErrorAction SilentlyContinue
-    }
-    catch {
-        # ignore
-    }
-
-    if (-not $p.HasExited) {
-        Write-Verbose "docker pull appears to be hanging for $Image; terminating after timeout"
-        try { Stop-Process -Id $p.Id -Force -ErrorAction SilentlyContinue } catch {}
-        return $false
-    }
-
-    if ($p.ExitCode -ne 0) {
-        Write-Verbose "docker pull exited with code $($p.ExitCode) for $Image"
-        return $false
-    }
-
-    # Basic verification the image exists locally
-    $exists = docker images --format "{{.Repository}}:{{.Tag}}" | Where-Object { $_ -like "*$($Image.Split(':')[0])*" }
-    if (-not $exists) {
-        Write-Verbose "docker pull completed but image not found locally for $Image"
-        return $false
-    }
-
-    return $true
+# Check that the script exists
+$scriptPath = "scripts/generate-stats.js"
+if (-not (Test-Path $scriptPath)) {
+    Pop-Location
+    Fail "Script '$scriptPath' not found in repo."
 }
 
-# Pre-pull candidate images unless user disabled it
-$ChosenImage = $Image
-if (-not $NoPrePull) {
-    $candidates = @($Image, 'ghcr.io/catthehacker/ubuntu:full-20.04', 'nektos/act-environments-ubuntu:18.04', 'ubuntu:20.04') | Select-Object -Unique
-    $pulled = $false
-    foreach ($img in $candidates) {
-        Write-Host "Pre-pulling: $img" -ForegroundColor Cyan
-        if (Try-PullImage -Image $img -TimeoutSec 180) {
-            Write-Host "Pulled: $img" -ForegroundColor Green
-            $ChosenImage = $img
-            $pulled = $true
-            break
-        }
-        else {
-            Write-Host "Failed to pull: $img" -ForegroundColor Yellow
-        }
+# Run the stats generation script
+Write-Host "Running: node $scriptPath" -ForegroundColor Cyan
+node $scriptPath
+
+if ($LASTEXITCODE -ne 0) {
+    Pop-Location
+    Fail "node script exited with code $LASTEXITCODE"
+}
+
+# Commit changes (but do NOT push)
+if ($Commit) {
+    Write-Host "Staging and committing changes..." -ForegroundColor Cyan
+    git add images/stats/combined-stats.svg images/pins/*.svg
+    git commit -m "Update stats images"
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "Nothing to commit or commit failed." -ForegroundColor Yellow
+    } else {
+        Write-Host "Changes committed locally. Run 'git push' manually when ready." -ForegroundColor Green
     }
-    if (-not $pulled) {
-        Write-Warning "Pre-pull failed for all candidates. 'act' may still attempt to pull and stall."
-        Write-Host "Try manual pull or check Docker Desktop/network/proxy settings: docker pull $Image" -ForegroundColor Gray
-    }
-}
-else {
-    Write-Verbose "Skipping pre-pull due to -NoPrePull"
-}
-
-if (-not (Test-Path $Workflow)) {
-    Fail "Workflow file '$Workflow' not found in repo."
-}
-
-if (-not (Test-Path $SecretsFile)) {
-    Write-Warning "Secrets file '$SecretsFile' not found. You can create one with GITHUB_TOKEN=..."
-}
-
-# Build act command
-$argsList = @(
-    '-W', $Workflow,
-    '-j', $Job
-)
-
-if (Test-Path $SecretsFile) {
-    $argsList += @('--secret-file', $SecretsFile)
-}
-
-$argsList += @('-P', "ubuntu-latest=$ChosenImage")
-
-Write-Host "Running: act $($argsList -join ' ')" -ForegroundColor Cyan
-
-$proc = Start-Process -FilePath act -ArgumentList $argsList -NoNewWindow -Wait -PassThru
-if ($proc.ExitCode -ne 0) {
-    Fail "act exited with code $($proc.ExitCode)"
 }
 
 Pop-Location
