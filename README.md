@@ -16,6 +16,7 @@
 AI-focused Software Engineer and open-source maintainer building AI-powered developer tools, AI agents and LLM integrations for real production environments.
 My work focuses on practical AI adoption: agent tooling, automation, developer productivity, and bridging AI systems with existing C# / .NET and Unity ecosystems.
 
+> - Creator of [AI Game Developer](https://github.com/IvanMurzak/Unity-MCP) — the most popular open-source AI assistent for Unity Engine.
 > - Inventor and creator of [MCP Plugin](https://github.com/IvanMurzak/MCP-Plugin-dotnet) concept and [ReflectorNet](https://github.com/IvanMurzak/ReflectorNet) for .NET
 > - Former startup co-founder and creator of the successful game *[Evil Cogs](https://www.youtube.com/watch?v=tJRztGsD7PE)*, with over 5 million installs.
 
