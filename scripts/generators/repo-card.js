@@ -6,7 +6,6 @@ const { fmtK, ICONS } = require('../theme');
 function generateRepoCardSVG(theme, repo, downloads = null, index = 0) {
   const t = theme;
   const W = 470, H = 130;
-  const delayMs = 200 + (index % 8) * 130;
 
   const description = repo.description || 'No description provided';
   const maxLineLength = 62;
@@ -50,14 +49,11 @@ function generateRepoCardSVG(theme, repo, downloads = null, index = 0) {
 
   return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${repo.name}: ${repo.stargazers.totalCount} stars, ${repo.forkCount} forks${downloads ? ', ' + fmtK(downloads) + ' downloads' : ''}.">
   <style>
-    .p-card { opacity: 0; animation: p-rise .55s ease-out ${delayMs}ms both; }
     .p-name { font: 600 16px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.accent}; }
     .p-desc { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.muted}; }
     .p-stat { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.muted}; }
-    @keyframes p-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-    @media (prefers-reduced-motion: reduce) { .p-card { animation: none; opacity: 1; } }
   </style>
-  <g class="p-card">
+  <g>
     <rect x="0.5" y="0.5" rx="6" width="${W - 1}" height="${H - 1}" fill="${t.bg}" stroke="${t.border}"/>
     <svg x="25" y="24" width="16" height="16" viewBox="0 0 16 16"><path fill="${t.muted}" d="${ICONS.repo}"/></svg>
     <text class="p-name" x="49" y="37">${repo.name}</text>

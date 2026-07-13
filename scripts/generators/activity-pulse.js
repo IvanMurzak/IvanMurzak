@@ -15,8 +15,8 @@ function generateActivityPulseSVG(theme, days) {
   });
   return `<svg width="955" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Activity pulse: contribution intensity for the last ${n} days.">
   <style>
-    .pu-cell { opacity: .5; animation: pu-wave 5s ease-in-out infinite; }
-    @keyframes pu-wave { 0% { opacity: .5; } 10% { opacity: 1; } 22% { opacity: .5; } 100% { opacity: .5; } }
+    .pu-cell { opacity: .65; animation: pu-wave 5s ease-in-out infinite; }
+    @keyframes pu-wave { 0% { opacity: .65; } 10% { opacity: 1; } 22% { opacity: .65; } 100% { opacity: .65; } }
     @media (prefers-reduced-motion: reduce) { .pu-cell { animation: none; opacity: 1; } }
   </style>
   ${cells}
