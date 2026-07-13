@@ -1,0 +1,209 @@
+scripts/generators/repo-card.js
+  s_495ed57f72c6ce::t_28f5221772e3d3 8-10
+  s_495ed57f72c6ce::t_8bc624893d1d32 37-38,47-48,59
+README.md
+  s_495ed57f72c6ce::t_fca8b637bf802c 70,72,74,80,82,84,90,92,94,96,98,100,108,114,116,118,120,122,130,136,138,140
+scripts/generators/flagship.js
+  s_495ed57f72c6ce::t_c159d8b1466136 71,73,80
+  s_495ed57f72c6ce::t_221fa9ac835e59 7-9
+images/pins/Godot-AI-Animation-dark.svg
+  s_495ed57f72c6ce::t_fff6c9b35a953c 1
+images/pins/Godot-AI-Animation-light.svg
+  s_495ed57f72c6ce::t_f5cfc78f2a2030 1
+images/pins/Godot-AI-Beehave-dark.svg
+  s_495ed57f72c6ce::t_469ead04b12832 1
+images/pins/Godot-AI-Beehave-light.svg
+  s_495ed57f72c6ce::t_71adee4c10259d 1
+images/pins/Godot-AI-CSG-dark.svg
+  s_495ed57f72c6ce::t_25561e35dda348 1
+images/pins/Godot-AI-CSG-light.svg
+  s_495ed57f72c6ce::t_5699011221717e 1
+images/pins/Godot-AI-Dialogic-dark.svg
+  s_495ed57f72c6ce::t_52269c175565f1 1
+images/pins/Godot-AI-Dialogic-light.svg
+  s_495ed57f72c6ce::t_8286f1fc15b6d6 1
+images/pins/Godot-AI-GridMap-dark.svg
+  s_495ed57f72c6ce::t_f79c9f80caa566 1
+images/pins/Godot-AI-GridMap-light.svg
+  s_495ed57f72c6ce::t_fd2d9629aec0df 1
+images/pins/Godot-AI-Navigation-dark.svg
+  s_495ed57f72c6ce::t_41d059b6ad8767 1
+images/pins/Godot-AI-Navigation-light.svg
+  s_495ed57f72c6ce::t_ab5bca9cd8bace 1
+images/pins/Godot-AI-Particles-dark.svg
+  s_495ed57f72c6ce::t_94994ed083c76a 1
+images/pins/Godot-AI-Particles-light.svg
+  s_495ed57f72c6ce::t_98f7ab1558274c 1
+images/pins/Godot-AI-PhantomCamera-dark.svg
+  s_495ed57f72c6ce::t_aba10fe5bf2ae6 1
+images/pins/Godot-AI-PhantomCamera-light.svg
+  s_495ed57f72c6ce::t_28fe1bb07ecfb3 1
+images/pins/Godot-AI-Terrain3D-dark.svg
+  s_495ed57f72c6ce::t_a450518cd69e62 1
+images/pins/Godot-AI-Terrain3D-light.svg
+  s_495ed57f72c6ce::t_d065c4f4c104cd 1
+images/pins/Godot-AI-Tilemap-dark.svg
+  s_495ed57f72c6ce::t_3b3320d92b699d 1
+images/pins/Godot-AI-Tilemap-light.svg
+  s_495ed57f72c6ce::t_f04ee8f9ae555d 1
+images/pins/Godot-AI-Tools-Template-dark.svg
+  s_495ed57f72c6ce::t_86938f424f2bc4 1
+images/pins/Godot-AI-Tools-Template-light.svg
+  s_495ed57f72c6ce::t_4cf31dcd82b7e1 1
+images/pins/Godot-MCP-dark.svg
+  s_495ed57f72c6ce::t_3a208377eef6a9 1
+images/pins/Godot-MCP-light.svg
+  s_495ed57f72c6ce::t_5d79c46ac4e5d6 1
+images/pins/MCP-Plugin-dotnet-dark.svg
+  s_495ed57f72c6ce::t_1b2a9d701dae40 1
+images/pins/MCP-Plugin-dotnet-light.svg
+  s_495ed57f72c6ce::t_cb451e4dbd3ba5 1
+images/pins/ReflectorNet-dark.svg
+  s_495ed57f72c6ce::t_4396acfd9794c0 1
+images/pins/ReflectorNet-light.svg
+  s_495ed57f72c6ce::t_c3d1d17cc0efed 1
+images/pins/UBuilder-dark.svg
+  s_495ed57f72c6ce::t_5f6cbed57ce4ba 1
+images/pins/UBuilder-light.svg
+  s_495ed57f72c6ce::t_450cf2675dfa04 1
+images/pins/Unity-AI-Animation-dark.svg
+  s_495ed57f72c6ce::t_292fe8b41c0829 1
+images/pins/Unity-AI-Animation-light.svg
+  s_495ed57f72c6ce::t_23e98d6c75a249 1
+images/pins/Unity-AI-ParticleSystem-dark.svg
+  s_495ed57f72c6ce::t_1600a04560dadb 1
+images/pins/Unity-AI-ParticleSystem-light.svg
+  s_495ed57f72c6ce::t_af8936c09d3807 1
+images/pins/Unity-AI-ProBuilder-dark.svg
+  s_495ed57f72c6ce::t_049a3cfd352240 1
+images/pins/Unity-AI-ProBuilder-light.svg
+  s_495ed57f72c6ce::t_7515b74ef34b6c 1
+images/pins/Unity-AI-Tools-Template-dark.svg
+  s_495ed57f72c6ce::t_ec2b2e16dce1a7 1
+images/pins/Unity-AI-Tools-Template-light.svg
+  s_495ed57f72c6ce::t_88b2385e5d1474 1
+images/pins/Unity-Appodeal-Simplifier-dark.svg
+  s_495ed57f72c6ce::t_54a73296a2bfc1 1
+images/pins/Unity-Appodeal-Simplifier-light.svg
+  s_495ed57f72c6ce::t_b8a04837f33535 1
+images/pins/Unity-AudioLoader-dark.svg
+  s_495ed57f72c6ce::t_35ee096179f61f 1
+images/pins/Unity-AudioLoader-light.svg
+  s_495ed57f72c6ce::t_949311c50cc12a 1
+images/pins/Unity-EFCore-SQLite-dark.svg
+  s_495ed57f72c6ce::t_dd214371c49978 1
+images/pins/Unity-EFCore-SQLite-light.svg
+  s_495ed57f72c6ce::t_0a1f3f268b027b 1
+images/pins/Unity-Extensions-dark.svg
+  s_495ed57f72c6ce::t_a0a964caa31208 1
+images/pins/Unity-Extensions-light.svg
+  s_495ed57f72c6ce::t_4a274057f2e775 1
+images/pins/Unity-Gyroscope-Manager-dark.svg
+  s_495ed57f72c6ce::t_5d4010aa40ca9c 1
+images/pins/Unity-Gyroscope-Manager-light.svg
+  s_495ed57f72c6ce::t_6ff82892c8b0c2 1
+images/pins/Unity-Gyroscope-Parallax-dark.svg
+  s_495ed57f72c6ce::t_86dd76188d6620 1
+images/pins/Unity-Gyroscope-Parallax-light.svg
+  s_495ed57f72c6ce::t_7d678860c4f552 1
+images/pins/Unity-IAP-Store-dark.svg
+  s_495ed57f72c6ce::t_f8d37a1b6a5c27 1
+images/pins/Unity-IAP-Store-light.svg
+  s_495ed57f72c6ce::t_7bd2b93ae85414 1
+images/pins/Unity-ImageLoader-dark.svg
+  s_495ed57f72c6ce::t_09d8a70ce2089d 1
+images/pins/Unity-ImageLoader-light.svg
+  s_495ed57f72c6ce::t_08a4d1fb180aa8 1
+images/pins/Unity-MCP-dark.svg
+  s_495ed57f72c6ce::t_2a7d80fc408fcd 1
+images/pins/Unity-MCP-light.svg
+  s_495ed57f72c6ce::t_28216587bab96a 1
+images/pins/Unity-Mobile-Notifications-Simplifier-dark.svg
+  s_495ed57f72c6ce::t_379f1884240c2a 1
+images/pins/Unity-Mobile-Notifications-Simplifier-light.svg
+  s_495ed57f72c6ce::t_f501742ccb78f7 1
+images/pins/Unity-Mouse-Parallax-dark.svg
+  s_495ed57f72c6ce::t_49bc53cc5fcfdc 1
+images/pins/Unity-Mouse-Parallax-light.svg
+  s_495ed57f72c6ce::t_3a5e2cdafb522b 1
+images/pins/Unity-Network-REST-dark.svg
+  s_495ed57f72c6ce::t_bdbb262b133bf6 1
+images/pins/Unity-Network-REST-light.svg
+  s_495ed57f72c6ce::t_2d7815501054d8 1
+images/pins/Unity-NonDrawingGraphic-dark.svg
+  s_495ed57f72c6ce::t_cf58694728ad8b 1
+images/pins/Unity-NonDrawingGraphic-light.svg
+  s_495ed57f72c6ce::t_17f07347a69bc9 1
+images/pins/Unity-Package-Template-dark.svg
+  s_495ed57f72c6ce::t_8b2d459dff018a 1
+images/pins/Unity-Package-Template-light.svg
+  s_495ed57f72c6ce::t_00ce1443030b86 1
+images/pins/Unity-PlayerPrefsEx-dark.svg
+  s_495ed57f72c6ce::t_795b93d3604ab0 1
+images/pins/Unity-PlayerPrefsEx-light.svg
+  s_495ed57f72c6ce::t_88823320eb4e53 1
+images/pins/Unity-Saver-dark.svg
+  s_495ed57f72c6ce::t_81ebfddc04714f 1
+images/pins/Unity-Saver-light.svg
+  s_495ed57f72c6ce::t_2eb60e8f23c8a1 1
+images/pins/Unity-Theme-dark.svg
+  s_495ed57f72c6ce::t_2519d8fe3c4511 1
+images/pins/Unity-Theme-light.svg
+  s_495ed57f72c6ce::t_bd9e7a53d4e40d 1
+images/pins/Unity-iOS-Pods-Bitcode-dark.svg
+  s_495ed57f72c6ce::t_54a2c60d54e0e9 1
+images/pins/Unity-iOS-Pods-Bitcode-light.svg
+  s_495ed57f72c6ce::t_94d1f8fc8d3c55 1
+images/pins/Unreal-AI-ControlRig-dark.svg
+  s_495ed57f72c6ce::t_6047c5ee07163f 1
+images/pins/Unreal-AI-ControlRig-light.svg
+  s_495ed57f72c6ce::t_d0b89708f68187 1
+images/pins/Unreal-AI-EnhancedInput-dark.svg
+  s_495ed57f72c6ce::t_1fb05b1eb390e5 1
+images/pins/Unreal-AI-EnhancedInput-light.svg
+  s_495ed57f72c6ce::t_bc368cd932f0c4 1
+images/pins/Unreal-AI-GAS-dark.svg
+  s_495ed57f72c6ce::t_c6b90f18841547 1
+images/pins/Unreal-AI-GAS-light.svg
+  s_495ed57f72c6ce::t_7093b02cbec737 1
+images/pins/Unreal-AI-Landscape-dark.svg
+  s_495ed57f72c6ce::t_78398dbebc0be9 1
+images/pins/Unreal-AI-Landscape-light.svg
+  s_495ed57f72c6ce::t_2d9bd32753125e 1
+images/pins/Unreal-AI-Niagara-dark.svg
+  s_495ed57f72c6ce::t_5c199221b4a8b6 1
+images/pins/Unreal-AI-Niagara-light.svg
+  s_495ed57f72c6ce::t_43d801ed2230d3 1
+images/pins/Unreal-AI-PCG-dark.svg
+  s_495ed57f72c6ce::t_e1dd1305c3689d 1
+images/pins/Unreal-AI-PCG-light.svg
+  s_495ed57f72c6ce::t_3d0fcd4a90f168 1
+images/pins/Unreal-AI-Template-dark.svg
+  s_495ed57f72c6ce::t_44556a01600bc7 1
+images/pins/Unreal-AI-Template-light.svg
+  s_495ed57f72c6ce::t_d5a362a184e225 1
+images/pins/Unreal-MCP-dark.svg
+  s_495ed57f72c6ce::t_21b76c2cd8da2e 1
+images/pins/Unreal-MCP-light.svg
+  s_495ed57f72c6ce::t_0eb82ae2357f46 1
+images/stats/flagship-dark.svg
+  s_495ed57f72c6ce::t_1f18ec5726f2a5 1
+images/stats/flagship-light.svg
+  s_495ed57f72c6ce::t_90726bf946ff6d 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "060746e9d9fc7d881f84b8e58ea4ba3bf71b6105",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
