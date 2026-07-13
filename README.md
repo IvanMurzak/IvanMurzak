@@ -51,11 +51,6 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
   </picture>
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/stats/waves-dark.svg">
-  <img src="images/stats/waves-light.svg" width="100%" height="100" alt=""/>
-</picture>
-
 <h1 align="center">AI Packages</h1>
 <div align="center">AI projects and solutions for .NET, Unity, Godot and Unreal</div>
 <br/>
