@@ -1,6 +1,6 @@
 const { calculateRank } = require('../utils');
 
-function generateCombinedStatsSVG(data) {
+function generateCombinedStatsSVG(theme, data) {
   // --- GITHUB STATS DATA ---
   const user = data.user;
   const totalStars = user.repositories.nodes.reduce((acc, repo) => acc + repo.stargazers.totalCount, 0);
@@ -122,19 +122,20 @@ function generateCombinedStatsSVG(data) {
 
   const totalText = `${totalContributions.toLocaleString()}`;
 
-  // --- COMMON CONFIG ---
+  // --- COMMON CONFIG (from theme tokens) ---
   const colors = {
-    bg: '#ffffff',
-    border: '#e1e4e8',
-    header: '#0969da',
-    label: '#333',
-    value: '#24292f',
-    icon: '#0969da',
-    ring: '#2f80ed',
-    date: '#777',
-    fire: '#0969da',
-    currStreakLabel: '#0579C3',
-    currStreakValue: '#333'
+    bg: theme.bg,
+    border: theme.border,
+    header: theme.accent,
+    label: theme.muted,
+    value: theme.ink,
+    icon: theme.accent,
+    ring: theme.accent,
+    date: theme.muted,
+    fire: theme.accent,
+    currStreakLabel: theme.accent,
+    currStreakValue: theme.ink,
+    track: theme.grid
   };
 
   // Layout Dimensions
@@ -260,7 +261,7 @@ function generateCombinedStatsSVG(data) {
 
         <!-- Rank Circle -->
         <g transform="translate(${rankCircleX}, ${rankCircleY})">
-            <circle cx="0" cy="0" r="${rankRadius}" fill="none" stroke="#e1e4e8" stroke-width="6" />
+            <circle cx="0" cy="0" r="${rankRadius}" fill="none" stroke="${colors.track}" stroke-width="6" />
             <circle cx="0" cy="0" r="${rankRadius}" fill="none" stroke="${colors.ring}" stroke-width="6" stroke-dasharray="${rankCircumference}" stroke-dashoffset="${rankCircumference}" stroke-linecap="round" transform="rotate(-90)" style="animation: rankAnimation 1s forwards ease-in-out"/>
             
             <text x="0" y="5" text-anchor="middle" class="rank-label">${rank.level}</text>
@@ -274,8 +275,8 @@ function generateCombinedStatsSVG(data) {
                 <rect stroke="${colors.border}" fill="${colors.bg}" rx="4.5" x="0.5" y="0.5" width="${rightWidth - 1}" height="${height - 1}"/>
             </g>
             <g style="isolation: isolate">
-                <line x1="165" y1="28" x2="165" y2="170" vector-effect="non-scaling-stroke" stroke-width="1" stroke="#E4E2E2" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
-                <line x1="330" y1="28" x2="330" y2="170" vector-effect="non-scaling-stroke" stroke-width="1" stroke="#E4E2E2" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                <line x1="165" y1="28" x2="165" y2="170" vector-effect="non-scaling-stroke" stroke-width="1" stroke="${colors.track}" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
+                <line x1="330" y1="28" x2="330" y2="170" vector-effect="non-scaling-stroke" stroke-width="1" stroke="${colors.track}" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3"/>
             </g>
             <g style="isolation: isolate">
                 <!-- Total Contributions big number -->
@@ -304,7 +305,7 @@ function generateCombinedStatsSVG(data) {
                 <g transform="translate(247.5, 48)"> 
                     <g transform="translate(0, 23)"> <!-- Center the ring -->
                         <g mask="url(#mask_out_ring_behind_fire)">
-                            <circle cx="0" cy="0" r="${streakRadius}" fill="none" stroke="#e1e4e8" stroke-width="5"/>
+                            <circle cx="0" cy="0" r="${streakRadius}" fill="none" stroke="${colors.track}" stroke-width="5"/>
                             <circle cx="0" cy="0" r="${streakRadius}" fill="none" stroke="${colors.ring}" stroke-width="5" stroke-dasharray="${streakCircumference}" stroke-dashoffset="${streakCircumference}" stroke-linecap="round" transform="rotate(-90)" style="animation: streakRing 1s forwards ease-in-out 0.5s"/>
                         </g>
                         <!-- Fire icon -->

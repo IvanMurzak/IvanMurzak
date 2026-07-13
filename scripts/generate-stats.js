@@ -1,85 +1,126 @@
 const fs = require('fs');
-const { fetchGitHubData, fetchOpenUPMDownloads } = require('./api');
+const {
+  fetchGitHubData,
+  monthlyContributions,
+  dailyContributions,
+  fetchOpenUPMAll,
+  fetchNuGetAll,
+  fetchNpmAll,
+} = require('./api');
+const { THEMES } = require('./theme');
 const { generateCombinedStatsSVG } = require('./generators/combined-stats');
 const { generateRepoCardSVG } = require('./generators/repo-card');
+const { generateHeroSVG } = require('./generators/hero');
+const { generateCommitsMonthlySVG } = require('./generators/commits-monthly');
+const { generateFlagshipSVG } = require('./generators/flagship');
+const { generateTechStackSVG } = require('./generators/tech-stack');
+const { generateActivityPulseSVG } = require('./generators/activity-pulse');
+const { generateWavesSVG } = require('./generators/waves');
 
-const COMBINED_STATS_FILE = 'images/stats/combined-stats.svg';
-const REPO_CARDS_DIR = 'images/pins';
+const STATS_DIR = 'images/stats';
+const PINS_DIR = 'images/pins';
 
+const FLAGSHIP_REPO = 'Unity-MCP';
+const FLAGSHIP_EYEBROW = 'FLAGSHIP · THE MOST POPULAR OPEN-SOURCE AI ASSISTANT FOR UNITY ENGINE';
+
+// Which repos get a pin card. Display selection only — all download counts
+// are discovered automatically from the registries (see api.js).
 const REPOS_TO_PIN = [
-  { name: 'Unity-MCP', packageId: 'com.ivanmurzak.unity.mcp' },
-  { name: 'Unity-ImageLoader', packageId: 'extensions.unity.imageloader' },
-  { name: 'Unity-Theme', packageId: 'extensions.unity.theme' },
-  { name: 'Unity-Gyroscope-Parallax', packageId: 'extensions.unity.gyroscope.parallax' },
-  { name: 'Unity-Package-Template' },
-  { name: 'Unity-Mouse-Parallax', packageId: 'extensions.unity.mouse.parallax' },
-  { name: 'Unity-PlayerPrefsEx', packageId: 'extensions.unity.playerprefsex' },
-  { name: 'Unity-EFCore-SQLite', packageId: 'extensions.unity.bundle.efcore.sqlite' },
-  { name: 'Unity-Saver', packageId: 'extensions.unity.saver' },
-  { name: 'Unity-AudioLoader', packageId: 'extensions.unity.audioloader' },
-  { name: 'Unity-IAP-Store', packageId: 'extensions.unity.iap.store' },
-  { name: 'Unity-NonDrawingGraphic', packageId: 'extensions.unity.nondrawinggraphic' },
-  { name: 'UBuilder', packageId: 'extensions.unity.ubuilder' },
-  { name: 'Unity-Network-REST', packageId: 'extensions.unity.network' },
-  { name: 'Unity-Appodeal-Simplifier', packageId: 'extensions.unity.base' },
-  { name: 'Unity-Gyroscope-Manager', packageId: 'extensions.unity.gyroscope.manager' },
-  { name: 'Unity-Extensions', packageId: 'extensions.unity.base' },
-  { name: 'Unity-iOS-Pods-Bitcode', packageId: 'com.github.ivanmurzak.ios.pods.bitcode' },
-  { name: 'Unity-Mobile-Notifications-Simplifier', packageId: 'extensions.unity.notifications' },
-  { name: 'Unity-AI-Tools-Template' },
-  { name: 'Unity-AI-Animation', packageId: 'com.ivanmurzak.unity.mcp.animation' },
-  { name: 'Unity-AI-ProBuilder', packageId: 'com.ivanmurzak.unity.mcp.probuilder' },
-  { name: 'Unity-AI-ParticleSystem', packageId: 'com.ivanmurzak.unity.mcp.particlesystem' },
-  { name: 'ReflectorNet' },
-  { name: 'MCP-Plugin-dotnet' }
+  // AI
+  'Unity-MCP',
+  'Godot-MCP',
+  'Unreal-MCP',
+  'MCP-Plugin-dotnet',
+  'ReflectorNet',
+  'Unity-AI-Animation',
+  'Unity-AI-ProBuilder',
+  'Unity-AI-ParticleSystem',
+  'Unity-AI-Tools-Template',
+  // Unity
+  'Unity-ImageLoader',
+  'Unity-Theme',
+  'Unity-Gyroscope-Parallax',
+  'Unity-Package-Template',
+  'Unity-Mouse-Parallax',
+  'Unity-PlayerPrefsEx',
+  'Unity-EFCore-SQLite',
+  'Unity-Saver',
+  'Unity-AudioLoader',
+  'Unity-IAP-Store',
+  'Unity-NonDrawingGraphic',
+  'UBuilder',
+  'Unity-Network-REST',
+  'Unity-Appodeal-Simplifier',
+  'Unity-Gyroscope-Manager',
+  'Unity-Extensions',
+  'Unity-iOS-Pods-Bitcode',
+  'Unity-Mobile-Notifications-Simplifier',
 ];
+
+function writeSVG(path, svg) {
+  fs.writeFileSync(path, svg);
+  console.log(`Generated ${path}`);
+}
 
 async function main() {
   try {
+    for (const dir of [STATS_DIR, PINS_DIR]) {
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+    }
+
     console.log('Fetching GitHub data...');
     const data = await fetchGitHubData();
-
-    console.log('Generating Combined Stats...');
-    const combinedStatsSVG = generateCombinedStatsSVG(data);
-
-    // Ensure stats directory exists
-    const statsDir = COMBINED_STATS_FILE.substring(0, COMBINED_STATS_FILE.lastIndexOf('/'));
-    if (!fs.existsSync(statsDir)) {
-      fs.mkdirSync(statsDir, { recursive: true });
-    }
-    fs.writeFileSync(COMBINED_STATS_FILE, combinedStatsSVG);
-    console.log(`Successfully generated ${COMBINED_STATS_FILE}`);
-
-    console.log('Generating Repo Cards...');
     const userRepos = data.user.repositories.nodes;
+    const monthly = monthlyContributions(data.user, 36);
+    const daily = dailyContributions(data.user, 40);
 
-    // Ensure pins directory exists
-    if (!fs.existsSync(REPO_CARDS_DIR)) {
-      fs.mkdirSync(REPO_CARDS_DIR, { recursive: true });
+    const openupm = await fetchOpenUPMAll();
+    const nuget = await fetchNuGetAll();
+    const npm = await fetchNpmAll();
+
+    // OpenUPM downloads grouped by GitHub repo (repository.url of each package).
+    const downloadsByRepo = {};
+    for (const p of openupm.packages) {
+      if (p.repo) downloadsByRepo[p.repo] = (downloadsByRepo[p.repo] || 0) + p.downloads;
     }
 
-    for (const repoConfig of REPOS_TO_PIN) {
-      const repoName = repoConfig.name;
-      const packageId = repoConfig.packageId;
-      const repo = userRepos.find(r => r.name === repoName);
-      if (repo) {
-        let downloads = null;
-        if (packageId) {
-          console.log(`Fetching downloads for ${packageId}...`);
-          downloads = await fetchOpenUPMDownloads(packageId);
-          if (downloads !== null) {
-            console.log(`  Downloads: ${downloads}`);
-          }
-        }
-        const svg = generateRepoCardSVG(repo, downloads);
-        const filePath = `${REPO_CARDS_DIR}/${repoName}.svg`;
-        fs.writeFileSync(filePath, svg);
-        console.log(`Generated ${filePath}`);
-      } else {
-        console.warn(`Repo not found: ${repoName}`);
+    const heroData = {
+      stars: userRepos.reduce((a, r) => a + r.stargazers.totalCount, 0),
+      openupm: openupm.total,
+      nuget: nuget.total,
+      npm: npm.total,
+      followers: data.user.followers ? data.user.followers.totalCount : 0,
+    };
+    console.log('Hero data:', JSON.stringify(heroData));
+
+    for (const themeName of ['dark', 'light']) {
+      const theme = THEMES[themeName];
+
+      writeSVG(`${STATS_DIR}/hero-${themeName}.svg`, generateHeroSVG(theme, heroData));
+      writeSVG(`${STATS_DIR}/combined-stats-${themeName}.svg`, generateCombinedStatsSVG(theme, data));
+      writeSVG(`${STATS_DIR}/commits-monthly-${themeName}.svg`, generateCommitsMonthlySVG(theme, monthly));
+      writeSVG(`${STATS_DIR}/tech-stack-${themeName}.svg`, generateTechStackSVG(theme));
+      writeSVG(`${STATS_DIR}/activity-pulse-${themeName}.svg`, generateActivityPulseSVG(theme, daily));
+      writeSVG(`${STATS_DIR}/waves-${themeName}.svg`, generateWavesSVG(theme));
+
+      const flagship = userRepos.find((r) => r.name === FLAGSHIP_REPO);
+      if (flagship) {
+        writeSVG(
+          `${STATS_DIR}/flagship-${themeName}.svg`,
+          generateFlagshipSVG(theme, flagship, downloadsByRepo[FLAGSHIP_REPO] || null, FLAGSHIP_EYEBROW)
+        );
       }
-    }
 
+      REPOS_TO_PIN.forEach((repoName, index) => {
+        const repo = userRepos.find((r) => r.name === repoName);
+        if (!repo) {
+          console.warn(`Repo not found: ${repoName}`);
+          return;
+        }
+        const svg = generateRepoCardSVG(theme, repo, downloadsByRepo[repoName] || null, index);
+        writeSVG(`${PINS_DIR}/${repoName}-${themeName}.svg`, svg);
+      });
+    }
   } catch (error) {
     console.error('Error generating stats:', error);
     process.exit(1);

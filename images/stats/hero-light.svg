@@ -1,0 +1,64 @@
+<svg width="955" height="175" viewBox="0 0 955 175" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ivan Murzak. AI Tools, AI Agents, AI Harness, .NET &amp; Unity, Game Dev.">
+  <style>
+    .h-name { font: 800 42px 'Segoe UI', Ubuntu, sans-serif; fill: url(#h-nameGrad); }
+    .h-ph { font: 600 15px ui-monospace, 'Cascadia Mono', Consolas, monospace; fill: #1f2328;
+            opacity: 0; animation: h-phrase 17s linear infinite both; }
+    .h-tw { transform-box: fill-box; transform-origin: left;
+            animation: h-type 17s linear infinite both; }
+    .h-val { font: 700 19px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+    .h-lbl { font: 600 9px 'Segoe UI', Ubuntu, sans-serif; fill: #656d76; letter-spacing: 1px; }
+    @keyframes h-phrase { 0% { opacity: 1; } 18.5% { opacity: 1; } 20% { opacity: 0; } 100% { opacity: 0; } }
+    @keyframes h-type {
+      0% { transform: scaleX(0); animation-timing-function: steps(16, end); }
+      6.5% { transform: scaleX(1); } 100% { transform: scaleX(1); }
+    }
+    
+    .fade { opacity: 0; animation: fadein .5s ease-out forwards; }
+    .chip { opacity: 0; animation: rise .5s ease-out both; }
+    .late { opacity: 0; animation: fadein .45s ease-out 1.5s forwards; }
+    @keyframes fadein { to { opacity: 1; } }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes breathe { from { opacity: .15; } to { opacity: .5; } }
+    @keyframes ping { 0% { transform: scale(.5); opacity: .8; } 55% { transform: scale(2.4); opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
+    @keyframes sweep { 0% { transform: translateX(0) skewX(-14deg); } 22% { transform: translateX(1115px) skewX(-14deg); } 100% { transform: translateX(1115px) skewX(-14deg); } }
+  
+    @media (prefers-reduced-motion: reduce) {
+      .fade, .chip, .h-ph { animation: none; opacity: 1; }
+      .h-ph:not(:first-of-type) { display: none; }
+      .h-tw { animation: none; transform: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="h-nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0.35" stop-color="#0969da"/>
+      <stop offset="0.5" stop-color="#54aeff"/>
+      <stop offset="0.65" stop-color="#0969da"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="5.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="h-clip0"><rect class="h-tw" x="428.5" y="86" width="98.0" height="24" style="animation-delay:0.0s"/></clipPath><clipPath id="h-clip1"><rect class="h-tw" x="424.0" y="86" width="107.0" height="24" style="animation-delay:3.4s"/></clipPath><clipPath id="h-clip2"><rect class="h-tw" x="419.5" y="86" width="116.0" height="24" style="animation-delay:6.8s"/></clipPath><clipPath id="h-clip3"><rect class="h-tw" x="410.5" y="86" width="134.0" height="24" style="animation-delay:10.2s"/></clipPath><clipPath id="h-clip4"><rect class="h-tw" x="428.5" y="86" width="98.0" height="24" style="animation-delay:13.6s"/></clipPath>
+  </defs>
+  <text class="h-name fade" x="477.5" y="58" text-anchor="middle">Ivan Murzak</text>
+  <text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip0)" style="animation-delay:0.0s">> AI Tools</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip1)" style="animation-delay:3.4s">> AI Agents</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip2)" style="animation-delay:6.8s">> AI Harness</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip3)" style="animation-delay:10.2s">> .NET &amp; Unity</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip4)" style="animation-delay:13.6s">> Game Dev</text>
+  <g class="chip" style="animation-delay:800ms">
+      <circle cx="63.5" cy="146" r="3" fill="#0969da"/>
+      <text x="73.5" y="151" class="h-val">4 994</text>
+      <text x="73.5" y="164" class="h-lbl">TOTAL STARS</text>
+    </g><g class="chip" style="animation-delay:950ms">
+      <circle cx="241.5" cy="146" r="3" fill="#0969da"/>
+      <text x="251.5" y="151" class="h-val">321.4k</text>
+      <text x="251.5" y="164" class="h-lbl">OPENUPM DL</text>
+    </g><g class="chip" style="animation-delay:1100ms">
+      <circle cx="419.5" cy="146" r="3" fill="#0969da"/>
+      <text x="429.5" y="151" class="h-val">240.7k</text>
+      <text x="429.5" y="164" class="h-lbl">NUGET DL</text>
+    </g><g class="chip" style="animation-delay:1250ms">
+      <circle cx="597.5" cy="146" r="3" fill="#0969da"/>
+      <text x="607.5" y="151" class="h-val">143.7k</text>
+      <text x="607.5" y="164" class="h-lbl">NPM DL</text>
+    </g><g class="chip" style="animation-delay:1400ms">
+      <circle cx="775.5" cy="146" r="3" fill="#0969da"/>
+      <text x="785.5" y="151" class="h-val">400</text>
+      <text x="785.5" y="164" class="h-lbl">FOLLOWERS</text>
+    </g>
+</svg>

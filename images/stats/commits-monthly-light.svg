@@ -1,0 +1,80 @@
+<svg width="955" height="270" viewBox="0 0 955 270" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commits per month, last 3 years. Total 16276, average 452 per month, peak 3551.">
+  <style>
+    .m-title { font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+    .m-sub { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #656d76; }
+    .m-tick { font: 400 10px 'Segoe UI', Ubuntu, sans-serif; fill: #656d76; }
+    .m-now { font: 600 9px 'Segoe UI', Ubuntu, sans-serif; fill: #0969da; letter-spacing: 1px; }
+    .m-grid { stroke: #eaeef2; stroke-width: 1; }
+    .m-sep { stroke: #eaeef2; stroke-width: 1; stroke-dasharray: 3 3; }
+    .m-cv { font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+    .m-cl { font: 600 9px 'Segoe UI', Ubuntu, sans-serif; fill: #656d76; letter-spacing: 1px; }
+    .m-peak { font: 600 11px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
+    .m-bar { transform-box: fill-box; transform-origin: bottom; transform: scaleY(0);
+             animation: grow .6s cubic-bezier(.34,1.35,.44,1) both; }
+    #m-nowGlow { animation: breathe 2.8s ease-in-out 2.2s infinite alternate; opacity: 0; }
+    #m-ping { transform-box: fill-box; transform-origin: center; animation: ping 2.6s ease-out 2.4s infinite; opacity: 0; }
+    #m-shine { animation: sweep 7s linear 2.8s infinite; }
+    
+    .fade { opacity: 0; animation: fadein .5s ease-out forwards; }
+    .chip { opacity: 0; animation: rise .5s ease-out both; }
+    .late { opacity: 0; animation: fadein .45s ease-out 1.5s forwards; }
+    @keyframes fadein { to { opacity: 1; } }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes breathe { from { opacity: .15; } to { opacity: .5; } }
+    @keyframes ping { 0% { transform: scale(.5); opacity: .8; } 55% { transform: scale(2.4); opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
+    @keyframes sweep { 0% { transform: translateX(0) skewX(-14deg); } 22% { transform: translateX(1115px) skewX(-14deg); } 100% { transform: translateX(1115px) skewX(-14deg); } }
+  
+    @media (prefers-reduced-motion: reduce) {
+      .fade, .m-bar, .chip, .late { animation: none; opacity: 1; transform: none; }
+      #m-nowGlow { animation: none; opacity: .3; }
+      #m-ping, #m-shine { animation: none; display: none; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="m-barGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0969da"/>
+      <stop offset="1" stop-color="#0969da" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="m-shineGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="rgba(255,255,255,0.55)" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="rgba(255,255,255,0.55)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.55)" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="m-plotClip"><rect x="52" y="68" width="879" height="158"/></clipPath>
+    <clipPath id="m-barsClip"><rect x="56.2" y="212.1" width="16" height="17.9" rx="3.5"/><rect x="80.6" y="218.3" width="16" height="11.7" rx="3.5"/><rect x="105.0" y="218.4" width="16" height="11.6" rx="3.5"/><rect x="129.5" y="220.3" width="16" height="9.7" rx="3.5"/><rect x="153.9" y="222.4" width="16" height="7.6" rx="3.5"/><rect x="178.3" y="224.9" width="16" height="6.0" rx="3.5"/><rect x="202.7" y="225.0" width="16" height="6.0" rx="3.5"/><rect x="227.1" y="225.2" width="16" height="6.0" rx="3.5"/><rect x="251.5" y="225.7" width="16" height="6.0" rx="3.5"/><rect x="276.0" y="224.1" width="16" height="6.0" rx="3.5"/><rect x="300.4" y="224.9" width="16" height="6.0" rx="3.5"/><rect x="324.8" y="224.0" width="16" height="6.0" rx="3.5"/><rect x="349.2" y="224.9" width="16" height="6.0" rx="3.5"/><rect x="373.6" y="217.9" width="16" height="12.1" rx="3.5"/><rect x="398.0" y="219.7" width="16" height="10.3" rx="3.5"/><rect x="422.5" y="203.0" width="16" height="27.0" rx="3.5"/><rect x="446.9" y="211.7" width="16" height="18.3" rx="3.5"/><rect x="471.3" y="221.4" width="16" height="8.6" rx="3.5"/><rect x="495.7" y="216.9" width="16" height="13.1" rx="3.5"/><rect x="520.1" y="210.7" width="16" height="19.3" rx="3.5"/><rect x="544.5" y="207.4" width="16" height="22.6" rx="3.5"/><rect x="569.0" y="213.3" width="16" height="16.7" rx="3.5"/><rect x="593.4" y="205.5" width="16" height="24.5" rx="3.5"/><rect x="617.8" y="202.4" width="16" height="27.6" rx="3.5"/><rect x="642.2" y="196.3" width="16" height="33.7" rx="3.5"/><rect x="666.6" y="195.2" width="16" height="34.8" rx="3.5"/><rect x="691.0" y="176.8" width="16" height="53.2" rx="3.5"/><rect x="715.5" y="203.1" width="16" height="26.9" rx="3.5"/><rect x="739.9" y="156.9" width="16" height="73.1" rx="3.5"/><rect x="764.3" y="91.1" width="16" height="138.9" rx="3.5"/><rect x="788.7" y="148.2" width="16" height="81.8" rx="3.5"/><rect x="813.1" y="226.0" width="16" height="6.0" rx="3.5"/><rect x="837.5" y="226.0" width="16" height="6.0" rx="3.5"/><rect x="862.0" y="226.0" width="16" height="6.0" rx="3.5"/><rect x="886.4" y="226.0" width="16" height="6.0" rx="3.5"/><rect x="910.8" y="226.0" width="16" height="6.0" rx="3.5"/></clipPath>
+    <filter id="m-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+
+  <rect x="0.5" y="0.5" rx="6" width="954" height="269" fill="#ffffff" stroke="#d0d7de"/>
+  <text class="m-title fade" x="25" y="38">Commits per month</text>
+  <text class="m-sub fade" x="25" y="57" style="animation-delay:.15s">Jan 2024 — Dec 2026 · last 36 months · GitHub contributions</text>
+  <g class="chip" style="animation-delay:850ms">
+      <text x="565" y="40" text-anchor="end" class="m-cv">16 276</text>
+      <text x="565" y="56" text-anchor="end" class="m-cl">TOTAL / 3Y</text>
+    </g><g class="chip" style="animation-delay:990ms">
+      <text x="687" y="40" text-anchor="end" class="m-cv">452</text>
+      <text x="687" y="56" text-anchor="end" class="m-cl">AVG / MONTH</text>
+    </g><g class="chip" style="animation-delay:1130ms">
+      <text x="809" y="40" text-anchor="end" class="m-cv">3 551</text>
+      <text x="809" y="56" text-anchor="end" class="m-cl">PEAK · JUN 2026</text>
+    </g><g class="chip" style="animation-delay:1270ms">
+      <text x="931" y="40" text-anchor="end" class="m-cv">0</text>
+      <text x="931" y="56" text-anchor="end" class="m-cl">THIS MONTH</text>
+    </g>
+  <g class="fade" style="animation-delay:.2s"><line class="m-grid" x1="52" y1="226.0" x2="931" y2="226.0"/><text class="m-tick" x="44" y="229.5" text-anchor="end">0</text><line class="m-grid" x1="52" y1="188.0" x2="931" y2="188.0"/><text class="m-tick" x="44" y="191.5" text-anchor="end">1k</text><line class="m-grid" x1="52" y1="150.0" x2="931" y2="150.0"/><text class="m-tick" x="44" y="153.5" text-anchor="end">2k</text><line class="m-grid" x1="52" y1="112.0" x2="931" y2="112.0"/><text class="m-tick" x="44" y="115.5" text-anchor="end">3k</text><line class="m-grid" x1="52" y1="74.0" x2="931" y2="74.0"/><text class="m-tick" x="44" y="77.5" text-anchor="end">4k</text><line class="m-sep" x1="52.0" y1="74" x2="52.0" y2="226"/><line class="m-sep" x1="345.0" y1="74" x2="345.0" y2="226"/><line class="m-sep" x1="638.0" y1="74" x2="638.0" y2="226"/></g>
+  <g clip-path="url(#m-plotClip)">
+    <rect id="m-nowGlow" x="906.8" y="222.0" width="24" height="8.0" rx="6" fill="#0969da" filter="url(#m-glow)"/>
+    <rect class="m-bar" x="56.2" y="212.1" width="16" height="17.9" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:340ms"/><rect class="m-bar" x="80.6" y="218.3" width="16" height="11.7" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:362ms"/><rect class="m-bar" x="105.0" y="218.4" width="16" height="11.6" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:384ms"/><rect class="m-bar" x="129.5" y="220.3" width="16" height="9.7" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:406ms"/><rect class="m-bar" x="153.9" y="222.4" width="16" height="7.6" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:428ms"/><rect class="m-bar" x="178.3" y="224.9" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:450ms"/><rect class="m-bar" x="202.7" y="225.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:472ms"/><rect class="m-bar" x="227.1" y="225.2" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:494ms"/><rect class="m-bar" x="251.5" y="225.7" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:516ms"/><rect class="m-bar" x="276.0" y="224.1" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:538ms"/><rect class="m-bar" x="300.4" y="224.9" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:560ms"/><rect class="m-bar" x="324.8" y="224.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:582ms"/><rect class="m-bar" x="349.2" y="224.9" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:604ms"/><rect class="m-bar" x="373.6" y="217.9" width="16" height="12.1" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:626ms"/><rect class="m-bar" x="398.0" y="219.7" width="16" height="10.3" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:648ms"/><rect class="m-bar" x="422.5" y="203.0" width="16" height="27.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:670ms"/><rect class="m-bar" x="446.9" y="211.7" width="16" height="18.3" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:692ms"/><rect class="m-bar" x="471.3" y="221.4" width="16" height="8.6" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:714ms"/><rect class="m-bar" x="495.7" y="216.9" width="16" height="13.1" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:736ms"/><rect class="m-bar" x="520.1" y="210.7" width="16" height="19.3" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:758ms"/><rect class="m-bar" x="544.5" y="207.4" width="16" height="22.6" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:780ms"/><rect class="m-bar" x="569.0" y="213.3" width="16" height="16.7" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:802ms"/><rect class="m-bar" x="593.4" y="205.5" width="16" height="24.5" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:824ms"/><rect class="m-bar" x="617.8" y="202.4" width="16" height="27.6" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:846ms"/><rect class="m-bar" x="642.2" y="196.3" width="16" height="33.7" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:868ms"/><rect class="m-bar" x="666.6" y="195.2" width="16" height="34.8" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:890ms"/><rect class="m-bar" x="691.0" y="176.8" width="16" height="53.2" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:912ms"/><rect class="m-bar" x="715.5" y="203.1" width="16" height="26.9" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:934ms"/><rect class="m-bar" x="739.9" y="156.9" width="16" height="73.1" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:956ms"/><rect class="m-bar" x="764.3" y="91.1" width="16" height="138.9" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:978ms"/><rect class="m-bar" x="788.7" y="148.2" width="16" height="81.8" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:1000ms"/><rect class="m-bar" x="813.1" y="226.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:1022ms"/><rect class="m-bar" x="837.5" y="226.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:1044ms"/><rect class="m-bar" x="862.0" y="226.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:1066ms"/><rect class="m-bar" x="886.4" y="226.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:1088ms"/><rect class="m-bar" x="910.8" y="226.0" width="16" height="6.0" rx="3.5" fill="url(#m-barGrad)" style="animation-delay:1110ms"/>
+    <g clip-path="url(#m-barsClip)">
+      <rect id="m-shine" x="-150" y="68" width="110" height="158" fill="url(#m-shineGrad)" style="transform: skewX(-14deg)"/>
+    </g>
+  </g>
+  <line x1="52" y1="226.5" x2="931" y2="226.5" stroke="#d0d7de" stroke-width="1"/>
+  <g class="fade" style="animation-delay:.35s"><text class="m-tick" x="64.2" y="244" text-anchor="middle">2024</text><text class="m-tick" x="357.2" y="244" text-anchor="middle">2025</text><text class="m-tick" x="650.2" y="244" text-anchor="middle">2026</text><text class="m-now" x="918.8" y="244" text-anchor="middle">NOW</text></g>
+  <text class="m-peak late" x="772.3" y="83.1" text-anchor="middle">3 551</text>
+  <g class="late">
+    <circle id="m-ping" cx="918.8" cy="215.0" r="4" fill="none" stroke="#0969da" stroke-width="1.5"/>
+    <circle cx="918.8" cy="215.0" r="3" fill="#0969da"/>
+  </g>
+</svg>
