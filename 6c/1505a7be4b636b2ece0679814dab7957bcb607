@@ -1,0 +1,209 @@
+scripts/generators/tech-stack.js
+  s_495ed57f72c6ce::t_2228cf8540cca7 1-35
+images/social/nuget.svg
+  s_495ed57f72c6ce::t_e95e23986e27fa 1-8
+images/pins/MCP-Plugin-dotnet-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-ImageLoader-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/MCP-Plugin-dotnet-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/ReflectorNet-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Mobile-Notifications-Simplifier-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Mobile-Notifications-Simplifier-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/stats/activity-pulse-light.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 7
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-6,8
+images/stats/commits-monthly-light.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 1,45,53,68
+  s_495ed57f72c6ce::t_c2acd6ae45a869 2-44,46-52,54-67,69-80
+images/stats/hero-dark.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 1
+  s_495ed57f72c6ce::t_c2acd6ae45a869 2-56,58-64
+  s_495ed57f72c6ce::t_37d07d7e082949 57
+images/pins/Unity-Gyroscope-Manager-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/stats/commits-monthly-dark.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 1,45,53,68
+  s_495ed57f72c6ce::t_c2acd6ae45a869 2-44,46-52,54-67,69-80
+images/pins/Unity-AI-ProBuilder-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-Gyroscope-Manager-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-iOS-Pods-Bitcode-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/repo-card.js
+  s_495ed57f72c6ce::t_dcee7f9c6c98fd 1,3-9,12,16,18,24-27,30-31,33-38,40-49,51-69,71-72,75
+images/pins/Unity-Appodeal-Simplifier-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-EFCore-SQLite-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+CLAUDE.md
+  s_495ed57f72c6ce::t_698c21293654f5 7,26,30,32-39,41,43,47-48,50
+  s_495ed57f72c6ce::t_0fca7b40e65052 1-6,8-25,27-29,31,40,42,44-46,49
+images/pins/Unity-AI-Animation-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-iOS-Pods-Bitcode-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-AI-Tools-Template-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-AudioLoader-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-Saver-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unreal-MCP-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/stats/activity-pulse-dark.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 7
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-6,8
+images/pins/Unity-AI-ProBuilder-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/api.js
+  s_495ed57f72c6ce::t_fc7189326458a5 34-35,39,46
+  s_495ed57f72c6ce::t_eea27af93740a7 5-33,36-38,40-45,47-50,187-199,201-212,214-220,222-336,339-346
+images/stats/flagship-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-63
+images/stats/flagship-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-63
+images/stats/tech-stack-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-44
+images/pins/Unity-Theme-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/stats/waves-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-17
+README.md
+  s_495ed57f72c6ce::t_733630c1ec9d02 2-13,20,26-45,48-51,54-57,60-61,64-80,83-86,89-92,95-98,101-104,107-110,113-116,120-121,124-127,130-133,136-139,142-145,148-151,154-168,171-174,177-180,183-186,189-192,195-198,201-204,207-210,213-216,219-222,225-228,231-234,237,243-246
+images/pins/Unity-NonDrawingGraphic-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/flagship.js
+  s_495ed57f72c6ce::t_fa0e8fa2ccb966 1-88
+images/pins/ReflectorNet-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/stats/tech-stack-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-44
+images/pins/Unity-AudioLoader-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-Mouse-Parallax-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-IAP-Store-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Saver-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unreal-MCP-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/stats/waves-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-17
+images/pins/Unity-AI-Tools-Template-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Gyroscope-Parallax-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-MCP-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/combined-stats.js
+  s_495ed57f72c6ce::t_1242c7f4dd6b8d 3
+  s_495ed57f72c6ce::t_f59bb263aa75cd 125,127-138,264,278-279,308
+images/pins/Godot-MCP-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+scripts/generate-stats.js
+  s_495ed57f72c6ce::t_5001e4a20389ca 2-10,13-18,20-21,23-27,29-57,60-64,67-70,73-75,77-79,81-84,87-94,96-97,99-111,114-123,130
+.markdownlint.json
+  s_495ed57f72c6ce::t_64e4ea1177bc71 5
+  s_4d68fcead85c12::t_aa09c4d2c3deca 3
+images/stats/combined-stats-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-61,63-109,111-186
+  s_495ed57f72c6ce::t_76492ac570a27e 62,110
+images/pins/Unity-AI-ParticleSystem-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/waves.js
+  s_495ed57f72c6ce::t_a9ce7278cb654e 1-25
+images/pins/Unity-Extensions-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-NonDrawingGraphic-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+.github/workflows/update-stats.yml
+  s_495ed57f72c6ce::t_2f54e040908415 13,16,18,29
+images/pins/UBuilder-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-MCP-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-IAP-Store-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/stats/combined-stats-light.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 62,110
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-61,63-109,111-186
+images/stats/hero-light.svg
+  s_495ed57f72c6ce::t_76492ac570a27e 1
+  s_495ed57f72c6ce::t_c2acd6ae45a869 2-56,58-64
+  s_495ed57f72c6ce::t_20c2f63cec562c 57
+images/pins/Unity-Package-Template-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Theme-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-ImageLoader-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/theme.js
+  s_495ed57f72c6ce::t_b54059bd812b38 1-59
+images/pins/Unity-PlayerPrefsEx-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/commits-monthly.js
+  s_495ed57f72c6ce::t_5e676ff36c3305 1-131
+images/pins/UBuilder-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-AI-Animation-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-Network-REST-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Network-REST-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-EFCore-SQLite-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/activity-pulse.js
+  s_495ed57f72c6ce::t_2e37607daf9299 1-26
+images/pins/Unity-Appodeal-Simplifier-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Mouse-Parallax-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+scripts/generators/hero.js
+  s_495ed57f72c6ce::t_53f633642eb793 39
+  s_495ed57f72c6ce::t_faa475b8b14763 1-18,20-38,40-75
+  s_495ed57f72c6ce::t_af94f41582d5e1 19
+images/pins/Unity-Package-Template-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-Gyroscope-Parallax-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-AI-ParticleSystem-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+images/pins/Unity-Extensions-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Godot-MCP-light.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-21
+images/pins/Unity-PlayerPrefsEx-dark.svg
+  s_495ed57f72c6ce::t_c2acd6ae45a869 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "6c1505a7be4b636b2ece0679814dab7957bcb607",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    },
+    "s_4d68fcead85c12": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e554db1e-8d99-4f43-8cb8-319a6b2dfb3c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
