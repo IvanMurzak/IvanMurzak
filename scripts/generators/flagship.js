@@ -4,7 +4,9 @@ const { fmt, fmtK, ICONS, sharedCSS } = require('../theme');
 // repo: GitHub repo node; downloads: OpenUPM all-time downloads (or null).
 function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
   const t = theme;
-  const W = 955, H = 150;
+  // Card is 150 tall; the transparent bottom strip separates the flagship
+  // from the first pin row (slightly larger than the row gap by design).
+  const W = 955, CARD_H = 150, GAP = 16, H = CARD_H + GAP;
 
   const desc = repo.description || '';
   const maxLine = 88;
@@ -66,16 +68,16 @@ function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
       <stop offset="0.5" stop-color="${t.shine}"/>
       <stop offset="1" stop-color="${t.shine}" stop-opacity="0"/>
     </linearGradient>
-    <clipPath id="f-cardClip"><rect x="1" y="1" rx="6" width="${W - 2}" height="${H - 2}"/></clipPath>
+    <clipPath id="f-cardClip"><rect x="1" y="1" rx="6" width="${W - 2}" height="${CARD_H - 2}"/></clipPath>
   </defs>
-  <rect x="0.75" y="0.75" rx="6" width="${W - 1.5}" height="${H - 1.5}" fill="${t.bg}" stroke="url(#f-borderGrad)" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" rx="6" width="${W - 1.5}" height="${CARD_H - 1.5}" fill="${t.bg}" stroke="url(#f-borderGrad)" stroke-width="1.5"/>
   <text class="f-eyebrow" x="25" y="32">${eyebrow}</text>
   <text class="f-name" x="25" y="62">${repo.name}</text>
   <text class="f-desc" x="25" y="86">${escapeXML(desc1)}</text>
   <text class="f-desc" x="25" y="103">${escapeXML(desc2)}</text>
   ${chipsSVG}
   <g clip-path="url(#f-cardClip)">
-    <rect id="f-shine" x="-150" y="0" width="110" height="${H}" fill="url(#f-shineGrad)" style="transform: skewX(-14deg)"/>
+    <rect id="f-shine" x="-150" y="0" width="110" height="${CARD_H}" fill="url(#f-shineGrad)" style="transform: skewX(-14deg)"/>
   </g>
 </svg>`;
 }

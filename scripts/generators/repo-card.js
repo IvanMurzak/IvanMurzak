@@ -5,7 +5,9 @@ const { fmtK, ICONS } = require('../theme');
 // index: card position used to stagger the entrance.
 function generateRepoCardSVG(theme, repo, downloads = null, index = 0) {
   const t = theme;
-  const W = 470, H = 130;
+  // Card is 130 tall; extra transparent bottom strip is the uniform vertical
+  // gap between card rows (it scales with the card, like the column gap).
+  const W = 470, CARD_H = 130, GAP = 9, H = CARD_H + GAP;
 
   const description = repo.description || 'No description provided';
   const maxLineLength = 62;
@@ -32,8 +34,8 @@ function generateRepoCardSVG(theme, repo, downloads = null, index = 0) {
   let cx = 25;
   let statsSVG = '';
   if (lang) {
-    statsSVG += `<circle cx="${cx + 5}" cy="${H - 27}" r="5" fill="${langColor}"/>
-    <text x="${cx + 15}" y="${H - 22.5}" class="p-stat">${lang}</text>`;
+    statsSVG += `<circle cx="${cx + 5}" cy="${CARD_H - 27}" r="5" fill="${langColor}"/>
+    <text x="${cx + 15}" y="${CARD_H - 22.5}" class="p-stat">${lang}</text>`;
     cx += 15 + lang.length * 7 + 22;
   }
   const stats = [
@@ -42,8 +44,8 @@ function generateRepoCardSVG(theme, repo, downloads = null, index = 0) {
   ];
   if (downloads) stats.push({ icon: ICONS.download, v: fmtK(downloads) });
   stats.forEach((s) => {
-    statsSVG += `<svg x="${cx}" y="${H - 37}" width="14" height="14" viewBox="0 0 16 16"><path fill="${t.muted}" d="${s.icon}"/></svg>
-      <text x="${cx + 18}" y="${H - 22.5}" class="p-stat">${s.v}</text>`;
+    statsSVG += `<svg x="${cx}" y="${CARD_H - 37}" width="14" height="14" viewBox="0 0 16 16"><path fill="${t.muted}" d="${s.icon}"/></svg>
+      <text x="${cx + 18}" y="${CARD_H - 22.5}" class="p-stat">${s.v}</text>`;
     cx += 18 + s.v.length * 7 + 24;
   });
 
@@ -54,7 +56,7 @@ function generateRepoCardSVG(theme, repo, downloads = null, index = 0) {
     .p-stat { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.muted}; }
   </style>
   <g>
-    <rect x="0.5" y="0.5" rx="6" width="${W - 1}" height="${H - 1}" fill="${t.bg}" stroke="${t.border}"/>
+    <rect x="0.5" y="0.5" rx="6" width="${W - 1}" height="${CARD_H - 1}" fill="${t.bg}" stroke="${t.border}"/>
     <svg x="25" y="24" width="16" height="16" viewBox="0 0 16 16"><path fill="${t.muted}" d="${ICONS.repo}"/></svg>
     <text class="p-name" x="49" y="37">${repo.name}</text>
     <text class="p-desc" x="25" y="66">${escapeXML(lines[0] || '')}</text>
