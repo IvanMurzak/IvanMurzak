@@ -1,0 +1,21 @@
+CLAUDE.md
+  s_495ed57f72c6ce::t_df72b0077a9c4d 41
+  s_495ed57f72c6ce::t_edfd1811bb7c63 35
+  s_495ed57f72c6ce::t_f7c2fd5208cc98 50-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "ac41cde5496bbd45ef7c9ae9f572eb5990169ceb",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
