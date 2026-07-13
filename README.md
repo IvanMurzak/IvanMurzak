@@ -238,11 +238,7 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 
 <br/>
 
-<div align="center">
-  <a href="https://star-history.com/#IvanMurzak/Unity-Gyroscope-Parallax&IvanMurzak/Unity-Package-Template&IvanMurzak/Unity-Mouse-Parallax&IvanMurzak/Unity-PlayerPrefsEx&IvanMurzak/Unity-ImageLoader&IvanMurzak/Unity-AudioLoader&IvanMurzak/Unity-Theme&IvanMurzak/Unity-Saver&IvanMurzak/Unity-MCP&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=IvanMurzak/Unity-Gyroscope-Parallax,IvanMurzak/Unity-Package-Template,IvanMurzak/Unity-Mouse-Parallax,IvanMurzak/Unity-PlayerPrefsEx,IvanMurzak/Unity-ImageLoader,IvanMurzak/Unity-AudioLoader,IvanMurzak/Unity-Theme,IvanMurzak/Unity-Saver,IvanMurzak/Unity-MCP&type=Date&theme=dark">
-      <img alt="Star History Chart" width="100%" src="https://api.star-history.com/svg?repos=IvanMurzak/Unity-Gyroscope-Parallax,IvanMurzak/Unity-Package-Template,IvanMurzak/Unity-Mouse-Parallax,IvanMurzak/Unity-PlayerPrefsEx,IvanMurzak/Unity-ImageLoader,IvanMurzak/Unity-AudioLoader,IvanMurzak/Unity-Theme,IvanMurzak/Unity-Saver,IvanMurzak/Unity-MCP&type=Date"/>
-    </picture>
-  </a>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/stats/waves-dark.svg">
+  <img src="images/stats/waves-light.svg" width="100%" height="70" alt=""/>
+</picture>
