@@ -1,0 +1,261 @@
+scripts/generators/hero.js
+  s_495ed57f72c6ce::t_e540f20080cf1e 35
+  s_495ed57f72c6ce::t_c410c1053c37a2 60,74
+scripts/generators/repo-card.js
+  s_495ed57f72c6ce::t_dd83169e33c2cf 54,58-59,61
+scripts/theme.js
+  s_495ed57f72c6ce::t_0c3286807b03a4 44-47,50-55
+scripts/generators/flagship.js
+  s_495ed57f72c6ce::t_29b2dc693527e0 31-32,40
+  s_495ed57f72c6ce::t_524b20096ca6ef 53,56
+  s_495ed57f72c6ce::t_96752a6b9e6731 75-78
+scripts/generators/commits-monthly.js
+  s_495ed57f72c6ce::t_d0afede4bad272 110-111,113,122-124
+  s_495ed57f72c6ce::t_671f9ad1afa484 27
+  s_495ed57f72c6ce::t_078d8940f710c1 82-83,86,89
+  s_495ed57f72c6ce::t_885d6175060015 65
+scripts/generators/waves.js
+  s_495ed57f72c6ce::t_0ceb2fed9b5569 1-2,7-14,17-20
+images/social/nuget.svg
+  s_495ed57f72c6ce::t_1d689a8dd6ce9e 2
+  s_495ed57f72c6ce::t_f4eb31d7df1f09 4-6
+  s_4d68fcead85c12::t_f745ad463a8e37 3,7-8
+scripts/api.js
+  s_495ed57f72c6ce::t_6afaa06aa33d10 286-287,292,298-301,304
+images/pins/Godot-AI-Animation-dark.svg
+  s_4d68fcead85c12::t_74e57795d20e6d 1,3,7-8,10,19-20
+images/pins/Godot-AI-Animation-light.svg
+  s_4d68fcead85c12::t_40048ec24cd4a4 1,3,7-8,10,19-20
+images/pins/Godot-AI-Beehave-dark.svg
+  s_4d68fcead85c12::t_f672fc304ffba9 1,3,7-8,10,19-20
+images/pins/Godot-AI-Beehave-light.svg
+  s_4d68fcead85c12::t_3f8d1db9544ea4 1,3,7-8,10,19-20
+images/pins/Godot-AI-CSG-dark.svg
+  s_4d68fcead85c12::t_5ad282c4756a3d 1,3,7-8,10,19-20
+images/pins/Godot-AI-CSG-light.svg
+  s_4d68fcead85c12::t_1fce974e702fe0 1,3,7-8,10,19-20
+images/pins/Godot-AI-Dialogic-dark.svg
+  s_4d68fcead85c12::t_26d5fc7d6a520e 1,3,7-8,10,19-20
+images/pins/Godot-AI-Dialogic-light.svg
+  s_4d68fcead85c12::t_10472c7f0ace0e 1,3,7-8,10,19-20
+images/pins/Godot-AI-GridMap-dark.svg
+  s_4d68fcead85c12::t_26d9ba87e2969c 1,3,7-8,10,19-20
+images/pins/Godot-AI-GridMap-light.svg
+  s_4d68fcead85c12::t_3ea37ff7156d27 1,3,7-8,10,19-20
+images/pins/Godot-AI-Navigation-dark.svg
+  s_4d68fcead85c12::t_15bb582b443360 1,3,7-8,10,19-20
+images/pins/Godot-AI-Navigation-light.svg
+  s_4d68fcead85c12::t_b292132928db6a 1,3,7-8,10,19-20
+images/pins/Godot-AI-Particles-dark.svg
+  s_4d68fcead85c12::t_2b002683499743 1,3,7-8,10,19-20
+images/pins/Godot-AI-Particles-light.svg
+  s_4d68fcead85c12::t_bb7555606ef797 1,3,7-8,10,19-20
+images/pins/Godot-AI-PhantomCamera-dark.svg
+  s_4d68fcead85c12::t_cf7f0a29e9435e 1,3,7-8,10,19-20
+images/pins/Godot-AI-PhantomCamera-light.svg
+  s_4d68fcead85c12::t_96e85472a897f1 1,3,7-8,10,19-20
+images/pins/Godot-AI-Terrain3D-dark.svg
+  s_4d68fcead85c12::t_229591ae0e5a0d 1,3,7-8,10,19-20
+images/pins/Godot-AI-Terrain3D-light.svg
+  s_4d68fcead85c12::t_1953c9c3375181 1,3,7-8,10,19-20
+images/pins/Godot-AI-Tilemap-dark.svg
+  s_4d68fcead85c12::t_67c65b83a63ebb 1,3,7-8,10,19-20
+images/pins/Godot-AI-Tilemap-light.svg
+  s_4d68fcead85c12::t_4b92e7b1eb22ad 1,3,7-8,10,19-20
+images/pins/Godot-AI-Tools-Template-dark.svg
+  s_4d68fcead85c12::t_98483fddc8acc8 3,7-8,10
+images/pins/Godot-AI-Tools-Template-light.svg
+  s_4d68fcead85c12::t_37c80f735e40fb 3,7-8,10
+images/pins/Godot-MCP-dark.svg
+  s_495ed57f72c6ce::t_3ba94467440fc2 3,7-8,10
+images/pins/Godot-MCP-light.svg
+  s_495ed57f72c6ce::t_4f5f5051f12072 3,7-8,10
+images/pins/MCP-Plugin-dotnet-dark.svg
+  s_495ed57f72c6ce::t_8cd321acea818f 1,3,7-8,10,19-20
+images/pins/MCP-Plugin-dotnet-light.svg
+  s_495ed57f72c6ce::t_08b251fe91afee 1,3,7-8,10,19-20
+images/pins/ReflectorNet-dark.svg
+  s_495ed57f72c6ce::t_0c49b8675a8ce5 1,3,7-8,10,19-20
+images/pins/ReflectorNet-light.svg
+  s_495ed57f72c6ce::t_cf1c327d590564 1,3,7-8,10,19-20
+images/pins/UBuilder-dark.svg
+  s_495ed57f72c6ce::t_7ee4f39c357dcf 3,7-8,10
+images/pins/UBuilder-light.svg
+  s_495ed57f72c6ce::t_aeb8bd7e57f61b 3,7-8,10
+images/pins/Unity-AI-Animation-dark.svg
+  s_495ed57f72c6ce::t_88dd38d2d3f172 3,7-8,10
+images/pins/Unity-AI-Animation-light.svg
+  s_495ed57f72c6ce::t_6af6b9702ab94e 3,7-8,10
+images/pins/Unity-AI-ParticleSystem-dark.svg
+  s_495ed57f72c6ce::t_bcc1c5b04319f3 3,7-8,10
+images/pins/Unity-AI-ParticleSystem-light.svg
+  s_495ed57f72c6ce::t_8148676b3b0007 3,7-8,10
+images/pins/Unity-AI-ProBuilder-dark.svg
+  s_495ed57f72c6ce::t_6d6ae44bb71c7c 3,7-8,10
+images/pins/Unity-AI-ProBuilder-light.svg
+  s_495ed57f72c6ce::t_709244728d77e7 3,7-8,10
+images/pins/Unity-AI-Tools-Template-dark.svg
+  s_495ed57f72c6ce::t_0df2c394e06aa4 3,7-8,10
+images/pins/Unity-AI-Tools-Template-light.svg
+  s_495ed57f72c6ce::t_1d07c21772f83b 3,7-8,10
+images/pins/Unity-Appodeal-Simplifier-dark.svg
+  s_495ed57f72c6ce::t_35a05dda200679 3,7-8,10
+images/pins/Unity-Appodeal-Simplifier-light.svg
+  s_495ed57f72c6ce::t_ea17a3866371fb 3,7-8,10
+images/pins/Unity-AudioLoader-dark.svg
+  s_495ed57f72c6ce::t_bc6ca1e94419c6 3,7-8,10
+images/pins/Unity-AudioLoader-light.svg
+  s_495ed57f72c6ce::t_b9d8c272447479 3,7-8,10
+images/pins/Unity-EFCore-SQLite-dark.svg
+  s_495ed57f72c6ce::t_0395ecea5dd984 3,7-8,10
+images/pins/Unity-EFCore-SQLite-light.svg
+  s_495ed57f72c6ce::t_edfbe577d58b83 3,7-8,10
+images/pins/Unity-Extensions-dark.svg
+  s_495ed57f72c6ce::t_526dbbfab062a6 3,7-8,10
+images/pins/Unity-Extensions-light.svg
+  s_495ed57f72c6ce::t_090be896cca3c8 3,7-8,10
+images/pins/Unity-Gyroscope-Manager-dark.svg
+  s_495ed57f72c6ce::t_ef2c8b5a7d47bc 3,7-8,10
+images/pins/Unity-Gyroscope-Manager-light.svg
+  s_495ed57f72c6ce::t_df9d40a93fe51b 3,7-8,10
+images/pins/Unity-Gyroscope-Parallax-dark.svg
+  s_495ed57f72c6ce::t_20eed1098d673a 3,7-8,10
+images/pins/Unity-Gyroscope-Parallax-light.svg
+  s_495ed57f72c6ce::t_c6722070f1c6bb 3,7-8,10
+images/pins/Unity-IAP-Store-dark.svg
+  s_495ed57f72c6ce::t_2ec7caa45ca22a 3,7-8,10
+images/pins/Unity-IAP-Store-light.svg
+  s_495ed57f72c6ce::t_d57f4f445d891a 3,7-8,10
+images/pins/Unity-ImageLoader-dark.svg
+  s_495ed57f72c6ce::t_37e4ae143cad35 3,7-8,10
+images/pins/Unity-ImageLoader-light.svg
+  s_495ed57f72c6ce::t_b5710b3fd1399b 3,7-8,10
+images/pins/Unity-MCP-dark.svg
+  s_495ed57f72c6ce::t_e02c711bdc17c8 1,3,7-8,10,20
+images/pins/Unity-MCP-light.svg
+  s_495ed57f72c6ce::t_449714e3a70a42 1,3,7-8,10,20
+images/pins/Unity-Mobile-Notifications-Simplifier-dark.svg
+  s_495ed57f72c6ce::t_05e8df74baac70 3,7-8,10
+images/pins/Unity-Mobile-Notifications-Simplifier-light.svg
+  s_495ed57f72c6ce::t_2406164845d321 3,7-8,10
+images/pins/Unity-Mouse-Parallax-dark.svg
+  s_495ed57f72c6ce::t_b9583dc2fcf789 3,7-8,10
+images/pins/Unity-Mouse-Parallax-light.svg
+  s_495ed57f72c6ce::t_24049db77668bc 3,7-8,10
+images/pins/Unity-Network-REST-dark.svg
+  s_495ed57f72c6ce::t_72bd1e3a8d1b43 3,7-8,10
+images/pins/Unity-Network-REST-light.svg
+  s_495ed57f72c6ce::t_89cd88fba48609 3,7-8,10
+images/pins/Unity-NonDrawingGraphic-dark.svg
+  s_495ed57f72c6ce::t_cac6aadd8d77d0 3,7-8,10
+images/pins/Unity-NonDrawingGraphic-light.svg
+  s_495ed57f72c6ce::t_07bcd2da9d9d5a 3,7-8,10
+images/pins/Unity-Package-Template-dark.svg
+  s_495ed57f72c6ce::t_efae536f3cbe43 3,7-8,10
+images/pins/Unity-Package-Template-light.svg
+  s_495ed57f72c6ce::t_45668e7166bd40 3,7-8,10
+images/pins/Unity-PlayerPrefsEx-dark.svg
+  s_495ed57f72c6ce::t_c667dd0c0e0f90 3,7-8,10
+images/pins/Unity-PlayerPrefsEx-light.svg
+  s_495ed57f72c6ce::t_64615663da012b 3,7-8,10
+images/pins/Unity-Saver-dark.svg
+  s_495ed57f72c6ce::t_d0035487147b74 3,7-8,10
+images/pins/Unity-Saver-light.svg
+  s_495ed57f72c6ce::t_658e4658c82185 3,7-8,10
+images/pins/Unity-Theme-dark.svg
+  s_495ed57f72c6ce::t_20c21703e945ea 3,7-8,10
+images/pins/Unity-Theme-light.svg
+  s_495ed57f72c6ce::t_07383f01a4693b 3,7-8,10
+images/pins/Unity-iOS-Pods-Bitcode-dark.svg
+  s_495ed57f72c6ce::t_e8ea28113a819d 3,7-8,10
+images/pins/Unity-iOS-Pods-Bitcode-light.svg
+  s_495ed57f72c6ce::t_1e51fbcf6f5d66 3,7-8,10
+images/pins/Unreal-AI-ControlRig-dark.svg
+  s_4d68fcead85c12::t_85358a206d05eb 3,7-8,10
+images/pins/Unreal-AI-ControlRig-light.svg
+  s_4d68fcead85c12::t_c682907104bd38 3,7-8,10
+images/pins/Unreal-AI-EnhancedInput-dark.svg
+  s_4d68fcead85c12::t_44071159544f13 3,7-8,10
+images/pins/Unreal-AI-EnhancedInput-light.svg
+  s_4d68fcead85c12::t_2263b5d7fe22c2 3,7-8,10
+images/pins/Unreal-AI-GAS-dark.svg
+  s_4d68fcead85c12::t_03cc7c1dbbb0de 3,7-8,10
+images/pins/Unreal-AI-GAS-light.svg
+  s_4d68fcead85c12::t_4ac3a4bda738ff 3,7-8,10
+images/pins/Unreal-AI-Landscape-dark.svg
+  s_4d68fcead85c12::t_3ca5374249e59e 3,7-8,10
+images/pins/Unreal-AI-Landscape-light.svg
+  s_4d68fcead85c12::t_af008c9d4712bd 3,7-8,10
+images/pins/Unreal-AI-Niagara-dark.svg
+  s_4d68fcead85c12::t_f7a993735ed2b4 3,7-8,10
+images/pins/Unreal-AI-Niagara-light.svg
+  s_4d68fcead85c12::t_d63d08480385e0 3,7-8,10
+images/pins/Unreal-AI-PCG-dark.svg
+  s_4d68fcead85c12::t_a0eb8eceb5aca8 3,7-8,10
+images/pins/Unreal-AI-PCG-light.svg
+  s_4d68fcead85c12::t_c71d2c735a6dc5 3,7-8,10
+images/pins/Unreal-AI-Template-dark.svg
+  s_4d68fcead85c12::t_b04cb528ef708e 3,7-8,10
+images/pins/Unreal-AI-Template-light.svg
+  s_4d68fcead85c12::t_5d1f067ecc3a92 3,7-8,10
+images/pins/Unreal-MCP-dark.svg
+  s_495ed57f72c6ce::t_2ba0a35df01d68 3,7-8,10
+images/pins/Unreal-MCP-light.svg
+  s_495ed57f72c6ce::t_a2b395a88049cc 3,7-8,10
+images/stats/activity-pulse-dark.svg
+  s_495ed57f72c6ce::t_ad0ec0b63b0a7c 7
+images/stats/activity-pulse-light.svg
+  s_495ed57f72c6ce::t_db21b8d7bd5d26 7
+images/stats/combined-stats-dark.svg
+  s_495ed57f72c6ce::t_10263ea8ebd6cb 44,51,58,92
+images/stats/combined-stats-light.svg
+  s_495ed57f72c6ce::t_d232a12f89103a 44,51,58,92
+images/stats/commits-monthly-dark.svg
+  s_495ed57f72c6ce::t_c30e327b3039a7 1,12-13,16,18-23,29,45,50-53,55,58,61-62,65,67-68,74-78
+images/stats/commits-monthly-light.svg
+  s_495ed57f72c6ce::t_a15eeda77dbc88 1,12-13,16,18-23,29,45,50-53,55,58,61-62,65,67-68,74-78
+images/stats/flagship-dark.svg
+  s_495ed57f72c6ce::t_fd3a7079bda777 1,8,10-15,21,40-44,46,48,52,54,56
+images/stats/flagship-light.svg
+  s_495ed57f72c6ce::t_083150824081d7 1,8,10-15,21,40-44,46,48,52,54,56
+images/stats/hero-dark.svg
+  s_495ed57f72c6ce::t_6cf86b715c83fc 18-23,29,43,45,49,53,57,61
+images/stats/hero-light.svg
+  s_495ed57f72c6ce::t_36acc7da381f85 18-23,29,43,45,49,53,57,61
+images/stats/tech-stack-dark.svg
+  s_495ed57f72c6ce::t_0fc3e249299615 4-5,7,9,11,15,19,23,27,31,35,39
+images/stats/tech-stack-light.svg
+  s_495ed57f72c6ce::t_a1d4609321ac6a 4-5,7,9,11,15,19,23,27,31,35,39
+images/stats/waves-dark.svg
+  s_495ed57f72c6ce::t_4b98041921fdd8 2-9,12-15
+images/stats/waves-light.svg
+  s_495ed57f72c6ce::t_3f9962606053c3 2-9,12-15
+scripts/generate-stats.js
+  s_495ed57f72c6ce::t_049e93ea297178 101-103,105
+scripts/generators/tech-stack.js
+  s_495ed57f72c6ce::t_d66df8426367b8 14,24-25,27,29
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "fb48280aa07c36cd39e8417451e302af1af1b2f9",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    },
+    "s_4d68fcead85c12": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e554db1e-8d99-4f43-8cb8-319a6b2dfb3c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
