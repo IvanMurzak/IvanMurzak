@@ -1,0 +1,19 @@
+README.md
+  s_495ed57f72c6ce::t_a606526a4b36e6 73,79,85,91,97,103,109,115,126,132,138,144,150,156,167,173,179,185,191,197,203,209,215,221,227,233
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "f89e1a83038eb05b2f123b6b0fbbf72834ab55ac",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
