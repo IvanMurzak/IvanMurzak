@@ -28,8 +28,8 @@ function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
 
   let chipsSVG = '';
   let cx = 25;
-  chips.forEach((c) => {
-    chipsSVG += `<g>
+  chips.forEach((c, i) => {
+    chipsSVG += `<g class="chip" style="animation-delay:${700 + i * 140}ms">
       <svg x="${cx}" y="116" width="15" height="15" viewBox="0 0 16 16"><path fill="${t.muted}" d="${c.icon}"/></svg>
       <text x="${cx + 20}" y="128" class="f-val">${c.v}</text>
       <text x="${(cx + 20 + String(c.v).length * 8.6 + 6).toFixed(1)}" y="128" class="f-lab">${c.l}</text>
@@ -37,7 +37,7 @@ function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
     cx += 24 + String(c.v).length * 8.6 + c.l.length * 6.4 + 34;
   });
   if (lang) {
-    chipsSVG += `<g>
+    chipsSVG += `<g class="chip" style="animation-delay:${700 + chips.length * 140}ms">
       <circle cx="${cx + 6}" cy="123" r="5.5" fill="${langColor}"/>
       <text x="${cx + 17}" y="128" class="f-val">${lang}</text>
     </g>`;
@@ -50,9 +50,10 @@ function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
     .f-desc { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.muted}; }
     .f-val { font: 600 13px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.ink}; }
     .f-lab { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.muted}; }
-    #f-shine { animation: sweep 9s linear infinite; }
+    #f-shine { animation: sweep 9s linear 3.5s infinite; }
     ${sharedCSS()}
     @media (prefers-reduced-motion: reduce) {
+      .fade, .chip { animation: none; opacity: 1; transform: none; }
       #f-shine { animation: none; display: none; }
     }
   </style>
@@ -71,10 +72,10 @@ function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
     <clipPath id="f-cardClip"><rect x="1" y="1" rx="6" width="${W - 2}" height="${CARD_H - 2}"/></clipPath>
   </defs>
   <rect x="0.75" y="0.75" rx="6" width="${W - 1.5}" height="${CARD_H - 1.5}" fill="${t.bg}" stroke="url(#f-borderGrad)" stroke-width="1.5"/>
-  <text class="f-eyebrow" x="25" y="32">${eyebrow}</text>
-  <text class="f-name" x="25" y="62">${repo.name}</text>
-  <text class="f-desc" x="25" y="86">${escapeXML(desc1)}</text>
-  <text class="f-desc" x="25" y="103">${escapeXML(desc2)}</text>
+  <text class="f-eyebrow fade" x="25" y="32">${eyebrow}</text>
+  <text class="f-name fade" x="25" y="62" style="animation-delay:.1s">${repo.name}</text>
+  <text class="f-desc fade" x="25" y="86" style="animation-delay:.25s">${escapeXML(desc1)}</text>
+  <text class="f-desc fade" x="25" y="103" style="animation-delay:.3s">${escapeXML(desc2)}</text>
   ${chipsSVG}
   <g clip-path="url(#f-cardClip)">
     <rect id="f-shine" x="-150" y="0" width="110" height="${CARD_H}" fill="url(#f-shineGrad)" style="transform: skewX(-14deg)"/>

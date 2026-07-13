@@ -98,9 +98,11 @@ async function main() {
     const nuget = await fetchNuGetAll();
     const npm = await fetchNpmAll();
 
-    // OpenUPM downloads grouped by GitHub repo (repository.url of each package).
+    // Downloads grouped by GitHub repo: OpenUPM packages map through their
+    // repository.url, NuGet packages through their projectUrl. A repo shipping
+    // on both registries shows the combined total.
     const downloadsByRepo = {};
-    for (const p of openupm.packages) {
+    for (const p of [...openupm.packages, ...nuget.packages]) {
       if (p.repo) downloadsByRepo[p.repo] = (downloadsByRepo[p.repo] || 0) + p.downloads;
     }
 

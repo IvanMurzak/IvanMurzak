@@ -1,17 +1,24 @@
-<svg width="955" height="166" viewBox="0 0 955 166" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Unity-MCP: 3 528 stars, 318 forks, 127.3k downloads.">
+<svg width="955" height="166" viewBox="0 0 955 166" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Unity-MCP: 3 529 stars, 318 forks, 146.2k downloads.">
   <style>
     .f-eyebrow { font: 600 9px 'Segoe UI', Ubuntu, sans-serif; fill: #2f81f7; letter-spacing: 1.6px; }
     .f-name { font: 700 22px 'Segoe UI', Ubuntu, sans-serif; fill: #e6edf3; }
     .f-desc { font: 400 13px 'Segoe UI', Ubuntu, sans-serif; fill: #8d96a0; }
     .f-val { font: 600 13px 'Segoe UI', Ubuntu, sans-serif; fill: #e6edf3; }
     .f-lab { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8d96a0; }
-    #f-shine { animation: sweep 9s linear infinite; }
+    #f-shine { animation: sweep 9s linear 3.5s infinite; }
     
+    .fade { opacity: 0; animation: fadein .5s ease-out forwards; }
+    .chip { opacity: 0; animation: rise .5s ease-out both; }
+    .late { opacity: 0; animation: fadein .45s ease-out 1.5s forwards; }
+    @keyframes fadein { to { opacity: 1; } }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes breathe { from { opacity: .15; } to { opacity: .5; } }
     @keyframes ping { 0% { transform: scale(.5); opacity: .8; } 55% { transform: scale(2.4); opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
     @keyframes sweep { 0% { transform: translateX(0) skewX(-14deg); } 22% { transform: translateX(1115px) skewX(-14deg); } 100% { transform: translateX(1115px) skewX(-14deg); } }
   
     @media (prefers-reduced-motion: reduce) {
+      .fade, .chip { animation: none; opacity: 1; transform: none; }
       #f-shine { animation: none; display: none; }
     }
   </style>
@@ -30,23 +37,23 @@
     <clipPath id="f-cardClip"><rect x="1" y="1" rx="6" width="953" height="148"/></clipPath>
   </defs>
   <rect x="0.75" y="0.75" rx="6" width="953.5" height="148.5" fill="#0d1117" stroke="url(#f-borderGrad)" stroke-width="1.5"/>
-  <text class="f-eyebrow" x="25" y="32">FLAGSHIP · THE MOST POPULAR OPEN-SOURCE AI ASSISTANT FOR UNITY ENGINE</text>
-  <text class="f-name" x="25" y="62">Unity-MCP</text>
-  <text class="f-desc" x="25" y="86">AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. Use cli</text>
-  <text class="f-desc" x="25" y="103">for quick setup. Efficient token usage, advanced tools. Any C# method may be turned into</text>
-  <g>
+  <text class="f-eyebrow fade" x="25" y="32">FLAGSHIP · THE MOST POPULAR OPEN-SOURCE AI ASSISTANT FOR UNITY ENGINE</text>
+  <text class="f-name fade" x="25" y="62" style="animation-delay:.1s">Unity-MCP</text>
+  <text class="f-desc fade" x="25" y="86" style="animation-delay:.25s">AI Skills, MCP Tools, and CLI for Unity Engine. Full AI develop and test loop. Use cli</text>
+  <text class="f-desc fade" x="25" y="103" style="animation-delay:.3s">for quick setup. Efficient token usage, advanced tools. Any C# method may be turned into</text>
+  <g class="chip" style="animation-delay:700ms">
       <svg x="25" y="116" width="15" height="15" viewBox="0 0 16 16"><path fill="#8d96a0" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-      <text x="45" y="128" class="f-val">3 528</text>
+      <text x="45" y="128" class="f-val">3 529</text>
       <text x="94.0" y="128" class="f-lab">stars</text>
-    </g><g>
+    </g><g class="chip" style="animation-delay:840ms">
       <svg x="158" y="116" width="15" height="15" viewBox="0 0 16 16"><path fill="#8d96a0" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"/></svg>
       <text x="178" y="128" class="f-val">318</text>
       <text x="209.8" y="128" class="f-lab">forks</text>
-    </g><g>
+    </g><g class="chip" style="animation-delay:980ms">
       <svg x="273.8" y="116" width="15" height="15" viewBox="0 0 16 16"><path fill="#8d96a0" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"/></svg>
-      <text x="293.8" y="128" class="f-val">127.3k</text>
+      <text x="293.8" y="128" class="f-val">146.2k</text>
       <text x="351.4" y="128" class="f-lab">downloads</text>
-    </g><g>
+    </g><g class="chip" style="animation-delay:1120ms">
       <circle cx="447" cy="123" r="5.5" fill="#178600"/>
       <text x="458" y="128" class="f-val">C#</text>
     </g>

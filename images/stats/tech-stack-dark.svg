@@ -1,39 +1,42 @@
 <svg width="955" height="56" viewBox="0 0 955 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tech stack: C#, .NET, Unity, MCP, TypeScript, Python, Docker, GitHub Actions.">
   <style>
     .st-txt { font: 600 12.5px 'Segoe UI', Ubuntu, sans-serif; fill: #e6edf3; }
+    .st-pill { opacity: 0; transform-box: fill-box; transform-origin: center;
+               animation: st-pop .45s cubic-bezier(.34,1.4,.5,1) both; }
     .st-dot { animation: st-pulse 3s ease-in-out infinite alternate; }
+    @keyframes st-pop { from { opacity: 0; transform: scale(.85); } to { opacity: 1; transform: scale(1); } }
     @keyframes st-pulse { from { opacity: .55; } to { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .st-dot { animation: none; opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .st-pill, .st-dot { animation: none; opacity: 1; transform: none; } }
   </style>
-  <g>
+  <g class="st-pill" style="animation-delay:200ms">
       <rect x="116.5" y="13" width="49.2" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="132.5" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:0.00s"/>
       <text x="142.5" y="32.5" class="st-txt">C#</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:290ms">
       <rect x="175.7" y="13" width="64.4" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="191.7" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:0.35s"/>
       <text x="201.7" y="32.5" class="st-txt">.NET</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:380ms">
       <rect x="250.1" y="13" width="72.0" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="266.1" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:0.70s"/>
       <text x="276.1" y="32.5" class="st-txt">Unity</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:470ms">
       <rect x="332.1" y="13" width="56.8" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="348.1" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:1.05s"/>
       <text x="358.1" y="32.5" class="st-txt">MCP</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:560ms">
       <rect x="398.9" y="13" width="110.0" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="414.9" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:1.40s"/>
       <text x="424.9" y="32.5" class="st-txt">TypeScript</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:650ms">
       <rect x="518.9" y="13" width="79.6" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="534.9" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:1.75s"/>
       <text x="544.9" y="32.5" class="st-txt">Python</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:740ms">
       <rect x="608.5" y="13" width="79.6" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="624.5" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:2.10s"/>
       <text x="634.5" y="32.5" class="st-txt">Docker</text>
-    </g><g>
+    </g><g class="st-pill" style="animation-delay:830ms">
       <rect x="698.1" y="13" width="140.4" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
       <circle cx="714.1" cy="28" r="3.5" fill="#2f81f7" class="st-dot" style="animation-delay:2.45s"/>
       <text x="724.1" y="32.5" class="st-txt">GitHub Actions</text>

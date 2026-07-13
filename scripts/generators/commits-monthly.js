@@ -24,7 +24,7 @@ function generateCommitsMonthlySVG(theme, months) {
     const h = Math.max(2, BASE - y(mo.c));
     const isNow = i === n - 1;
     const r = `x="${x.toFixed(1)}" y="${y(mo.c).toFixed(1)}" width="${barW}" height="${(h + 4).toFixed(1)}" rx="3.5"`;
-    bars += `<rect ${r} fill="url(#m-barGrad)"/>`;
+    bars += `<rect class="m-bar" ${r} fill="url(#m-barGrad)" style="animation-delay:${340 + i * 22}ms"/>`;
     clipBars += `<rect ${r}/>`;
     const [yy, mm] = mo.m.split('-');
     if (mm === '01') {
@@ -62,7 +62,7 @@ function generateCommitsMonthlySVG(theme, months) {
   let chipsSVG = '';
   chips.forEach((c, i) => {
     const cx = 931 - (chips.length - 1 - i) * 122;
-    chipsSVG += `<g>
+    chipsSVG += `<g class="chip" style="animation-delay:${850 + i * 140}ms">
       <text x="${cx}" y="40" text-anchor="end" class="m-cv">${c.v}</text>
       <text x="${cx}" y="56" text-anchor="end" class="m-cl">${c.l}</text>
     </g>`;
@@ -79,11 +79,14 @@ function generateCommitsMonthlySVG(theme, months) {
     .m-cv { font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.ink}; }
     .m-cl { font: 600 9px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.muted}; letter-spacing: 1px; }
     .m-peak { font: 600 11px 'Segoe UI', Ubuntu, sans-serif; fill: ${t.ink}; }
+    .m-bar { transform-box: fill-box; transform-origin: bottom; transform: scaleY(0);
+             animation: grow .6s cubic-bezier(.34,1.35,.44,1) both; }
     #m-nowGlow { opacity: .2; animation: breathe 2.8s ease-in-out infinite alternate; }
     #m-ping { transform-box: fill-box; transform-origin: center; animation: ping 2.6s ease-out infinite; }
-    #m-shine { animation: sweep 7s linear infinite; }
+    #m-shine { animation: sweep 7s linear 2.8s infinite; }
     ${sharedCSS()}
     @media (prefers-reduced-motion: reduce) {
+      .fade, .m-bar, .chip, .late { animation: none; opacity: 1; transform: none; }
       #m-nowGlow { animation: none; opacity: .3; }
       #m-ping, #m-shine { animation: none; display: none; }
     }
@@ -104,10 +107,10 @@ function generateCommitsMonthlySVG(theme, months) {
   </defs>
 
   <rect x="0.5" y="0.5" rx="6" width="${W - 1}" height="${H - 1}" fill="${t.bg}" stroke="${t.border}"/>
-  <text class="m-title" x="25" y="38">Commits per month</text>
-  <text class="m-sub" x="25" y="57">${label(months[0].m)} — ${label(months[n - 1].m)} · last ${n} months · GitHub contributions</text>
+  <text class="m-title fade" x="25" y="38">Commits per month</text>
+  <text class="m-sub fade" x="25" y="57" style="animation-delay:.15s">${label(months[0].m)} — ${label(months[n - 1].m)} · last ${n} months · GitHub contributions</text>
   ${chipsSVG}
-  <g>${grid}${seps}</g>
+  <g class="fade" style="animation-delay:.2s">${grid}${seps}</g>
   <g clip-path="url(#m-plotClip)">
     <rect id="m-nowGlow" x="${(nowX - barW / 2 - 4).toFixed(1)}" y="${(nowY - 4).toFixed(1)}" width="${barW + 8}" height="${(BASE - nowY + 8).toFixed(1)}" rx="6" fill="${t.accent}" filter="url(#m-glow)"/>
     ${bars}
@@ -116,9 +119,9 @@ function generateCommitsMonthlySVG(theme, months) {
     </g>
   </g>
   <line x1="${X0}" y1="${BASE + 0.5}" x2="${X1}" y2="${BASE + 0.5}" stroke="${t.border}" stroke-width="1"/>
-  <g>${ticks}</g>
-  <text class="m-peak" x="${peakX.toFixed(1)}" y="${(y(peak) - 8).toFixed(1)}" text-anchor="middle">${fmt(peak)}</text>
-  <g>
+  <g class="fade" style="animation-delay:.35s">${ticks}</g>
+  <text class="m-peak late" x="${peakX.toFixed(1)}" y="${(y(peak) - 8).toFixed(1)}" text-anchor="middle">${fmt(peak)}</text>
+  <g class="late">
     <circle id="m-ping" cx="${nowX.toFixed(1)}" cy="${(nowY - 11).toFixed(1)}" r="4" fill="none" stroke="${t.accent}" stroke-width="1.5"/>
     <circle cx="${nowX.toFixed(1)}" cy="${(nowY - 11).toFixed(1)}" r="3" fill="${t.accent}"/>
   </g>

@@ -41,13 +41,18 @@ const ICONS = {
   repo: 'M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z',
 };
 
-// Shared idle keyframes (identical bodies are safe to duplicate across SVGs).
-// IMPORTANT: GitHub renders these SVGs inside <img>, and Chromium freezes image
-// animations at frame 0 when the OS has reduced-motion enabled. Frame 0 must
-// therefore always show the complete card — never animate from a hidden state.
-// Idle loops below are all frame-0 safe (band off-screen, dot visible, etc.).
+// Shared entrance/idle keyframes (identical bodies are safe to duplicate
+// across SVGs). Entrance animations play once when the image document loads
+// (not on scroll-into-view); every SVG also ships a prefers-reduced-motion
+// block that reveals the full card instantly.
 function sharedCSS() {
   return `
+    .fade { opacity: 0; animation: fadein .5s ease-out forwards; }
+    .chip { opacity: 0; animation: rise .5s ease-out both; }
+    .late { opacity: 0; animation: fadein .45s ease-out 1.5s forwards; }
+    @keyframes fadein { to { opacity: 1; } }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes breathe { from { opacity: .15; } to { opacity: .5; } }
     @keyframes ping { 0% { transform: scale(.5); opacity: .8; } 55% { transform: scale(2.4); opacity: 0; } 100% { transform: scale(2.4); opacity: 0; } }
     @keyframes sweep { 0% { transform: translateX(0) skewX(-14deg); } 22% { transform: translateX(1115px) skewX(-14deg); } 100% { transform: translateX(1115px) skewX(-14deg); } }

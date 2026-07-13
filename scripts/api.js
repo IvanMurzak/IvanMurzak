@@ -283,20 +283,25 @@ async function fetchOpenUPMAll() {
 // ---------------------------------------------------------------------------
 // NuGet: enumerate all packages owned by the profile via the v3 Search API.
 // The API has no owner: qualifier, so we search related terms and filter the
-// `owners` field, paging where needed.
+// `owners` field, paging where needed. Each package's projectUrl points at
+// its GitHub repo, which lets pin cards show per-repo NuGet downloads.
 // ---------------------------------------------------------------------------
 async function fetchNuGetAll() {
   console.log('NuGet: searching packages...');
   const queries = [USERNAME, `com.${USERNAME}`, 'McpPlugin', 'ReflectorNet'];
+  const repoRe = new RegExp(`github\\.com\\/${USERNAME}\\/([\\w.-]+?)(?:\\.git|\\/|#|$)`, 'i');
   const seen = new Map();
   for (const q of queries) {
     const r = await httpJSONRetry('azuresearch-usnc.nuget.org', `/query?q=${encodeURIComponent(q)}&take=100&prerelease=true`);
     for (const p of (r && r.data) || []) {
       const owners = (p.owners || []).map((o) => o.toLowerCase());
-      if (owners.includes(USERNAME.toLowerCase())) seen.set(p.id, p.totalDownloads);
+      if (owners.includes(USERNAME.toLowerCase())) {
+        const m = String(p.projectUrl || '').match(repoRe);
+        seen.set(p.id, { downloads: p.totalDownloads, repo: m ? m[1] : null });
+      }
     }
   }
-  const packages = [...seen.entries()].map(([name, downloads]) => ({ name, downloads }));
+  const packages = [...seen.entries()].map(([name, v]) => ({ name, downloads: v.downloads, repo: v.repo }));
   const total = packages.reduce((a, p) => a + p.downloads, 0);
   console.log(`NuGet: ${packages.length} packages, ${total} downloads total`);
   return { total, packages };

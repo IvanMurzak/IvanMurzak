@@ -32,7 +32,7 @@ function generateHeroSVG(theme, data) {
   let chipsSVG = '';
   chips.forEach((c, i) => {
     const cx = CX + (i - 2) * 178;
-    chipsSVG += `<g>
+    chipsSVG += `<g class="chip" style="animation-delay:${800 + i * 150}ms">
       <circle cx="${cx - 58}" cy="146" r="3" fill="${t.accent}" class="h-dot" style="animation-delay:${(i * 0.4).toFixed(1)}s"/>
       <text x="${cx - 48}" y="151" class="h-val">${c.v}</text>
       <text x="${cx - 48}" y="164" class="h-lbl">${c.l}</text>
@@ -57,7 +57,7 @@ function generateHeroSVG(theme, data) {
     }
     ${sharedCSS()}
     @media (prefers-reduced-motion: reduce) {
-      .h-ph, .h-dot { animation: none; opacity: 1; }
+      .fade, .chip, .h-ph, .h-dot { animation: none; opacity: 1; }
       .h-ph:not(:first-of-type) { display: none; }
       .h-tw { animation: none; transform: none; }
     }
@@ -71,7 +71,7 @@ function generateHeroSVG(theme, data) {
     </linearGradient>
     ${clips}
   </defs>
-  <text class="h-name" x="${CX}" y="58" text-anchor="middle">Ivan Murzak</text>
+  <text class="h-name fade" x="${CX}" y="58" text-anchor="middle">Ivan Murzak</text>
   ${phrases}
   ${chipsSVG}
 </svg>`;
