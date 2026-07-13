@@ -19,7 +19,10 @@ jobs:
 
       - name: Generate GitHub Stats
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN can't see private PRs/issues, which undercounts
+          # Total PRs / Total Issues. Add a GH_PAT repo secret (classic PAT,
+          # scopes: repo + read:user) to get the full numbers.
+          GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
         run: node scripts/generate-stats.js
 
       - name: Commit and Push changes
