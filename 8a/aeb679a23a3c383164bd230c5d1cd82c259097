@@ -1,0 +1,23 @@
+scripts/generators/combined-stats.js
+  s_495ed57f72c6ce::t_c24c8be7cef6f7 2-3,5-8,10-11,19,23,28,30,35,41,47,49-55,57,59-78,80,82-90,92-93,96-98,100,105-107,109,111,118-130,132-135,137-141,143-159,161-167,169-236,238-249,251-267,269-270,272-278,280-283,285-286,289
+images/stats/combined-stats-dark.svg
+  s_495ed57f72c6ce::t_0b9f70561f1ee1 1-72,74-132,134-135,137-143,145-148,150-151
+images/stats/combined-stats-light.svg
+  s_495ed57f72c6ce::t_0b9f70561f1ee1 1-72,74-132,134-135,137-143,145-148,150-151
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "8aaeb679a23a3c383164bd230c5d1cd82c259097",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
