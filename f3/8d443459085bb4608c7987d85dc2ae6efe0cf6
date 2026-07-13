@@ -1,0 +1,19 @@
+README.md
+  s_495ed57f72c6ce::t_4bd51238b2d4b3 70-74,80-84,90-100,108,114-122,130,136-140
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "f38d443459085bb4608c7987d85dc2ae6efe0cf6",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
