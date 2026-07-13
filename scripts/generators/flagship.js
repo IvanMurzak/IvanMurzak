@@ -55,10 +55,11 @@ function generateFlagshipSVG(theme, repo, downloads, eyebrow) {
     }
   </style>
   <defs>
-    <linearGradient id="f-borderGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${t.accent}"/>
+    <linearGradient id="f-borderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="${t.border}"/>
       <stop offset="0.5" stop-color="${t.accentHi}"/>
       <stop offset="1" stop-color="${t.border}"/>
+      <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="10s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="f-shineGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="${t.shine}" stop-opacity="0"/>
