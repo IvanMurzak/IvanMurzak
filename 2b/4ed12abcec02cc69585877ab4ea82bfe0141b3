@@ -1,0 +1,121 @@
+scripts/generate-stats.js
+  s_495ed57f72c6ce::t_d4a4ce49587cd6 39-58
+scripts/generators/flagship.js
+  s_495ed57f72c6ce::t_949b809741ecfd 58-59,62
+README.md
+  s_495ed57f72c6ce::t_65e90ada72efae 73,79,82,86,92,95,99,105,108,117,123,126,130,136,139,143,149,152,161,167,170,174,180,183,187,193,196,200,206,209,213,219,222,226,232-235,246,252,255,264,270,273,277,283,286,290,296,299,303,309,312,316,322,325,336,342,345,354,360,363,367,373,376,380,386,389
+  s_495ed57f72c6ce::t_b705f9fed87909 237,239-245,247-251,253-254,256-263,265-269,271-272,274-276,278-282,284-285,287-289,291-295,297-298,300-302,304-308,310-311,313-315,317-321,323-324,326-335,337-341,343-344,346-353,355-359,361-362,364-366,368-372,374-375,377-379,381-385
+  s_495ed57f72c6ce::t_baa0138dbbd1af 236,238
+images/stats/flagship-light.svg
+  s_495ed57f72c6ce::t_65e90ada72efae 19-20,23
+images/stats/flagship-dark.svg
+  s_495ed57f72c6ce::t_65e90ada72efae 19-20,23
+images/pins/Godot-AI-Animation-dark.svg
+  s_4d68fcead85c12::t_ee74cc8748c0a8 1-18
+images/pins/Godot-AI-Animation-light.svg
+  s_4d68fcead85c12::t_28599893bfba76 1-18
+images/pins/Godot-AI-Beehave-dark.svg
+  s_4d68fcead85c12::t_621a786ac4f097 1-18
+images/pins/Godot-AI-Beehave-light.svg
+  s_4d68fcead85c12::t_6739f784a27aac 1-18
+images/pins/Godot-AI-CSG-dark.svg
+  s_4d68fcead85c12::t_76860bbcbab5f8 1-18
+images/pins/Godot-AI-CSG-light.svg
+  s_4d68fcead85c12::t_a99fb9de186baa 1-18
+images/pins/Godot-AI-Dialogic-dark.svg
+  s_4d68fcead85c12::t_3f3745c38dd9f6 1-18
+images/pins/Godot-AI-Dialogic-light.svg
+  s_4d68fcead85c12::t_a0cd90e488991c 1-18
+images/pins/Godot-AI-GridMap-dark.svg
+  s_4d68fcead85c12::t_c3923568890f50 1-18
+images/pins/Godot-AI-GridMap-light.svg
+  s_4d68fcead85c12::t_ff48e47f815843 1-18
+images/pins/Godot-AI-Navigation-dark.svg
+  s_4d68fcead85c12::t_ad437b8c7a84fe 1-18
+images/pins/Godot-AI-Navigation-light.svg
+  s_4d68fcead85c12::t_1ce26da9f3c9e8 1-18
+images/pins/Godot-AI-Particles-dark.svg
+  s_4d68fcead85c12::t_c263f27096ceff 1-18
+images/pins/Godot-AI-Particles-light.svg
+  s_4d68fcead85c12::t_46a6aa6437e40f 1-18
+images/pins/Godot-AI-PhantomCamera-dark.svg
+  s_4d68fcead85c12::t_4cb4165bc74b0c 1-18
+images/pins/Godot-AI-PhantomCamera-light.svg
+  s_4d68fcead85c12::t_4c515323154a9e 1-18
+images/pins/Godot-AI-Terrain3D-dark.svg
+  s_4d68fcead85c12::t_884e63a804f2d8 1-18
+images/pins/Godot-AI-Terrain3D-light.svg
+  s_4d68fcead85c12::t_764733d648a9be 1-18
+images/pins/Godot-AI-Tilemap-dark.svg
+  s_4d68fcead85c12::t_3da6f17f762506 1-18
+images/pins/Godot-AI-Tilemap-light.svg
+  s_4d68fcead85c12::t_69f82a2436d408 1-18
+images/pins/Godot-AI-Tools-Template-dark.svg
+  s_4d68fcead85c12::t_ba735cd0b8cc1f 1-18
+images/pins/Godot-AI-Tools-Template-light.svg
+  s_4d68fcead85c12::t_2b3c5c79bd44ed 1-18
+images/pins/Unreal-AI-ControlRig-dark.svg
+  s_4d68fcead85c12::t_67878f94143180 1-18
+images/pins/Unreal-AI-ControlRig-light.svg
+  s_4d68fcead85c12::t_7a08812669fd1a 1-18
+images/pins/Unreal-AI-EnhancedInput-dark.svg
+  s_4d68fcead85c12::t_a8fdb6b3bad0e7 1-18
+images/pins/Unreal-AI-EnhancedInput-light.svg
+  s_4d68fcead85c12::t_7cd1239dfff042 1-18
+images/pins/Unreal-AI-GAS-dark.svg
+  s_4d68fcead85c12::t_68a050bdda0d2e 1-18
+images/pins/Unreal-AI-GAS-light.svg
+  s_4d68fcead85c12::t_4fcbe7e1c2cb77 1-18
+images/pins/Unreal-AI-Landscape-dark.svg
+  s_4d68fcead85c12::t_45db4ad3ce08cb 1-18
+images/pins/Unreal-AI-Landscape-light.svg
+  s_4d68fcead85c12::t_9db796c760a706 1-18
+images/pins/Unreal-AI-Niagara-dark.svg
+  s_4d68fcead85c12::t_0ec958bdf9bb19 1-18
+images/pins/Unreal-AI-Niagara-light.svg
+  s_4d68fcead85c12::t_2bde52f50b0ea7 1-18
+images/pins/Unreal-AI-PCG-dark.svg
+  s_4d68fcead85c12::t_0a8040f0e066f3 1-18
+images/pins/Unreal-AI-PCG-light.svg
+  s_4d68fcead85c12::t_f866e4c503eab3 1-18
+images/pins/Unreal-AI-Template-dark.svg
+  s_4d68fcead85c12::t_b830a30375faa3 1-18
+images/pins/Unreal-AI-Template-light.svg
+  s_4d68fcead85c12::t_f8e6d8e4648506 1-18
+images/stats/activity-pulse-dark.svg
+  s_495ed57f72c6ce::t_6cf28eec13b497 7
+images/stats/activity-pulse-light.svg
+  s_495ed57f72c6ce::t_0ae7bba862735d 7
+images/stats/combined-stats-dark.svg
+  s_495ed57f72c6ce::t_86a6659ac87255 44,92
+images/stats/combined-stats-light.svg
+  s_495ed57f72c6ce::t_d40bc2e109df47 44,92
+images/stats/commits-monthly-dark.svg
+  s_495ed57f72c6ce::t_93a80b8cdd11f2 1,36,44,47,53,58-59,68-69
+images/stats/commits-monthly-light.svg
+  s_495ed57f72c6ce::t_5f21cb581b2b34 1,36,44,47,53,58-59,68-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "2b4ed12abcec02cc69585877ab4ea82bfe0141b3",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    },
+    "s_4d68fcead85c12": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e554db1e-8d99-4f43-8cb8-319a6b2dfb3c",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
