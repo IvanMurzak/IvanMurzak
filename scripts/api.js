@@ -179,6 +179,13 @@ async function fetchGitHubData() {
     }
   }
 
+  // Year-window queries include future days of the current year as zeros —
+  // drop them so month grouping and streak math see only real days.
+  const todayISO = new Date().toISOString().slice(0, 10);
+  aggregatedContributions.contributionCalendar.weeks = aggregatedContributions.contributionCalendar.weeks
+    .map((w) => ({ contributionDays: w.contributionDays.filter((d) => d.date <= todayISO) }))
+    .filter((w) => w.contributionDays.length > 0);
+
   user.contributionsCollection = aggregatedContributions;
 
   return { user };
