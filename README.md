@@ -70,49 +70,49 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 <a href="https://github.com/IvanMurzak/Godot-MCP">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Godot-MCP-dark.svg">
-    <img width="45%" align="center" src="images/pins/Godot-MCP-light.svg" alt="Godot-MCP"/>
+    <img width="49%" align="center" src="images/pins/Godot-MCP-light.svg" alt="Godot-MCP"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unreal-MCP">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unreal-MCP-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unreal-MCP-light.svg" alt="Unreal-MCP"/>
+    <img width="49%" align="center" src="images/pins/Unreal-MCP-light.svg" alt="Unreal-MCP"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/MCP-Plugin-dotnet">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/MCP-Plugin-dotnet-dark.svg">
-    <img width="45%" align="center" src="images/pins/MCP-Plugin-dotnet-light.svg" alt="MCP-Plugin-dotnet"/>
+    <img width="49%" align="center" src="images/pins/MCP-Plugin-dotnet-light.svg" alt="MCP-Plugin-dotnet"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/ReflectorNet">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/ReflectorNet-dark.svg">
-    <img width="45%" align="center" src="images/pins/ReflectorNet-light.svg" alt="ReflectorNet"/>
+    <img width="49%" align="center" src="images/pins/ReflectorNet-light.svg" alt="ReflectorNet"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-AI-Animation">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-AI-Animation-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-AI-Animation-light.svg" alt="Unity-AI-Animation"/>
+    <img width="49%" align="center" src="images/pins/Unity-AI-Animation-light.svg" alt="Unity-AI-Animation"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-AI-ProBuilder">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-AI-ProBuilder-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-AI-ProBuilder-light.svg" alt="Unity-AI-ProBuilder"/>
+    <img width="49%" align="center" src="images/pins/Unity-AI-ProBuilder-light.svg" alt="Unity-AI-ProBuilder"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-AI-ParticleSystem">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-AI-ParticleSystem-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-AI-ParticleSystem-light.svg" alt="Unity-AI-ParticleSystem"/>
+    <img width="49%" align="center" src="images/pins/Unity-AI-ParticleSystem-light.svg" alt="Unity-AI-ParticleSystem"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-AI-Tools-Template">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-AI-Tools-Template-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-AI-Tools-Template-light.svg" alt="Unity-AI-Tools-Template"/>
+    <img width="49%" align="center" src="images/pins/Unity-AI-Tools-Template-light.svg" alt="Unity-AI-Tools-Template"/>
   </picture>
 </a>
 
@@ -123,37 +123,37 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 <a href="https://github.com/IvanMurzak/Unity-ImageLoader">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-ImageLoader-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-ImageLoader-light.svg" alt="Unity-ImageLoader"/>
+    <img width="49%" align="center" src="images/pins/Unity-ImageLoader-light.svg" alt="Unity-ImageLoader"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Theme">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Theme-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Theme-light.svg" alt="Unity-Theme"/>
+    <img width="49%" align="center" src="images/pins/Unity-Theme-light.svg" alt="Unity-Theme"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Gyroscope-Parallax">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Gyroscope-Parallax-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Gyroscope-Parallax-light.svg" alt="Unity-Gyroscope-Parallax"/>
+    <img width="49%" align="center" src="images/pins/Unity-Gyroscope-Parallax-light.svg" alt="Unity-Gyroscope-Parallax"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Package-Template">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Package-Template-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Package-Template-light.svg" alt="Unity-Package-Template"/>
+    <img width="49%" align="center" src="images/pins/Unity-Package-Template-light.svg" alt="Unity-Package-Template"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-PlayerPrefsEx">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-PlayerPrefsEx-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-PlayerPrefsEx-light.svg" alt="Unity-PlayerPrefsEx"/>
+    <img width="49%" align="center" src="images/pins/Unity-PlayerPrefsEx-light.svg" alt="Unity-PlayerPrefsEx"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-EFCore-SQLite">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-EFCore-SQLite-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-EFCore-SQLite-light.svg" alt="Unity-EFCore-SQLite"/>
+    <img width="49%" align="center" src="images/pins/Unity-EFCore-SQLite-light.svg" alt="Unity-EFCore-SQLite"/>
   </picture>
 </a>
 
@@ -164,73 +164,73 @@ My work focuses on practical AI adoption: agent tooling, automation, developer p
 <a href="https://github.com/IvanMurzak/Unity-Mouse-Parallax">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Mouse-Parallax-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Mouse-Parallax-light.svg" alt="Unity-Mouse-Parallax"/>
+    <img width="49%" align="center" src="images/pins/Unity-Mouse-Parallax-light.svg" alt="Unity-Mouse-Parallax"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Saver">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Saver-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Saver-light.svg" alt="Unity-Saver"/>
+    <img width="49%" align="center" src="images/pins/Unity-Saver-light.svg" alt="Unity-Saver"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-AudioLoader">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-AudioLoader-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-AudioLoader-light.svg" alt="Unity-AudioLoader"/>
+    <img width="49%" align="center" src="images/pins/Unity-AudioLoader-light.svg" alt="Unity-AudioLoader"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-IAP-Store">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-IAP-Store-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-IAP-Store-light.svg" alt="Unity-IAP-Store"/>
+    <img width="49%" align="center" src="images/pins/Unity-IAP-Store-light.svg" alt="Unity-IAP-Store"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-NonDrawingGraphic">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-NonDrawingGraphic-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-NonDrawingGraphic-light.svg" alt="Unity-NonDrawingGraphic"/>
+    <img width="49%" align="center" src="images/pins/Unity-NonDrawingGraphic-light.svg" alt="Unity-NonDrawingGraphic"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/UBuilder">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/UBuilder-dark.svg">
-    <img width="45%" align="center" src="images/pins/UBuilder-light.svg" alt="UBuilder"/>
+    <img width="49%" align="center" src="images/pins/UBuilder-light.svg" alt="UBuilder"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Network-REST">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Network-REST-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Network-REST-light.svg" alt="Unity-Network-REST"/>
+    <img width="49%" align="center" src="images/pins/Unity-Network-REST-light.svg" alt="Unity-Network-REST"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Appodeal-Simplifier">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Appodeal-Simplifier-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Appodeal-Simplifier-light.svg" alt="Unity-Appodeal-Simplifier"/>
+    <img width="49%" align="center" src="images/pins/Unity-Appodeal-Simplifier-light.svg" alt="Unity-Appodeal-Simplifier"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Gyroscope-Manager">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Gyroscope-Manager-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Gyroscope-Manager-light.svg" alt="Unity-Gyroscope-Manager"/>
+    <img width="49%" align="center" src="images/pins/Unity-Gyroscope-Manager-light.svg" alt="Unity-Gyroscope-Manager"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Extensions">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Extensions-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Extensions-light.svg" alt="Unity-Extensions"/>
+    <img width="49%" align="center" src="images/pins/Unity-Extensions-light.svg" alt="Unity-Extensions"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-iOS-Pods-Bitcode">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-iOS-Pods-Bitcode-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-iOS-Pods-Bitcode-light.svg" alt="Unity-iOS-Pods-Bitcode"/>
+    <img width="49%" align="center" src="images/pins/Unity-iOS-Pods-Bitcode-light.svg" alt="Unity-iOS-Pods-Bitcode"/>
   </picture>
 </a>
 <a href="https://github.com/IvanMurzak/Unity-Mobile-Notifications-Simplifier">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="images/pins/Unity-Mobile-Notifications-Simplifier-dark.svg">
-    <img width="45%" align="center" src="images/pins/Unity-Mobile-Notifications-Simplifier-light.svg" alt="Unity-Mobile-Notifications-Simplifier"/>
+    <img width="49%" align="center" src="images/pins/Unity-Mobile-Notifications-Simplifier-light.svg" alt="Unity-Mobile-Notifications-Simplifier"/>
   </picture>
 </a>
 
