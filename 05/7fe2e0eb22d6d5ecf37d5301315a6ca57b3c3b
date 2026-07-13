@@ -1,0 +1,31 @@
+images/stats/commits-monthly-light.svg
+  s_495ed57f72c6ce::t_799267ebde04c5 1,36,42,44,47,53,56,58-59,65-66,68-69
+images/stats/combined-stats-light.svg
+  s_495ed57f72c6ce::t_799267ebde04c5 44,92
+images/stats/combined-stats-dark.svg
+  s_495ed57f72c6ce::t_799267ebde04c5 44,92
+scripts/api.js
+  s_495ed57f72c6ce::t_4418c726045030 182-188
+images/stats/activity-pulse-light.svg
+  s_495ed57f72c6ce::t_799267ebde04c5 7
+images/stats/commits-monthly-dark.svg
+  s_495ed57f72c6ce::t_799267ebde04c5 1,36,42,44,47,53,56,58-59,65-66,68-69
+images/stats/activity-pulse-dark.svg
+  s_495ed57f72c6ce::t_799267ebde04c5 7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "057fe2e0eb22d6d5ecf37d5301315a6ca57b3c3b",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
