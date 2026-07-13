@@ -16,11 +16,10 @@
     }
   </style>
   <defs>
-    <linearGradient id="f-borderGrad" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#30363d"/>
+    <linearGradient id="f-borderGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f81f7"/>
       <stop offset="0.5" stop-color="#79c0ff"/>
       <stop offset="1" stop-color="#30363d"/>
-      <animateTransform attributeName="gradientTransform" type="rotate" from="0 0.5 0.5" to="360 0.5 0.5" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="f-shineGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="rgba(255,255,255,0.22)" stop-opacity="0"/>
