@@ -1,0 +1,41 @@
+scripts/generators/flagship.js
+  s_495ed57f72c6ce::t_2d835fb5479558 58-59
+scripts/generators/waves.js
+  s_495ed57f72c6ce::t_20ca1325aaf75d 1-3,10-13
+images/stats/activity-pulse-dark.svg
+  s_495ed57f72c6ce::t_6c29feef7e5903 7
+images/stats/activity-pulse-light.svg
+  s_495ed57f72c6ce::t_617f2f28e7eddc 7
+images/stats/combined-stats-dark.svg
+  s_495ed57f72c6ce::t_5201023cc5dd53 44,92
+images/stats/combined-stats-light.svg
+  s_495ed57f72c6ce::t_4c6b7637ac228e 44,92
+images/stats/commits-monthly-dark.svg
+  s_495ed57f72c6ce::t_15ce37c5f31161 1,44,53
+images/stats/commits-monthly-light.svg
+  s_495ed57f72c6ce::t_c5a60a64694758 1,44,53
+images/stats/flagship-dark.svg
+  s_495ed57f72c6ce::t_9fc432e5f14d80 19-20
+images/stats/flagship-light.svg
+  s_495ed57f72c6ce::t_f35284a044f3c5 19-20
+images/stats/waves-dark.svg
+  s_495ed57f72c6ce::t_c5b695a340e71c 4-7
+images/stats/waves-light.svg
+  s_495ed57f72c6ce::t_c176eb04fa4c87 4-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.12",
+  "base_commit_sha": "9468fe95c6c8472fd7754031ff9d16cae7511ebf",
+  "prompts": {},
+  "sessions": {
+    "s_495ed57f72c6ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "78673687-b9d1-47d9-96b1-136b93325986",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Ivan Murzak <Ivan.D.Murzak@gmail.com>"
+    }
+  }
+}
