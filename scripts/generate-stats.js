@@ -98,6 +98,15 @@ async function main() {
     const nuget = await fetchNuGetAll();
     const npm = await fetchNpmAll();
 
+    // Registry APIs fail soft (httpJSONRetry returns null after giving up).
+    // A zero total means the API was unreachable, not that downloads dropped —
+    // abort so the daily workflow never commits zeroed-out numbers.
+    for (const [name, r] of [['OpenUPM', openupm], ['NuGet', nuget], ['npm', npm]]) {
+      if (!r.total || !r.packages.length) {
+        throw new Error(`${name} enumeration returned no data — refusing to write stale stats.`);
+      }
+    }
+
     // Downloads grouped by GitHub repo: OpenUPM packages map through their
     // repository.url, NuGet packages through their projectUrl. A repo shipping
     // on both registries shows the combined total.
