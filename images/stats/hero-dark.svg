@@ -44,15 +44,15 @@
   <text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip0)" style="animation-delay:-1.7s">> AI Tools</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip1)" style="animation-delay:1.7s">> AI Agents</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip2)" style="animation-delay:5.1s">> AI Harness</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip3)" style="animation-delay:8.5s">> .NET &amp; Unity</text><text class="h-ph" x="477.5" y="103" text-anchor="middle" clip-path="url(#h-clip4)" style="animation-delay:11.9s">> Game Dev</text>
   <g class="chip" style="animation-delay:800ms">
       <circle cx="63.5" cy="146" r="3" fill="#2f81f7" class="h-dot" style="animation-delay:0.0s"/>
-      <text x="73.5" y="151" class="h-val">4 995</text>
+      <text x="73.5" y="151" class="h-val">4 998</text>
       <text x="73.5" y="164" class="h-lbl">TOTAL STARS</text>
     </g><g class="chip" style="animation-delay:950ms">
       <circle cx="241.5" cy="146" r="3" fill="#2f81f7" class="h-dot" style="animation-delay:0.4s"/>
-      <text x="251.5" y="151" class="h-val">321.4k</text>
+      <text x="251.5" y="151" class="h-val">323.9k</text>
       <text x="251.5" y="164" class="h-lbl">OPENUPM DL</text>
     </g><g class="chip" style="animation-delay:1100ms">
       <circle cx="419.5" cy="146" r="3" fill="#2f81f7" class="h-dot" style="animation-delay:0.8s"/>
-      <text x="429.5" y="151" class="h-val">240.7k</text>
+      <text x="429.5" y="151" class="h-val">241.9k</text>
       <text x="429.5" y="164" class="h-lbl">NUGET DL</text>
     </g><g class="chip" style="animation-delay:1250ms">
       <circle cx="597.5" cy="146" r="3" fill="#2f81f7" class="h-dot" style="animation-delay:1.2s"/>
