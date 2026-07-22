@@ -1,4 +1,4 @@
-<svg width="955" height="195" viewBox="0 0 955 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub stats: 5 105 stars, 12 556 commits, rank S+. 13 174 contributions, current streak 1 days.">
+<svg width="955" height="195" viewBox="0 0 955 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub stats: 5 122 stars, 23 807 commits, rank S+. 26 542 contributions, current streak 65 days.">
   <style>
     .cs-lab { font: 400 12.5px 'Segoe UI', Ubuntu, sans-serif; fill: #656d76; }
     .cs-val { font: 600 14px 'Segoe UI', Ubuntu, sans-serif; fill: #1f2328; }
@@ -25,7 +25,7 @@
     @keyframes cs-fadein { to { opacity: 1; } }
     @keyframes cs-grow { to { transform: scaleX(1); } }
     @keyframes cs-drawL { to { stroke-dashoffset: 0.00; } }
-    @keyframes cs-drawR { to { stroke-dashoffset: 246.76; } }
+    @keyframes cs-drawR { to { stroke-dashoffset: 7.50; } }
     @keyframes cs-breathe { from { opacity: .45; } to { opacity: 1; } }
     @keyframes cs-flick { 0%, 100% { opacity: 1; } 40% { opacity: .68; } 65% { opacity: .9; } }
     @keyframes cs-blink { 0%, 100% { opacity: 0; } 50% { opacity: .85; } }
@@ -33,7 +33,7 @@
       .cs-fade, .cs-row, .cs-spark { animation: none; opacity: 1; }
       .cs-bar { animation: none; transform: none; }
       .cs-ringL { animation: none; stroke-dashoffset: 0.00; }
-      .cs-ringR { animation: none; stroke-dashoffset: 246.76; }
+      .cs-ringR { animation: none; stroke-dashoffset: 7.50; }
       .cs-halo, .cs-flame, .cs-e1, .cs-e2, .cs-e3 { animation: none; }
     }
   </style>
@@ -73,33 +73,33 @@
     
     <g class="cs-row" style="animation-delay:150ms">
       <text class="cs-lab" x="25" y="36">Total Stars</text>
-      <text class="cs-val" x="300" y="37" text-anchor="end">5 105</text>
+      <text class="cs-val" x="300" y="37" text-anchor="end">5 122</text>
       <rect x="25" y="44" width="275" height="4" rx="2" fill="#eaeef2"/>
-      <rect class="cs-bar" style="animation-delay:250ms" x="25" y="44" width="249" height="4" rx="2" fill="url(#cs-bg)"/>
+      <rect class="cs-bar" style="animation-delay:250ms" x="25" y="44" width="233" height="4" rx="2" fill="url(#cs-bg)"/>
     </g>
     <g class="cs-row" style="animation-delay:260ms">
       <text class="cs-lab" x="25" y="68">Total Commits</text>
-      <text class="cs-val" x="300" y="69" text-anchor="end">12 556</text>
+      <text class="cs-val" x="300" y="69" text-anchor="end">23 807</text>
       <rect x="25" y="76" width="275" height="4" rx="2" fill="#eaeef2"/>
       <rect class="cs-bar" style="animation-delay:360ms" x="25" y="76" width="275" height="4" rx="2" fill="url(#cs-bg)"/>
     </g>
     <g class="cs-row" style="animation-delay:370ms">
       <text class="cs-lab" x="25" y="100">Total PRs</text>
-      <text class="cs-val" x="300" y="101" text-anchor="end">1 767</text>
+      <text class="cs-val" x="300" y="101" text-anchor="end">1 796</text>
       <rect x="25" y="108" width="275" height="4" rx="2" fill="#eaeef2"/>
-      <rect class="cs-bar" style="animation-delay:470ms" x="25" y="108" width="218" height="4" rx="2" fill="url(#cs-bg)"/>
+      <rect class="cs-bar" style="animation-delay:470ms" x="25" y="108" width="204" height="4" rx="2" fill="url(#cs-bg)"/>
     </g>
     <g class="cs-row" style="animation-delay:480ms">
       <text class="cs-lab" x="25" y="132">Total Issues</text>
-      <text class="cs-val" x="300" y="133" text-anchor="end">732</text>
+      <text class="cs-val" x="300" y="133" text-anchor="end">741</text>
       <rect x="25" y="140" width="275" height="4" rx="2" fill="#eaeef2"/>
-      <rect class="cs-bar" style="animation-delay:580ms" x="25" y="140" width="192" height="4" rx="2" fill="url(#cs-bg)"/>
+      <rect class="cs-bar" style="animation-delay:580ms" x="25" y="140" width="180" height="4" rx="2" fill="url(#cs-bg)"/>
     </g>
     <g class="cs-row" style="animation-delay:590ms">
       <text class="cs-lab" x="25" y="164">Followers</text>
-      <text class="cs-val" x="300" y="165" text-anchor="end">412</text>
+      <text class="cs-val" x="300" y="165" text-anchor="end">413</text>
       <rect x="25" y="172" width="275" height="4" rx="2" fill="#eaeef2"/>
-      <rect class="cs-bar" style="animation-delay:690ms" x="25" y="172" width="176" height="4" rx="2" fill="url(#cs-bg)"/>
+      <rect class="cs-bar" style="animation-delay:690ms" x="25" y="172" width="164" height="4" rx="2" fill="url(#cs-bg)"/>
     </g>
     <g transform="translate(382,92)">
       <circle class="cs-halo" r="57" fill="url(#cs-hg)"/>
@@ -114,13 +114,13 @@
   <g transform="translate(460,0)">
     <rect x="0.5" y="0.5" rx="6" width="494" height="194" fill="#ffffff" stroke="#d0d7de"/>
     <g class="cs-spark" clip-path="url(#cs-clipR)">
-      <path d="M1.0,189.1 L38.9,186.9 L76.8,189.2 L114.8,171.5 L152.7,175.8 L190.6,133.5 L228.5,155.5 L266.5,180.4 L304.4,168.9 L342.3,153.0 L380.2,144.8 L418.2,159.5 L456.1,139.7 L494.0,132.0 L494,194 L1,194 Z" fill="#0969da" opacity=".06"/>
-      <path d="M1.0,189.1 L38.9,186.9 L76.8,189.2 L114.8,171.5 L152.7,175.8 L190.6,133.5 L228.5,155.5 L266.5,180.4 L304.4,168.9 L342.3,153.0 L380.2,144.8 L418.2,159.5 L456.1,139.7 L494.0,132.0" stroke="#0969da" stroke-width="1.5" fill="none" opacity=".3"/>
+      <path d="M1.0,190.4 L38.9,188.8 L76.8,186.7 L114.8,185.5 L152.7,187.6 L190.6,184.9 L228.5,183.8 L266.5,181.7 L304.4,181.3 L342.3,174.8 L380.2,184.0 L418.2,167.9 L456.1,145.4 L494.0,132.0 L494,194 L1,194 Z" fill="#0969da" opacity=".06"/>
+      <path d="M1.0,190.4 L38.9,188.8 L76.8,186.7 L114.8,185.5 L152.7,187.6 L190.6,184.9 L228.5,183.8 L266.5,181.7 L304.4,181.3 L342.3,174.8 L380.2,184.0 L418.2,167.9 L456.1,145.4 L494.0,132.0" stroke="#0969da" stroke-width="1.5" fill="none" opacity=".3"/>
     </g>
     <line x1="165" y1="30" x2="165" y2="170" stroke="url(#cs-sep)"/>
     <line x1="330" y1="30" x2="330" y2="170" stroke="url(#cs-sep)"/>
     <g class="cs-row" style="animation-delay:250ms">
-      <text class="cs-big" x="82.5" y="86" text-anchor="middle">13 174</text>
+      <text class="cs-big" x="82.5" y="86" text-anchor="middle">26 542</text>
       <text class="cs-sub" x="82.5" y="114" text-anchor="middle">Total Contributions</text>
       <text class="cs-date" x="82.5" y="136" text-anchor="middle">Jan 1 - Present</text>
     </g>
@@ -137,15 +137,15 @@
         <circle class="cs-e1" cx="-9" cy="-57" r="1.6" fill="#54aeff"/>
         <circle class="cs-e2" cx="2" cy="-63" r="1.4" fill="#54aeff"/>
         <circle class="cs-e3" cx="10" cy="-55" r="1.6" fill="#54aeff"/>
-        <text class="cs-big" y="10" text-anchor="middle" fill="url(#cs-num)">1</text>
+        <text class="cs-big" y="10" text-anchor="middle" fill="url(#cs-num)">65</text>
       </g>
       <text class="cs-cur" x="247.5" y="150" text-anchor="middle">Current Streak</text>
-      <text class="cs-date" x="247.5" y="170" text-anchor="middle">Dec 31 - Dec 31</text>
+      <text class="cs-date" x="247.5" y="170" text-anchor="middle">May 18 - Jul 21</text>
     </g>
     <g class="cs-row" style="animation-delay:550ms">
-      <text class="cs-big" x="412.5" y="86" text-anchor="middle">55</text>
+      <text class="cs-big" x="412.5" y="86" text-anchor="middle">67</text>
       <text class="cs-sub" x="412.5" y="114" text-anchor="middle">Longest Streak</text>
-      <text class="cs-date" x="412.5" y="136" text-anchor="middle">Jul 13 - Sep 5</text>
+      <text class="cs-date" x="412.5" y="136" text-anchor="middle">Jan 25 - Apr 1</text>
     </g>
   </g>
 </svg>
