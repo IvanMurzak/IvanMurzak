@@ -110,9 +110,7 @@ async function fetchGitHubData() {
           nodes {
             name
             description
-            stargazers {
-              totalCount
-            }
+            stargazerCount
             forkCount
             primaryLanguage {
               name
@@ -126,6 +124,11 @@ async function fetchGitHubData() {
 
   const basicData = await postGraphQL(userInfoQuery);
   const user = basicData.user;
+  for (const repo of user.repositories.nodes) {
+    repo.stargazers = { totalCount: repo.stargazerCount || 0 };
+    delete repo.stargazerCount;
+  }
+
   const createdYear = new Date(user.createdAt).getFullYear();
   const currentYear = new Date().getFullYear();
 
