@@ -106,7 +106,7 @@ async function fetchGitHubData() {
         issues(first: 1) {
           totalCount
         }
-        repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: STARGAZERS, direction: DESC}) {
+        repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, orderBy: {field: STARGAZERS, direction: DESC}) {
           nodes {
             name
             description
